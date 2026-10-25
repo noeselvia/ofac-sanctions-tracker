@@ -1,0 +1,15 @@
+{
+  "name": "OFAC Tracker Navy",
+  "dataColors": ["#2A78D6", "#EB6834", "#8B97AB", "#0B1F3F", "#1BAF7A", "#EDA100", "#6250D6", "#E87BA4"],
+  "background": "#FFFFFF",
+  "foreground": "#0D1A2E",
+  "tableAccent": "#1F5FD1",
+  "good": "#0CA30C",
+  "neutral": "#EDA100",
+  "bad": "#D03B3B",
+  "textClasses": {
+    "title": {"fontFace": "Segoe UI Semibold", "color": "#0B1F3F", "fontSize": 14},
+    "label": {"fontFace": "Segoe UI", "color": "#4A5870", "fontSize": 10},
+    "callout": {"fontFace": "Segoe UI Bold", "color": "#0D1A2E", "fontSize": 28}
+  }
+}

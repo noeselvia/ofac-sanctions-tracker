@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>OFAC Sanctions Tracker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Every change to the U.S. Treasury OFAC SDN list since 2021: additions, removals and updates by program, country and entity type.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: navy masthead band -> filter bar -> KPI ledger -> 2-col chart grid -> change register table. */
+:root{
+  --navy:#0b1f3f; --navy-2:#13305e; --cobalt:#1f5fd1; --on-navy:#e8eefb; --on-navy-2:#a9bbdf;
+  --bg:#f4f6fa; --surface:#ffffff; --line:#dde3ee; --grid:#e8ecf3;
+  --fg:#0d1a2e; --fg-2:#4a5870; --fg-3:#76839a;
+  --added:#2a78d6; --removed:#eb6834; --updated:#8b97ab;
+  --bar:#2a78d6; --chip:#eef2fa; --chip-on:#0b1f3f; --chip-on-fg:#ffffff;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --navy:#081529; --navy-2:#102748; --cobalt:#5b8ff0; --on-navy:#e8eefb; --on-navy-2:#9fb2d8;
+  --bg:#0c1424; --surface:#121c30; --line:#24324c; --grid:#1d2940;
+  --fg:#e8edf6; --fg-2:#aab6cb; --fg-3:#7d8aa3;
+  --added:#3987e5; --removed:#d95926; --updated:#6f7c93;
+  --bar:#3987e5; --chip:#1a2640; --chip-on:#e8eefb; --chip-on-fg:#0b1f3f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --navy:#081529; --navy-2:#102748; --cobalt:#5b8ff0; --on-navy:#e8eefb; --on-navy-2:#9fb2d8;
+  --bg:#0c1424; --surface:#121c30; --line:#24324c; --grid:#1d2940;
+  --fg:#e8edf6; --fg-2:#aab6cb; --fg-3:#7d8aa3;
+  --added:#3987e5; --removed:#d95926; --updated:#6f7c93;
+  --bar:#3987e5; --chip:#1a2640; --chip-on:#e8eefb; --chip-on-fg:#0b1f3f; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mast{background:var(--navy);color:var(--on-navy);border-bottom:3px solid var(--cobalt)}
+.mast .wrap{padding-block:28px 24px;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:flex-end;justify-content:space-between}
+.eyebrow{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy-2)}
+h1{font:800 clamp(30px,5vw,46px)/1 var(--display);font-stretch:80%;letter-spacing:-.01em;margin:8px 0 8px;text-wrap:balance}
+.lede{margin:0;color:var(--on-navy-2);max-width:62ch}
+.stamp{font:400 12px/1.6 var(--mono);color:var(--on-navy-2);text-align:right}
+.stamp b{color:var(--on-navy);font-weight:500}
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding-block:16px;border-bottom:1px solid var(--line)}
+.fgroup{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.flabel{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);margin-right:2px}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--fg);font:500 13px/1 var(--body);padding:7px 11px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--chip-on);color:var(--chip-on-fg);border-color:var(--chip-on)}
+select,input[type=search]{font:14px var(--body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 8px;max-width:100%}
+:focus-visible{outline:2px solid var(--cobalt);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-block:20px;border-radius:8px;overflow:hidden}
+.kpi{background:var(--surface);padding:14px 16px}
+.kpi .k{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);display:flex;gap:6px;align-items:center}
+.kpi .v{font:700 30px/1.1 var(--display);font-stretch:85%;margin-top:6px;font-variant-numeric:tabular-nums}
+.kpi .s{font-size:12px;color:var(--fg-2)}
+.sw{width:10px;height:10px;border-radius:2px;display:inline-block}
+.insights{margin:0 0 20px;padding:0;list-style:none;display:grid;gap:6px}
+.insights li{padding-left:14px;position:relative;color:var(--fg-2);max-width:95ch}
+.insights li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;background:var(--cobalt);border-radius:1px}
+.insights b{color:var(--fg);font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px;min-width:0}
+.span-12{grid-column:span 12}.span-7{grid-column:span 7}.span-5{grid-column:span 5}.span-6{grid-column:span 6}
+@media (max-width:860px){.span-7,.span-5,.span-6{grid-column:span 12}}
+h2{font:700 18px/1.2 var(--display);font-stretch:90%;margin:0 0 2px}
+.sub{font-size:13px;color:var(--fg-3);margin:0 0 10px}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--fg-2);margin-bottom:6px;flex-wrap:wrap}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+svg text{fill:var(--fg-3);font:11px var(--mono)}
+svg .lbl{fill:var(--fg);font:13px var(--body)}
+svg .val{fill:var(--fg-2);font:12px var(--mono)}
+.hbar rect.hit{fill:transparent}
+.tip{position:fixed;pointer-events:none;background:var(--navy);color:var(--on-navy);font:12px/1.45 var(--body);padding:8px 10px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:20;max-width:260px}
+.tip b{font-family:var(--mono);font-weight:500}
+.tablebox{overflow-x:auto;max-height:520px;overflow-y:auto;border-top:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:720px}
+th{position:sticky;top:0;background:var(--surface);text-align:left;font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);padding:10px 8px;border-bottom:1px solid var(--line)}
+td{padding:8px;border-bottom:1px solid var(--grid);vertical-align:top}
+td.num,td.date{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--fg-2)}
+td.prog{font-family:var(--mono);font-size:12px;color:var(--fg-2)}
+.pill{display:inline-block;font:500 11px/1 var(--mono);padding:4px 7px;border-radius:4px;border:1px solid currentColor;text-transform:uppercase;letter-spacing:.05em}
+.pill.added{color:var(--added)}.pill.removed{color:var(--removed)}.pill.updated{color:var(--fg-3)}
+.tbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:10px}
+.releases{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,460px),1fr));column-gap:28px;max-height:430px;overflow-y:auto}
+.releases li{display:grid;grid-template-columns:86px 1fr auto;gap:10px;padding:9px 0;border-bottom:1px solid var(--grid);font-size:13px;min-width:0}
+.releases .d{font-family:var(--mono);color:var(--fg-3);font-size:12px}
+.releases a{color:var(--fg);text-decoration:none}
+.releases a:hover{color:var(--cobalt);text-decoration:underline}
+.releases .n{font-family:var(--mono);color:var(--fg-2);font-size:12px}
+a{color:var(--cobalt)}
+footer{margin-block:28px 40px;color:var(--fg-3);font-size:12.5px;display:grid;gap:6px;max-width:100ch}
+footer strong{color:var(--fg-2)}
+.empty{color:var(--fg-3);font-size:13px;padding:24px 0;text-align:center}
+@media (prefers-reduced-motion:no-preference){.panel svg rect.m{transition:opacity .15s}}
+</style>
+
+</head><body>
+<header class="mast">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">U.S. Treasury · Office of Foreign Assets Control · SDN List</div>
+      <h1>OFAC Sanctions Tracker</h1>
+      <p class="lede">Every addition, removal and update to the Specially Designated Nationals list, parsed from OFAC's official release notices and refreshed daily.</p>
+    </div>
+    <div class="stamp" id="stamp"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="filters" role="group" aria-label="Filters">
+    <div class="fgroup" id="periods"><span class="flabel">Period</span></div>
+    <div class="fgroup"><label class="flabel" for="f-family">Program</label><select id="f-family"></select></div>
+    <div class="fgroup"><label class="flabel" for="f-type">Entity</label><select id="f-type"></select></div>
+  </div>
+
+  <section class="kpis" id="kpis" aria-label="Key figures"></section>
+  <ul class="insights" id="insights"></ul>
+
+  <div class="grid">
+    <section class="panel span-12">
+      <h2>Monthly flow of the SDN list</h2>
+      <p class="sub">Entries added (up) and removed (down) per month. Updates to existing entries are counted in the KPIs.</p>
+      <div class="legend"><span><i class="sw" style="background:var(--added)"></i>Added</span><span><i class="sw" style="background:var(--removed)"></i>Removed</span></div>
+      <div id="c-month"></div>
+    </section>
+    <section class="panel span-6">
+      <h2>Designations by sanctions program</h2>
+      <p class="sub">Entries added, grouped into program families.</p>
+      <div id="c-family"></div>
+    </section>
+    <section class="panel span-6">
+      <h2>Designations by country</h2>
+      <p class="sub">Entries added, by nationality or address country.</p>
+      <div id="c-country"></div>
+    </section>
+    <section class="panel span-12">
+      <div class="tbar">
+        <div><h2>Change register</h2><p class="sub" style="margin:0">Latest SDN entries affected, newest first.</p></div>
+        <input type="search" id="q" placeholder="Search name, country, program" aria-label="Search the change register">
+      </div>
+      <div class="tablebox"><table>
+        <thead><tr><th>Date</th><th>Change</th><th>Name</th><th>Type</th><th>Country</th><th>Program</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table></div>
+    </section>
+    <section class="panel span-12">
+      <h2>Latest OFAC releases</h2>
+      <p class="sub">Official notices, with entries parsed from each.</p>
+      <ul class="releases" id="releases"></ul>
+    </section>
+  </div>
+
+  <footer>
+    <div><strong>Source:</strong> public data from <a href="https://ofac.treasury.gov/recent-actions/sanctions-list-updates" target="_blank" rel="noopener">OFAC Recent Actions</a>, parsed by an automated Python pipeline (SQLite star schema, Power BI exports, GitHub Actions).</div>
+    <div><strong>Not a screening tool.</strong> This is an independent analytics portfolio project. It must not be used for sanctions compliance or name screening; always use OFAC's official Sanctions List Search.</div>
+    <div>Built by Elvis Guzmán Rosario · Personal project using only public data.</div>
+  </footer>
+</main>
+<div class="tip" id="tip" hidden></div>
+
+<script id="ofac-data" type="application/json">__DATA__</script>
+<script>
+(async function(){
+  let D;
+  const inline=document.getElementById('ofac-data').textContent.trim();
+  if(inline && inline[0]==='{'){D=JSON.parse(inline)}else{D=await (await fetch('data.json')).json()}
+  const IDX={m:0,a:1,f:2,c:3,t:4,l:5,n:6};
+  const cube=D.cube.filter(r=>r[IDX.l]==='SDN');
+  const fmt=n=>n.toLocaleString('en-US');
+  const months=[...new Set(cube.map(r=>r[0]))].sort();
+  const lastMonth=months[months.length-1];
+  const years=[...new Set(months.map(m=>m.slice(0,4)))];
+  const st={period:'all',family:'',type:''};
+  try{const s=JSON.parse(localStorage.getItem('ofac-filters')||'{}');Object.assign(st,s)}catch(e){}
+
+  // stamp
+  const gen=new Date(D.generated_at);
+  document.getElementById('stamp').innerHTML=
+    `Coverage <b>${D.coverage.from}</b> → <b>${D.coverage.to}</b><br>${fmt(D.coverage.actions)} OFAC releases parsed<br>Refreshed ${gen.toISOString().slice(0,10)}`;
+
+  // period chips
+  const minus12=(()=>{const [y,m]=lastMonth.split('-').map(Number);const d=new Date(Date.UTC(y,m-12,1));return d.toISOString().slice(0,7)})();
+  const periods=[['all','All'],['12m','Last 12 mo'],...years.map(y=>[y,y])];
+  const pg=document.getElementById('periods');
+  periods.forEach(([k,l])=>{const b=document.createElement('button');b.className='chip';b.textContent=l;b.dataset.k=k;b.type='button';b.onclick=()=>{st.period=k;render()};pg.appendChild(b)});
+  const fams=[...new Set(cube.map(r=>r[2]))].sort();
+  const sf=document.getElementById('f-family');sf.innerHTML='<option value="">All programs</option>'+fams.map(f=>`<option>${f}</option>`).join('');
+  const types=['individual','entity','vessel','aircraft'];
+  const stp=document.getElementById('f-type');stp.innerHTML='<option value="">All types</option>'+types.map(t=>`<option value="${t}">${t[0].toUpperCase()+t.slice(1)}</option>`).join('');
+  sf.onchange=()=>{st.family=sf.value;render()};stp.onchange=()=>{st.type=stp.value;render()};
+
+  const inPeriod=m=>st.period==='all'?true:st.period==='12m'?m>=minus12:m.startsWith(st.period);
+  const pass=r=>inPeriod(r[0])&&(!st.family||r[2]===st.family)&&(!st.type||r[4]===st.type);
+
+  // tooltip
+  const tip=document.getElementById('tip');
+  function showTip(e,html){tip.innerHTML=html;tip.hidden=false;const x=Math.min(e.clientX+14,innerWidth-tip.offsetWidth-8);const y=Math.min(e.clientY+14,innerHeight-tip.offsetHeight-8);tip.style.left=x+'px';tip.style.top=y+'px'}
+  function hideTip(){tip.hidden=true}
+  const NS='http://www.w3.org/2000/svg';
+  const el=(n,a={},p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e};
+  const nice=v=>{const p=Math.pow(10,Math.floor(Math.log10(v||1)));for(const s of [1,2,2.5,5,10])if(s*p>=v)return s*p;return 10*p};
+  const monthLabel=m=>new Date(m+'-01T00:00:00Z').toLocaleString('en-US',{month:'short',year:'numeric',timeZone:'UTC'});
+
+  function monthChart(rows){
+    const box=document.getElementById('c-month');box.innerHTML='';
+    const ms=months.filter(inPeriod);
+    const agg=Object.fromEntries(ms.map(m=>[m,{added:0,removed:0}]));
+    rows.forEach(r=>{if(agg[r[0]]&&r[1]!=='updated')agg[r[0]][r[1]]+=r[6]});
+    const W=Math.max(320,box.clientWidth),H=280,ml=44,mr=8,mt=10,mb=26;
+    const maxA=nice(Math.max(1,...ms.map(m=>agg[m].added))),maxR=nice(Math.max(1,...ms.map(m=>agg[m].removed)));
+    const ih=H-mt-mb,y0=mt+ih*maxA/(maxA+maxR),sc=ih/(maxA+maxR);
+    const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':'Monthly additions and removals'},box);
+    [maxA,maxA/2,0,-maxR/2,-maxR].forEach(v=>{const y=y0-v*sc;el('line',{x1:ml,x2:W-mr,y1:y,y2:y,stroke:v===0?'var(--fg-3)':'var(--grid)','stroke-width':1},svg);const t=el('text',{x:ml-6,y:y+4,'text-anchor':'end'},svg);t.textContent=fmt(Math.abs(v))});
+    const bw=(W-ml-mr)/Math.max(1,ms.length),w=Math.max(1,bw-2);
+    ms.forEach((m,i)=>{const x=ml+i*bw+(bw-w)/2,a=agg[m].added,r=agg[m].removed;
+      if(a){el('rect',{class:'m',x,y:y0-a*sc,width:w,height:a*sc,rx:Math.min(2,w/2),fill:'var(--added)'},svg)}
+      if(r){el('rect',{class:'m',x,y:y0+1,width:w,height:Math.max(0,r*sc-1),rx:Math.min(2,w/2),fill:'var(--removed)'},svg)}
+      const hit=el('rect',{x:ml+i*bw,y:mt,width:bw,height:ih,fill:'transparent'},svg);
+      hit.onmousemove=e=>showTip(e,`${monthLabel(m)}<br>Added <b>${fmt(a)}</b> · Removed <b>${fmt(r)}</b><br>Net <b>${a-r>=0?'+':''}${fmt(a-r)}</b>`);hit.onmouseleave=hideTip;
+      const step=Math.ceil(ms.length/(W/70));
+      if(i%step===0){const t=el('text',{x:ml+i*bw+bw/2,y:H-8,'text-anchor':'middle'},svg);t.textContent=ms.length>14?(m.endsWith('-01')||step>1?m.slice(0,7):m.slice(5)):monthLabel(m)}
+    });
+  }
+
+  function hbar(id,pairs,unit){
+    const box=document.getElementById(id);box.innerHTML='';
+    if(!pairs.length){box.innerHTML='<p class="empty">No additions for this selection.</p>';return}
+    const W=Math.max(300,box.clientWidth),row=26,lw=Math.min(170,W*.4),H=pairs.length*row+4,vw=58;
+    const max=Math.max(...pairs.map(p=>p[1]));
+    const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',class:'hbar',role:'img'},box);
+    pairs.forEach(([k,v],i)=>{const y=i*row+4,bw=Math.max(2,(W-lw-vw)*v/max);
+      const t=el('text',{x:0,y:y+13,class:'lbl'},svg);const mc=Math.floor(lw/7.4);t.textContent=k.length>mc?k.slice(0,mc-1)+'…':k;
+      el('rect',{class:'m',x:lw,y:y+2,width:bw,height:row-10,rx:3,fill:'var(--bar)'},svg);
+      const tv=el('text',{x:lw+bw+6,y:y+13,class:'val'},svg);tv.textContent=fmt(v);
+      const h=el('rect',{class:'hit',x:0,y,width:W,height:row},svg);
+      const tot=pairs.reduce((s,p)=>s+p[1],0);
+      h.onmousemove=e=>showTip(e,`${k}<br><b>${fmt(v)}</b> ${unit}`);h.onmouseleave=hideTip;});
+  }
+
+  function render(){
+    try{localStorage.setItem('ofac-filters',JSON.stringify(st))}catch(e){}
+    document.querySelectorAll('#periods .chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===st.period));
+    sf.value=st.family;stp.value=st.type;
+    const rows=cube.filter(pass);
+    const sum=a=>rows.filter(r=>r[1]===a).reduce((s,r)=>s+r[6],0);
+    const A=sum('added'),R=sum('removed'),U=sum('updated');
+    const countries=new Set(rows.filter(r=>r[1]==='added'&&r[3]!=='Unknown').map(r=>r[3])).size;
+    document.getElementById('kpis').innerHTML=[
+      ['Added',A,'new SDN entries','var(--added)'],['Removed',R,'entries delisted','var(--removed)'],
+      ['Updated',U,'entries amended','var(--updated)'],['Net change',(A-R),'added minus removed',null],
+      ['Countries',countries,'with new designations',null]]
+      .map(([k,v,s,c])=>`<div class="kpi"><div class="k">${c?`<i class="sw" style="background:${c}"></i>`:''}${k}</div><div class="v">${k==='Net change'&&v>0?'+':''}${fmt(v)}</div><div class="s">${s}</div></div>`).join('');
+
+    const by=(i)=>{const o={};rows.filter(r=>r[1]==='added').forEach(r=>o[r[i]]=(o[r[i]]||0)+r[6]);return Object.entries(o).sort((a,b)=>b[1]-a[1])};
+    const famAll=by(2),ctyAll=by(3).filter(p=>p[0]!=='Unknown');
+    hbar('c-family',famAll.slice(0,10),'entries added');
+    hbar('c-country',ctyAll.slice(0,10),'entries added');
+    monthChart(rows);
+
+    // insights
+    const ins=[];
+    if(A&&famAll[0])ins.push(`<b>${famAll[0][0]}</b> programs account for <b>${Math.round(famAll[0][1]/A*100)}%</b> of additions in this view.`);
+    if(A&&ctyAll[0])ins.push(`<b>${ctyAll[0][0]}</b> leads by country with <b>${fmt(ctyAll[0][1])}</b> new entries${ctyAll[1]?`, followed by ${ctyAll[1][0]} (${fmt(ctyAll[1][1])})`:''}.`);
+    const mo={};rows.filter(r=>r[1]==='added').forEach(r=>mo[r[0]]=(mo[r[0]]||0)+r[6]);
+    const peak=Object.entries(mo).sort((a,b)=>b[1]-a[1])[0];
+    if(peak)ins.push(`The busiest month was <b>${monthLabel(peak[0])}</b>, with <b>${fmt(peak[1])}</b> entries added.`);
+    if(R)ins.push(`For every entry removed, OFAC added <b>${(A/R).toFixed(1)}</b>.`);
+    document.getElementById('insights').innerHTML=ins.map(s=>`<li>${s}</li>`).join('');
+    renderTable();
+  }
+
+  const q=document.getElementById('q');q.oninput=renderTable;
+  function renderTable(){
+    const term=q.value.trim().toLowerCase();
+    const list=D.latest.filter(r=>inPeriod(r.date.slice(0,7))&&(!st.family||r.family===st.family)&&(!st.type||r.type===st.type)
+      &&(!term||(r.name+' '+r.country+' '+r.programs).toLowerCase().includes(term))).slice(0,200);
+    const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    document.getElementById('rows').innerHTML=list.length?list.map(r=>`<tr><td class="date">${r.date}</td><td><span class="pill ${r.action}">${r.action}</span></td><td>${esc(r.name)}</td><td>${r.type}</td><td>${esc(r.country)}</td><td class="prog">${esc(r.programs.replace(/\|/g,' · '))}</td></tr>`).join('')
+      :'<tr><td colspan="6" class="empty">No recent entries match this selection. The register keeps the latest 400 changes.</td></tr>';
+  }
+  document.getElementById('releases').innerHTML=D.actions.slice(0,30).map(a=>`<li><span class="d">${a.date}</span><a href="${a.url}" target="_blank" rel="noopener">${a.title.replace(/[<>]/g,'')}</a><span class="n">${a.n?a.n+' entries':'—'}</span></li>`).join('');
+  render();
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(render,150)});
+})();
+</script>
+
+</body></html>
