@@ -57,9 +57,10 @@ def load_actions(raw_path: Path = RAW) -> list[dict]:
 def build(raw_path: Path = RAW) -> dict:
     actions = load_actions(raw_path)
     PBI.mkdir(parents=True, exist_ok=True)
-    if DB.exists():
-        DB.unlink()
     con = sqlite3.connect(DB)
+    # rebuild in place (drop objects instead of deleting the file)
+    con.executescript("""DROP VIEW IF EXISTS v_monthly_net; DROP TABLE IF EXISTS bridge_change_program;
+        DROP TABLE IF EXISTS fact_list_change; DROP TABLE IF EXISTS dim_action; DROP TABLE IF EXISTS dim_date;""")
     con.executescript(SCHEMA.read_text())
 
     change_rows, bridge_rows = [], []
@@ -93,6 +94,7 @@ def build(raw_path: Path = RAW) -> dict:
             cur += dt.timedelta(days=1)
         con.executemany("INSERT INTO dim_date VALUES (?,?,?,?,?,?,?)", drows)
     con.commit()
+    con.execute("VACUUM")
 
     _export_csv(con)
     summary = _export_dashboard(con)
