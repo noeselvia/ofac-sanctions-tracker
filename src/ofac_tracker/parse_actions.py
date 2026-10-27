@@ -25,7 +25,7 @@ SECTION_RE = re.compile(
 )
 END_MARKERS = re.compile(r"Unrelated Administrative List Changes", re.IGNORECASE)
 TAG_RE = re.compile(r"\[([A-Z0-9][A-Z0-9 \-_.]*?)\]")
-ENTRY_SPLIT_RE = re.compile(r"(?<=[\]\)])\.\s+(?=[A-Z0-9\"'À-ɏ])")
+ENTRY_SPLIT_RE = re.compile(r"(?<=[\]\)])\.\s*(?=[A-Z0-9\"'À-ɏ])")
 TYPE_RE = re.compile(r"\((individual|vessel|aircraft)\)", re.IGNORECASE)
 
 # Program tags that are qualifiers rather than sanctions programs.
@@ -43,10 +43,11 @@ class ListChange:
     aliases: list[str] = field(default_factory=list)
     linked_to: list[str] = field(default_factory=list)
     entry_text: str = ""     # OFAC's published entry text (new version for updates)
+    nationalities: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         d = asdict(self)
-        for k in ("programs", "aliases", "linked_to"):
+        for k in ("programs", "aliases", "linked_to", "nationalities"):
             d[k] = "|".join(getattr(self, k))
         return d
 
@@ -126,13 +127,42 @@ def extract_name(entry: str) -> str:
     return parts[0]
 
 
+# OFAC writes some countries "inverted" with a comma ("Korea, North").
+INVERTED = {
+    ("Korea", "North"): "North Korea", ("Korea", "South"): "South Korea",
+    ("Congo", "Democratic Republic of the"): "Democratic Republic of the Congo",
+    ("Congo", "Republic of the"): "Republic of the Congo",
+    ("Virgin Islands", "British"): "British Virgin Islands", ("Virgin Islands", "U.S."): "U.S. Virgin Islands",
+    ("Gambia", "The"): "The Gambia", ("Bahamas", "The"): "Bahamas", ("Man", "Isle of"): "Isle of Man",
+    ("Micronesia", "Federated States of"): "Micronesia",
+}
+_COUNTRY_RE = r"([A-Z][A-Za-z .'\-]+?(?:, (?:North|South|The|British|U\.S\.|Isle of|Democratic Republic of the|Republic of the|Federated States of))?)"
+
+
+def _fix_country(c: str) -> str:
+    c = c.strip()
+    if ", " in c:
+        a, b = c.split(", ", 1)
+        return INVERTED.get((a, b), c)
+    return c
+
+
+def extract_nationalities(entry: str) -> list[str]:
+    out = []
+    for m in re.finditer(r"\b(?:alt\. )?(?:nationality|citizen) " + _COUNTRY_RE + r"\.?(?:;|\)|\s*$)", entry):
+        c = _fix_country(m.group(1).rstrip("."))
+        if c not in out:
+            out.append(c)
+    return out
+
+
 def extract_country(entry: str, entity_type: str) -> str:
-    m = re.search(r"\bnationality ([A-Z][A-Za-z .'\-]+?)(?:;|\)|$)", entry)
+    m = re.search(r"(?<!alt\. )\bnationality " + _COUNTRY_RE + r"(?:;|\)|$)", entry)
     if m:
-        return m.group(1).strip()
-    m = re.search(r"\bcitizen ([A-Z][A-Za-z .'\-]+?)(?:;|\)|$)", entry)
+        return _fix_country(m.group(1))
+    m = re.search(r"(?<!alt\. )\bcitizen " + _COUNTRY_RE + r"(?:;|\)|$)", entry)
     if m:
-        return m.group(1).strip()
+        return _fix_country(m.group(1))
     if entity_type == "vessel":
         vm = _vessel_head(entry)
         if vm and vm.group("flag").strip().lower() not in {"unknown", "none identified"}:
@@ -142,7 +172,10 @@ def extract_country(entry: str, entity_type: str) -> str:
             return m.group(1).strip()
     head = _strip_parens(entry).split(";")[0]
     parts = [p.strip() for p in head.split(",") if p.strip()]
-    if len(parts) > 1:
+    name_parts = 2 if entity_type == "individual" else 1   # "LAST, First" vs "COMPANY"
+    if len(parts) > name_parts + 1 and (parts[-2], parts[-1]) in INVERTED:
+        return INVERTED[(parts[-2], parts[-1])]
+    if len(parts) > name_parts:
         cand = parts[-1]
         cand = re.sub(r"\s+\d[\w\- ]*$", "", cand).strip()  # drop trailing postal codes
         if cand and len(cand) <= 40 and not any(ch.isdigit() for ch in cand) and cand[0].isupper():
@@ -184,6 +217,7 @@ def parse_entry(raw: str, action: str, list_name: str) -> ListChange:
         programs=extract_programs(entry),
         country=extract_country(entry, etype),
         aliases=extract_aliases(entry),
+        nationalities=extract_nationalities(entry),
         linked_to=extract_linked(entry),
         entry_text=entry.strip(),
     )

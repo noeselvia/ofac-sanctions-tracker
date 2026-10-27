@@ -40,6 +40,7 @@ OFAC SDN.CSV / ADD.CSV (daily)  ────┘   parse + diff                  
 |---|---|---|
 | Ingestion | Scrapes new "Sanctions List Updates" notices incrementally; downloads the official SDN.CSV/ADD.CSV snapshot | `src/ofac_tracker/sources.py` |
 | Parsing | Turns each notice's free text into one record per affected entry: action, entity type, name, country, programs | `src/ofac_tracker/parse_actions.py` |
+| Current lists | Reads the full SDN snapshot (SDN/ALT/ADD.CSV) and the UN consolidated XML; vessels excluded | `src/ofac_tracker/current_lists.py`, `overview.py` |
 | Change detection | Diffs consecutive SDN snapshots by `ent_num` with attribute hashing (added / removed / updated + changed fields) | `src/ofac_tracker/snapshot_diff.py` |
 | Modeling | Star schema: `fact_list_change`, `dim_action`, `dim_date`, `bridge_change_program`, view `v_monthly_net` | `sql/schema.sql`, `src/ofac_tracker/build.py` |
 | Semantics | 60+ OFAC program tags grouped into readable program families | `src/ofac_tracker/programs.py` |
@@ -74,6 +75,9 @@ Outputs:
 - `data/powerbi/*.csv`: tables for Power BI
 - `docs/index.html` + `docs/data.json`: web dashboard
 - `docs/inclusions.html` + `docs/inclusions.json`: new designations page
+- `docs/ofac.html`, `docs/onu.html`: list-status pages (Spanish) for OFAC SDN and the UN Security Council
+  Consolidated List: last update, total records and aliases, Dominican nationals, latest additions and their
+  aliases, type split, monthly trend and countries map. Vessels are excluded.
 - `dist/ofac_dashboard.html`, `dist/ofac_new_designations.html`: self-contained pages (single file, data embedded)
 - `data/snapshot_changes.csv`: day-over-day diff log from the official SDN snapshots
 

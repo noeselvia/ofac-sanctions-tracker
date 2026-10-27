@@ -62,8 +62,16 @@ def main(argv: list[str] | None = None) -> int:
             run_snapshot_diff()
         except Exception as exc:  # snapshot is a complement; never block the build
             print(f"WARNING snapshot step failed: {exc}", file=sys.stderr)
+        try:
+            from .overview import UN_XML
+            sources.download_un(UN_XML)
+            print("UN consolidated list downloaded")
+        except Exception as exc:
+            print(f"WARNING UN download failed: {exc}", file=sys.stderr)
 
     summary = build.build()
+    from .overview import build_all
+    build_all()
     build.render_dashboards()
     print(json.dumps(summary["coverage"]))
     return 0

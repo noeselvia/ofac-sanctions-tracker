@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lista OFAC</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+<style>
+/* Layout: tab strip -> KPI band (update date + 3 totals) -> 3-col row (new additions + aliases | type donut | monthly trend) -> countries list + map. */
+:root{
+  --navy:#0b1f3f; --cobalt:#1f5fd1; --on-navy:#e8eefb; --on-navy-2:#a9bbdf; --navy-line:#24406e;
+  --bg:#f4f6fa; --surface:#ffffff; --surface-2:#f7f9fc; --line:#dde3ee; --grid:#e8ecf3;
+  --fg:#0d1a2e; --fg-2:#4a5870; --fg-3:#76839a;
+  --bar:#2a78d6; --s1:#2a78d6; --s2:#0b1f3f; --s3:#eda100;
+  --map-land:#d9e1ee; --map-hit:#2a78d6; --map-bg:#eef2f8; --marker:#eb6834;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --navy:#081529; --cobalt:#5b8ff0; --on-navy:#e8eefb; --on-navy-2:#9fb2d8; --navy-line:#1d3358;
+  --bg:#0c1424; --surface:#121c30; --surface-2:#0f182a; --line:#24324c; --grid:#1d2940;
+  --fg:#e8edf6; --fg-2:#aab6cb; --fg-3:#7d8aa3;
+  --bar:#3987e5; --s1:#3987e5; --s2:#9fb2d8; --s3:#c98500;
+  --map-land:#25334f; --map-hit:#3987e5; --map-bg:#0f182a; --marker:#d95926; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --navy:#081529; --cobalt:#5b8ff0; --on-navy:#e8eefb; --on-navy-2:#9fb2d8; --navy-line:#1d3358;
+  --bg:#0c1424; --surface:#121c30; --surface-2:#0f182a; --line:#24324c; --grid:#1d2940;
+  --fg:#e8edf6; --fg-2:#aab6cb; --fg-3:#7d8aa3;
+  --bar:#3987e5; --s1:#3987e5; --s2:#9fb2d8; --s3:#c98500;
+  --map-land:#25334f; --map-hit:#3987e5; --map-bg:#0f182a; --marker:#d95926; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body)}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--cobalt)}
+.mast{background:var(--navy);color:var(--on-navy);border-bottom:3px solid var(--cobalt)}
+.mast .wrap{padding-block:18px 0;display:grid;gap:14px}
+.mrow{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
+.eyebrow{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy-2)}
+h1{font:800 clamp(28px,4.4vw,40px)/1 var(--display);font-stretch:80%;margin:8px 0 0;text-wrap:balance}
+.note{font:12px/1.4 var(--mono);color:var(--on-navy-2);text-align:right}
+nav.tabs{display:flex;gap:2px;overflow-x:auto}
+nav.tabs a{font:500 13px/1 var(--body);color:var(--on-navy-2);text-decoration:none;padding:11px 14px;border-radius:6px 6px 0 0;white-space:nowrap}
+nav.tabs a:hover{color:var(--on-navy);background:var(--navy-line)}
+nav.tabs a[aria-current="page"]{background:var(--bg);color:var(--fg);font-weight:600}
+main{padding-block:18px 0}
+.kband{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+@media (max-width:820px){.kband{grid-template-columns:1fr 1fr}}
+.k{background:var(--surface);padding:14px 16px;min-width:0}
+.k .l{font:600 12px/1.2 var(--display);font-stretch:85%;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-2)}
+.k .v{font:700 32px/1.1 var(--display);font-stretch:85%;margin-top:6px;font-variant-numeric:tabular-nums;color:var(--cobalt)}
+.k .v.date{font-size:22px;color:var(--fg)}
+.k .s{font-size:12px;color:var(--fg-3)}
+.k.date-k{display:flex;gap:14px;align-items:center}
+.cal{flex:none;width:46px;height:50px;border:2px solid var(--fg-3);border-radius:6px;display:grid;grid-template-rows:14px 1fr;overflow:hidden;text-align:center}
+.cal b{background:var(--marker);color:#fff;font:600 9px/14px var(--mono);letter-spacing:.06em}
+.cal span{font:700 20px/32px var(--display);color:var(--fg)}
+.pending{color:var(--fg-3)!important;font-size:22px!important}
+.row{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.9fr) minmax(0,1.3fr);gap:14px;margin-top:14px}
+@media (max-width:1000px){.row{grid-template-columns:1fr 1fr}.row .newp{grid-column:1 / -1}}
+@media (max-width:640px){.row{grid-template-columns:1fr}}
+.row2{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,2fr);gap:14px;margin-top:14px}
+@media (max-width:820px){.row2{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;min-width:0}
+h2{font:700 15px/1.2 var(--display);font-stretch:85%;letter-spacing:.05em;text-transform:uppercase;margin:0 0 8px;color:var(--fg);display:flex;gap:10px;align-items:baseline}
+h2 .c{font:700 20px/1 var(--display);color:var(--cobalt)}
+.sub{font-size:12.5px;color:var(--fg-3);margin:-4px 0 10px}
+.sub a{color:var(--fg-2)}
+.tbl{overflow:auto;max-height:290px;border:1px solid var(--line);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th{position:sticky;top:0;background:var(--navy);color:var(--on-navy);text-align:left;font:600 11px/1.2 var(--mono);letter-spacing:.04em;text-transform:uppercase;padding:8px}
+td{padding:6px 8px;border-bottom:1px solid var(--grid);vertical-align:top}
+td.u{font-family:var(--mono);color:var(--fg-2);white-space:nowrap}
+td.t{white-space:nowrap;color:var(--fg-2)}
+.blank{font:600 14px var(--display);color:var(--fg-3);padding:14px 8px}
+.donut{display:grid;justify-items:center;gap:10px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--fg-2);justify-content:center}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+.sw{width:10px;height:10px;border-radius:50%;display:inline-block}
+svg text{font:11px var(--mono);fill:var(--fg-3)}
+svg .vl{fill:var(--fg-2);font:600 11px var(--mono)}
+.ctry{list-style:none;margin:0;padding:0;display:grid;gap:0;max-height:330px;overflow:auto}
+.ctry li{display:flex;justify-content:space-between;gap:10px;padding:7px 2px;border-bottom:1px solid var(--grid);font-size:13.5px}
+.ctry li b{font:600 12px var(--mono);color:var(--fg-2)}
+#map{height:330px;background:var(--map-bg);border-radius:6px}
+.jvm-tooltip{position:absolute;display:none;background:var(--navy);color:var(--on-navy);font:12px var(--body);padding:5px 8px;border-radius:4px;z-index:30;white-space:nowrap}
+.jvm-zoom-btn{display:none}
+.tip{position:fixed;pointer-events:none;background:var(--navy);color:var(--on-navy);font:12px/1.45 var(--body);padding:7px 9px;border-radius:6px;z-index:20}
+.empty-state{background:var(--surface);border:1px dashed var(--line);border-radius:8px;padding:28px;margin-top:14px;display:grid;gap:8px;max-width:760px}
+.empty-state h2{text-transform:none;letter-spacing:0;font-size:20px}
+.empty-state p{margin:0;color:var(--fg-2)}
+.empty-state code{font:12.5px var(--mono);background:var(--surface-2);padding:2px 5px;border-radius:4px}
+footer{margin-block:22px 36px;color:var(--fg-3);font-size:12.5px;display:grid;gap:5px;max-width:110ch}
+footer strong{color:var(--fg-2)}
+</style>
+
+</head><body>
+<header class="mast">
+  <div class="wrap">
+    <div class="mrow">
+      <div><div class="eyebrow" id="eyebrow"></div><h1 id="h1"></h1></div>
+      <div class="note" id="note"></div>
+    </div>
+    <nav class="tabs" aria-label="Páginas">
+      <a href="ofac.html" data-k="OFAC">OFAC</a>
+      <a href="onu.html" data-k="ONU">ONU</a>
+      <a href="inclusions.html">Nuevas inclusiones</a>
+      <a href="index.html">Tracker histórico</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+<div class="tip" id="tip" hidden></div>
+
+<script id="ov-data" type="application/json">{"list":"OFAC","generated_at":"2026-10-27T14:02:55Z","last_update":"2026-10-21","stats":null,"snapshot_date":null,"type_fallback":{"label":"Inclusiones 2026","by_type":{"individual":479,"entity":772,"aircraft":2}},"new":{"date":"2026-10-21","title":"Iran-related Designations; Belarus and North Korea Designations Removals; Issuance of Iran-related and Russia-related General Licenses and Amended Frequently Asked Questions","url":"https://ofac.treasury.gov/recent-actions/20261021","rows":[{"uid":null,"name":"KARNAKIS KOSMAS, Ioanis","type":"individual","nationalities":["Panama"],"country":"Panama","programs":"IRAN-EO13902"},{"uid":null,"name":"KARNAKIS KOSMAS, Konstantinos","type":"individual","nationalities":["Panama","Greece"],"country":"Panama","programs":"IRAN-EO13902"},{"uid":null,"name":"KARNAKIS KOSMAS, Sofianos","type":"individual","nationalities":["Panama","Greece"],"country":"Panama","programs":"IRAN-EO13902"},{"uid":null,"name":"ORTEGA JONES, Pedro","type":"individual","nationalities":["Panama"],"country":"Panama","programs":"IRAN-EO13902"},{"uid":null,"name":"ORTEGA JONES, Roberto","type":"individual","nationalities":["Panama"],"country":"Panama","programs":"IRAN-EO13902"},{"uid":null,"name":"AMIGOZ SINGAPORE PTE. LTD.","type":"entity","nationalities":[],"country":"Singapore","programs":"IRAN-EO13902"},{"uid":null,"name":"KARNAKIS AND KARNAKIS","type":"entity","nationalities":[],"country":"Panama","programs":"IRAN-EO13902"},{"uid":null,"name":"ROXETTE MARITIME SHIPPING AND TRADING S.A.","type":"entity","nationalities":[],"country":"Panama","programs":"IRAN-EO13902"},{"uid":null,"name":"WHALES SHIPPING LINE LLC","type":"entity","nationalities":[],"country":"United Arab Emirates","programs":"IRAN-EO13902"}],"aliases":[]},"trend":{"year":"2026","months":[{"m":"Enero","n":84},{"m":"Febrero","n":83},{"m":"Marzo","n":34},{"m":"Abril","n":174},{"m":"Mayo","n":165},{"m":"Junio","n":119},{"m":"Julio","n":177},{"m":"Agosto","n":148},{"m":"Septiembre","n":148},{"m":"Octubre","n":121}]},"countries":[{"name":"Panama","n":7,"iso":"PA","lat":8.5,"lon":-80.8},{"name":"Greece","n":2,"iso":"GR","lat":39.1,"lon":21.8},{"name":"Singapore","n":1,"iso":"SG","lat":1.35,"lon":103.8},{"name":"United Arab Emirates","n":1,"iso":"AE","lat":23.4,"lon":53.8}]}</script>
+<script>
+(function(){
+  const D=JSON.parse(document.getElementById('ov-data').textContent);
+  const isUN=D.list==='ONU';
+  document.querySelectorAll('nav.tabs a').forEach(a=>{if(a.dataset.k===D.list)a.setAttribute('aria-current','page')});
+  document.getElementById('eyebrow').textContent=isUN?'Consejo de Seguridad de las Naciones Unidas · Lista consolidada':'U.S. Treasury · OFAC · Lista SDN';
+  document.getElementById('h1').textContent=isUN?'Lista consolidada ONU':'Lista OFAC';
+  document.getElementById('note').innerHTML='Excluye buques (vessels)<br>Generado '+D.generated_at.slice(0,10);
+  const app=document.getElementById('app');
+  const fmt=n=>(n??0).toLocaleString('en-US');
+  const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const TL={individual:'Individual',entity:'Entity',aircraft:'Aircraft',vessel:'Vessel'};
+  const footer=`<footer><div><strong>Fuente:</strong> ${isUN?'<a href="https://main.un.org/securitycouncil/en/content/un-sc-consolidated-list" target="_blank" rel="noopener">Lista consolidada del Consejo de Seguridad de la ONU</a> (XML oficial).':'<a href="https://ofac.treasury.gov/recent-actions/sanctions-list-updates" target="_blank" rel="noopener">OFAC Recent Actions</a> y archivos oficiales SDN.CSV / ALT.CSV / ADD.CSV.'}</div><div><strong>No es una herramienta de screening.</strong> Proyecto analítico independiente con datos públicos; para decisiones de cumplimiento use las búsquedas oficiales.</div><div>Elvis Guzmán Rosario · Proyecto personal.</div></footer>`;
+
+  if(isUN&&!D.available){
+    app.innerHTML=`<section class="empty-state"><h2>Datos de la ONU pendientes</h2>
+      <p>Esta página se llena con el archivo oficial <code>consolidated.xml</code> del Consejo de Seguridad. Se descarga solo en la próxima ejecución automática del pipeline (GitHub Actions), o al colocar el archivo en <code>data/un/</code> y reconstruir.</p>
+      <p>Mostrará lo mismo que la página OFAC: última actualización, registros y alternos totales, dominicanos listados, nuevos agregados con sus alias, distribución por tipo, tendencia mensual, régimen de sanciones y países involucrados.</p></section>`+footer;
+    return;}
+
+  const S=D.stats, N=D.new;
+  const d=new Date(D.last_update+'T00:00:00Z');
+  const longDate=d.toLocaleDateString('es-DO',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+  const mon=d.toLocaleDateString('es-DO',{month:'short',timeZone:'UTC'}).replace('.','').toUpperCase();
+  const pend=`<div class="v pending">—</div><div class="s">Pendiente: ${isUN?'XML':'SDN.CSV / ALT.CSV'}</div>`;
+  const kv=(v,sub)=>S?`<div class="v">${fmt(v)}</div>${sub?`<div class="s">${sub}</div>`:''}`:pend;
+
+  app.innerHTML=`
+  <section class="kband" aria-label="Indicadores">
+    <div class="k date-k"><div class="cal" aria-hidden="true"><b>${mon}</b><span>${d.getUTCDate()}</span></div>
+      <div><div class="l">Última fecha de actualización</div><div class="v date">${longDate[0].toUpperCase()+longDate.slice(1)}</div></div></div>
+    <div class="k"><div class="l">Registros totales</div>${kv(S&&S.total_records)}</div>
+    <div class="k"><div class="l">Alternos totales</div>${kv(S&&S.total_aliases)}</div>
+    <div class="k"><div class="l">Total de dominicanos</div>${kv(S&&S.dominicans)}</div>
+  </section>
+
+  <div class="row">
+    <section class="panel newp">
+      <h2>Nuevos agregados <span class="c">${fmt(N.rows.length)}</span></h2>
+      <p class="sub">${esc(N.date)} · ${N.url?`<a href="${esc(N.url)}" target="_blank" rel="noopener">${esc(N.title)}</a>`:esc(N.title)}</p>
+      <div class="tbl"><table><thead><tr><th>UID</th><th>Nombre completo</th><th>Nacionalidad</th><th>Tipo persona</th>${isUN?'<th>Régimen</th>':''}</tr></thead>
+      <tbody>${N.rows.map(r=>`<tr><td class="u">${esc(r.uid||'—')}</td><td>${esc(r.name)}</td><td>${esc((r.nationalities&&r.nationalities.length?r.nationalities:[r.type==='individual'?r.country:'']).filter(Boolean).join(', '))}</td><td class="t">${TL[r.type]||r.type}</td>${isUN?`<td class="t">${esc(r.programs)}</td>`:''}</tr>`).join('')||'<tr><td colspan="5" class="blank">(Sin registros)</td></tr>'}</tbody></table></div>
+      <h2 style="margin-top:14px">Nuevos alternos <span class="c">${N.aliases.length?fmt(N.aliases.length):'(Blank)'}</span></h2>
+      <div class="tbl" style="max-height:180px"><table><thead><tr><th>UID</th><th>UID alterno</th><th>Alterno</th><th>Nacionalidad</th></tr></thead>
+      <tbody>${N.aliases.map(a=>`<tr><td class="u">${esc(a.uid||'—')}</td><td class="u">${esc(a.alt_uid||'—')}</td><td>${esc(a.alias)}</td><td>${esc(a.nationality)}</td></tr>`).join('')||'<tr><td colspan="4" class="blank">Los nuevos agregados no tienen alias publicados.</td></tr>'}</tbody></table></div>
+    </section>
+    <section class="panel"><h2>Distribución por tipo de persona</h2><p class="sub" id="donut-sub"></p><div class="donut" id="donut"></div></section>
+    <section class="panel"><h2>Tendencia mensual de inclusiones</h2><p class="sub">${esc(D.trend.year)} · nuevas entradas por mes, sin buques</p><div id="trend"></div></section>
+  </div>
+
+  <div class="row2">
+    <section class="panel"><h2>Países involucrados</h2><p class="sub">Nuevos agregados por nacionalidad o país</p>
+      <ul class="ctry">${D.countries.map(c=>`<li><span>${esc(c.name)}</span><b>${c.n}</b></li>`).join('')||'<li>Sin país informado</li>'}</ul></section>
+    <section class="panel"><h2>Mapa de nuevos agregados</h2><p class="sub">Países resaltados; los territorios pequeños se marcan con un punto</p><div id="map" role="img" aria-label="Mapa de países involucrados"></div></section>
+  </div>
+  ${isUN&&D.regimes?`<section class="panel" style="margin-top:14px"><h2>Registros por régimen de sanciones</h2><div id="regimes"></div></section>`:''}
+  `+footer;
+
+  // ---- donut
+  const NS='http://www.w3.org/2000/svg';const el=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e};
+  const tip=document.getElementById('tip');const showTip=(e,h)=>{tip.innerHTML=h;tip.hidden=false;tip.style.left=Math.min(e.clientX+12,innerWidth-tip.offsetWidth-8)+'px';tip.style.top=(e.clientY+12)+'px'};const hideTip=()=>tip.hidden=true;
+  (function(){
+    const bt=S?S.by_type:(D.type_fallback||{}).by_type||{};
+    document.getElementById('donut-sub').textContent=S?'Lista vigente completa':`${(D.type_fallback||{}).label||''} (lista completa pendiente)`;
+    const order=['individual','entity','aircraft'].filter(k=>bt[k]);const col={individual:'var(--s1)',entity:'var(--s2)',aircraft:'var(--s3)'};
+    const tot=order.reduce((s,k)=>s+bt[k],0);const box=document.getElementById('donut');
+    if(!tot){box.innerHTML='<p class="blank">Sin datos</p>';return}
+    const R=78,r=48,cx=95,cy=95;const svg=el('svg',{viewBox:'0 0 190 190',width:'190',height:'190',role:'img','aria-label':'Distribución por tipo'},box);
+    let a0=-Math.PI/2;
+    order.forEach(k=>{const frac=bt[k]/tot,a1=a0+frac*2*Math.PI-(order.length>1?0.03:0);const lg=(a1-a0)>Math.PI?1:0;
+      const p=(a,rad)=>[cx+rad*Math.cos(a),cy+rad*Math.sin(a)];const[x0,y0]=p(a0,R),[x1,y1]=p(a1,R),[x2,y2]=p(a1,r),[x3,y3]=p(a0,r);
+      const path=order.length===1?`M${cx-R},${cy}a${R},${R} 0 1,0 ${2*R},0a${R},${R} 0 1,0 ${-2*R},0M${cx-r},${cy}a${r},${r} 0 1,1 ${2*r},0a${r},${r} 0 1,1 ${-2*r},0`:`M${x0},${y0}A${R},${R} 0 ${lg} 1 ${x1},${y1}L${x2},${y2}A${r},${r} 0 ${lg} 0 ${x3},${y3}Z`;
+      const s=el('path',{d:path,fill:col[k],'fill-rule':'evenodd'},svg);s.onmousemove=e=>showTip(e,`${TL[k]}: <b>${fmt(bt[k])}</b> (${(frac*100).toFixed(1)}%)`);s.onmouseleave=hideTip;
+      a0=a0+frac*2*Math.PI;});
+    const t=el('text',{x:cx,y:cy+2,'text-anchor':'middle',class:'vl',style:'font-size:18px;fill:var(--fg)'},svg);t.textContent=tot>=1e4?(tot/1e3).toFixed(1)+'K':fmt(tot);
+    const t2=el('text',{x:cx,y:cy+18,'text-anchor':'middle'},svg);t2.textContent='registros';
+    box.insertAdjacentHTML('beforeend',`<div class="legend">${order.map(k=>`<span><i class="sw" style="background:${col[k]}"></i>${TL[k]} ${fmt(bt[k])} · ${(bt[k]/tot*100).toFixed(1)}%</span>`).join('')}</div>`);
+  })();
+
+  // ---- monthly trend (labels on bars, as in the report)
+  function trend(){
+    const box=document.getElementById('trend');box.innerHTML='';const M=D.trend.months;if(!M.length){box.innerHTML='<p class="blank">Sin datos</p>';return}
+    const W=Math.max(280,box.clientWidth),H=230,ml=6,mr=6,mt=18,mb=44,ih=H-mt-mb;const max=Math.max(1,...M.map(x=>x.n));
+    const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':'Tendencia mensual'},box);
+    el('line',{x1:ml,x2:W-mr,y1:mt+ih,y2:mt+ih,stroke:'var(--fg-3)'},svg);
+    const bw=(W-ml-mr)/M.length,w=Math.max(6,Math.min(40,bw-6));
+    M.forEach((x,i)=>{const h=x.n/max*ih,X=ml+i*bw+(bw-w)/2;
+      if(x.n)el('rect',{x:X,y:mt+ih-h,width:w,height:h,rx:3,fill:'var(--bar)'},svg);
+      const v=el('text',{x:X+w/2,y:mt+ih-h-5,'text-anchor':'middle',class:'vl'},svg);v.textContent=x.n;
+      const lb=el('text',{x:X+w/2,y:mt+ih+12,'text-anchor':'end',transform:`rotate(-40 ${X+w/2} ${mt+ih+12})`},svg);lb.textContent=x.m.slice(0,3);
+      const hit=el('rect',{x:ml+i*bw,y:mt,width:bw,height:ih,fill:'transparent'},svg);hit.onmousemove=e=>showTip(e,`${x.m} ${D.trend.year}: <b>${fmt(x.n)}</b> inclusiones`);hit.onmouseleave=hideTip;});
+  }
+  trend();
+
+  // ---- regimes (UN)
+  if(isUN&&D.regimes){const box=document.getElementById('regimes');const R=D.regimes;const max=Math.max(...R.map(r=>r[1]));
+    box.innerHTML=R.map(([k,v])=>`<div style="display:grid;grid-template-columns:minmax(90px,170px) 1fr 50px;gap:10px;align-items:center;font-size:13px;margin:4px 0"><span>${esc(k)}</span><span style="height:12px;border-radius:3px;background:var(--bar);width:${Math.max(2,v/max*100)}%"></span><b style="font:500 12px var(--mono);color:var(--fg-2)">${fmt(v)}</b></div>`).join('');}
+
+  // ---- map
+  (function(){
+    const box=document.getElementById('map');
+    if(typeof jsVectorMap==='undefined'){box.innerHTML='<p class="blank" style="padding:20px">El mapa no pudo cargarse; la lista de países de la izquierda tiene la misma información.</p>';return}
+    const cs=getComputedStyle(document.documentElement);const v=n=>cs.getPropertyValue(n).trim();
+    const known=new Set('BD BE BF BG BA BN BO JP BI BJ BT JM BW BR BS BY BZ RU RW RS LT LU LR RO GW GT GR GQ GY GE GB GA GN GM GL KW GH OM JO HR HT HU HN PR PS PT PY PA PG PE PK PH PL ZM EH EE EG ZA EC AL AO KZ ET ZW ES ER ME MD MG MA UZ MM ML MN MK MW MR UG MY MX VU FR FI FJ FK NI NL NO NA NC NE NG NZ NP CI CH CO CN CM CL CA CG CF CD CZ CY CR CU SZ SY KG KE SS SR KH SV SK KR SI KP SO SN SL SB SA SE SD DO DJ DK DE YE AT DZ US LV UY LB LA TW TT TR LK TN TL TM TJ LS TH TF TG TD LY AE VE AF IQ IS IR AM IT VN AR AU IL IN TZ AZ IE ID UA QA MZ'.split(' ')); // regions drawn by jsvectormap@1.5.3 world map
+    const regions=[],markers=[],byIso={};
+    D.countries.forEach(c=>{if(!c.iso)return;byIso[c.iso]=c;if(known.has(c.iso))regions.push(c.iso);else if(c.lat!=null)markers.push({name:`${c.name}: ${c.n}`,coords:[c.lat,c.lon]})});
+    try{new jsVectorMap({selector:'#map',map:'world',zoomButtons:false,zoomOnScroll:false,backgroundColor:'transparent',
+      regionStyle:{initial:{fill:v('--map-land'),stroke:v('--map-bg'),strokeWidth:.5,fillOpacity:1},hover:{fillOpacity:.85,cursor:'default'},selected:{fill:v('--map-hit')}},
+      selectedRegions:regions,regionsSelectable:false,markers,markerStyle:{initial:{fill:v('--marker'),stroke:v('--surface'),strokeWidth:2,r:6}},
+      onRegionTooltipShow(e,tt,code){const c=byIso[code];tt.text(c?`${c.name}: ${c.n} nuevo(s)`:tt.text())}});}
+    catch(err){box.innerHTML='<p class="blank" style="padding:20px">El mapa no pudo cargarse.</p>'}
+  })();
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(trend,150)});
+})();
+</script>
+
+</body></html>

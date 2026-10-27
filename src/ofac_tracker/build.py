@@ -181,6 +181,8 @@ def _export_inclusions(con: sqlite3.Connection, entry_text: dict) -> None:
 # the self-contained dist/ files use the published artifact URLs (override via env).
 DIST_TRACKER_URL = os.environ.get("OFAC_TRACKER_URL", "https://claude.ai/artifact/HNfW39QhVtLBN84dh92VC5")
 DIST_INCL_URL = os.environ.get("OFAC_INCL_URL", "https://claude.ai/artifact/KCgzakQxBZSqUrZHuLX9Si")
+DIST_OFAC_URL = os.environ.get("OFAC_LIST_URL", "https://claude.ai/artifact/4cuM4kzGkqymyzXuWuKF8Y")
+DIST_UN_URL = os.environ.get("UN_LIST_URL", "https://claude.ai/artifact/JxZR2psc6nGY4ehUxzA7xT")
 
 HEAD = ("<!doctype html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
         "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\">\n")
@@ -205,6 +207,21 @@ def render_dashboards() -> None:
     data = DASH.read_text().replace("</", "<\\/")
     (dist / "ofac_dashboard.html").write_text(
         tracker.replace("__INCL_URL__", DIST_INCL_URL).replace("__DATA__", data))
+    # list-overview pages (OFAC / ONU): data is small, so it is embedded in both docs/ and dist/
+    from .overview import OUT_OFAC, OUT_UN
+    ov = (ROOT / "dashboard" / "list_overview.html").read_text()
+    for out_json, title, docs_name, dist_name in ((OUT_OFAC, "Lista OFAC", "ofac.html", "ofac_lista.html"),
+                                                  (OUT_UN, "Lista ONU", "onu.html", "onu_lista.html")):
+        if not out_json.exists():
+            continue
+        page = ov.replace("__PAGE_TITLE__", title).replace("__DATA__", out_json.read_text().replace("</", "<\\/"))
+        docs_page = (page.replace("__NAV_OFAC__", "ofac.html").replace("__NAV_UN__", "onu.html")
+                         .replace("__NAV_INCL__", "inclusions.html").replace("__NAV_TRACKER__", "index.html"))
+        (ROOT / "docs" / docs_name).write_text(_as_document(docs_page, '<header class="mast">'))
+        dist_page = (page.replace("__NAV_OFAC__", DIST_OFAC_URL).replace("__NAV_UN__", DIST_UN_URL)
+                         .replace("__NAV_INCL__", DIST_INCL_URL).replace("__NAV_TRACKER__", DIST_TRACKER_URL))
+        (dist / dist_name).write_text(dist_page)
+
     idata = INCL.read_text().replace("</", "<\\/")
     (dist / "ofac_new_designations.html").write_text(
         incl.replace("__TRACKER_URL__", DIST_TRACKER_URL).replace("__DATA__", idata))
@@ -212,5 +229,7 @@ def render_dashboards() -> None:
 
 if __name__ == "__main__":
     s = build()
+    from .overview import build_all
+    build_all()
     render_dashboards()
     print(f"Built {len(s['cube'])} cube rows; coverage {s['coverage']}")

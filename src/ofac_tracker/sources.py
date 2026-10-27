@@ -94,10 +94,20 @@ def update_raw_actions(raw_path: Path, since_default: str = "2021-01-01") -> int
 
 
 def download_snapshot(snap_dir: Path) -> Path:
-    """Save today's SDN.CSV and ADD.CSV into snap_dir/YYYY-MM-DD/."""
+    """Save today's SDN.CSV, ALT.CSV and ADD.CSV into snap_dir/YYYY-MM-DD/."""
     day = dt.date.today().isoformat()
     target = snap_dir / day
     target.mkdir(parents=True, exist_ok=True)
-    for name in ("SDN.CSV", "ADD.CSV"):
+    for name in ("SDN.CSV", "ALT.CSV", "ADD.CSV"):
         (target / name).write_bytes(_get(SLS + name).content)
+    return target
+
+
+UN_XML_URL = "https://scsanctions.un.org/resources/xml/en/consolidated.xml"
+
+
+def download_un(target: Path) -> Path:
+    """Save the UN Security Council Consolidated List (XML)."""
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_bytes(_get(UN_XML_URL).content)
     return target

@@ -51,7 +51,7 @@ action_id,action_date,title,url,n_changes
 50,2021-07-30,Global Magnitsky Designations,https://ofac.treasury.gov/recent-actions/20210730,3
 51,2021-08-06,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20210806,5
 52,2021-08-09,Issuance of Executive Order Blocking Property of Additional Persons Contributing to the Situation in Belarus; Issuance of Belarus General License 4 and related Frequently Asked Questions; Belarus Designations,https://ofac.treasury.gov/recent-actions/20210809,44
-53,2021-08-13,Counter Terrorism Designations; Global Magnitsky Designations; Iran-related Designation,https://ofac.treasury.gov/recent-actions/20210813,8
+53,2021-08-13,Counter Terrorism Designations; Global Magnitsky Designations; Iran-related Designation,https://ofac.treasury.gov/recent-actions/20210813,9
 54,2021-08-19,Global Magnitsky Designations,https://ofac.treasury.gov/recent-actions/20210819,3
 55,2021-08-20,Issuance of Executive Order Blocking Property with Respect to Certain Russian Energy Export Pipelines; Issuance of Russia-related General License and related Frequently Asked Questions; PEESA Designations; Non-Proliferation Designations Updates,https://ofac.treasury.gov/recent-actions/20210820,34
 56,2021-08-23,Global Magnitsky Designation,https://ofac.treasury.gov/recent-actions/20210823,1
@@ -63,7 +63,7 @@ action_id,action_date,title,url,n_changes
 62,2021-09-16,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20210916_33,5
 63,2021-09-17,Issuance of Executive Order Imposing Sanctions on Certain Persons with Respect to the Humanitarian and Human Rights Crisis in Ethiopia; Ethiopia General Licenses and related Frequently Asked Questions; Counter Terrorism and Iran-related Designations,https://ofac.treasury.gov/recent-actions/20210917,22
 64,2021-09-21,Publication of Updated Ransomware Advisory; Cyber-related Designation,https://ofac.treasury.gov/recent-actions/20210921,1
-65,2021-09-22,Kingpin Act Designations; Counter Narcotics Designations Updates and Removals; Somalia Designation Update,https://ofac.treasury.gov/recent-actions/20210922,4
+65,2021-09-22,Kingpin Act Designations; Counter Narcotics Designations Updates and Removals; Somalia Designation Update,https://ofac.treasury.gov/recent-actions/20210922,99
 66,2021-09-29,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20210929,8
 67,2021-09-30,Kingpin Act Designations Removals,https://ofac.treasury.gov/recent-actions/20210930_33,4
 68,2021-10-06,Kingpin Act Designations,https://ofac.treasury.gov/recent-actions/20211006,4
@@ -229,7 +229,7 @@ action_id,action_date,title,url,n_changes
 228,2023-03-28,Counter Terrorism Designations; Syria Designations,https://ofac.treasury.gov/recent-actions/20230328,8
 229,2023-03-30,North Korea Designation; Counter-Narcotics Designations Removals; Venezuela-related Designation Removal,https://ofac.treasury.gov/recent-actions/20230330,32
 230,2023-03-31,Global Magnitsky Designation; Issuance of Global Magnitsky General License and Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20230331,1
-231,2023-04-04,Lebanon Designations,https://ofac.treasury.gov/recent-actions/20230404,3
+231,2023-04-04,Lebanon Designations,https://ofac.treasury.gov/recent-actions/20230404,5
 232,2023-04-05,Cyber-related Designation; Global Magnitsky Designation,https://ofac.treasury.gov/recent-actions/20230405,2
 233,2023-04-11,Counter Terrorism Designation and Designations Updates,https://ofac.treasury.gov/recent-actions/20230411,3
 234,2023-04-12,Russia-related Designations; Issuance of Russia-related General Licenses and Frequently Asked Question; Revocation of Russia-related General License,https://ofac.treasury.gov/recent-actions/20230412,146
@@ -255,8 +255,8 @@ action_id,action_date,title,url,n_changes
 254,2023-06-15,Non-Proliferation Designation; North Korea Designation; Russia-related Designation Update,https://ofac.treasury.gov/recent-actions/20230615,3
 255,2023-06-16,Transnational Criminal Organizations Designations,https://ofac.treasury.gov/recent-actions/20230616,8
 256,2023-06-20,Counter Terrorism Designations; South Sudan-related Designations,https://ofac.treasury.gov/recent-actions/20230620,4
-257,2023-06-21,Burma-related Designations and Designation Removal; Issuance of Burma-related General License,https://ofac.treasury.gov/recent-actions/20230621,2
-258,2023-06-23,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20230623,1
+257,2023-06-21,Burma-related Designations and Designation Removal; Issuance of Burma-related General License,https://ofac.treasury.gov/recent-actions/20230621,4
+258,2023-06-23,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20230623,2
 259,2023-06-27,Russia-related Designations and Designation Update; Publication of Africa Gold Advisory,https://ofac.treasury.gov/recent-actions/20230627_33,6
 260,2023-06-29,Counter Terrorism Designations Updates; Counter Narcotics Designations Removals; Venezuela-related Designations Removals,https://ofac.treasury.gov/recent-actions/20230629,18
 261,2023-07-11,Balkans-related Designation; Russia-related Designation Update,https://ofac.treasury.gov/recent-actions/20230711,2
@@ -319,7 +319,7 @@ action_id,action_date,title,url,n_changes
 318,2023-12-19,Iran-related Designations; Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20231219,14
 319,2023-12-20,Publication of Updated Guidance on Implementation of the Price Cap Policy for Crude Oil and Petroleum Products of Russian Federation Origin; Russia-related Designations; Counter Narcotics Designations Removals; Issuance of Russia-related General Licenses,https://ofac.treasury.gov/recent-actions/20231220,121
 320,2023-12-28,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20231228,4
-321,2024-01-11,Russia-related Designations and Designations Updates; Cyber-related Designation Update; Implementation of the Federal Civil Penalties Inflation Adjustment Act,https://ofac.treasury.gov/recent-actions/20240111,7
+321,2024-01-11,Russia-related Designations and Designations Updates; Cyber-related Designation Update; Implementation of the Federal Civil Penalties Inflation Adjustment Act,https://ofac.treasury.gov/recent-actions/20240111,9
 322,2024-01-12,Counter Terrorism Designations; Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20240112,7
 323,2024-01-17,Global Magnitsky Designation and Designations Removals; Issuance of Counter Terrorism General Licenses,https://ofac.treasury.gov/recent-actions/20240117,10
 324,2024-01-18,Russia-related Designations and Designation Update; Counter Terrorism Designation Update; Issuance of Russia-related General Licenses and Amended Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20240118,21
@@ -338,47 +338,47 @@ action_id,action_date,title,url,n_changes
 337,2024-02-16,Counter Terrorism Designation; Issuance of Counter Terrorism General License; Sanctions Compliance Guidance for the Provision of Humanitarian-Related Assistance and Critical Commodities to the Yemeni People,https://ofac.treasury.gov/recent-actions/20240216,1
 338,2024-02-20,Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20240220,2
 339,2024-02-23,Russia-related Designations; Issuance of Russia-related General Licenses and new and amended Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20240223,561
-340,2024-02-23,Russia-related Designations; Issuance of Russia-related General Licenses,https://ofac.treasury.gov/recent-actions/20240223_33,18
-341,2024-02-27,Counter Terrorism Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20240227,3
-342,2024-02-28,"Counter Narcotics Designations, Designation Update, and Designations Removals",https://ofac.treasury.gov/recent-actions/20240228,4
+340,2024-02-23,Russia-related Designations; Issuance of Russia-related General Licenses,https://ofac.treasury.gov/recent-actions/20240223_33,19
+341,2024-02-27,Counter Terrorism Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20240227,7
+342,2024-02-28,"Counter Narcotics Designations, Designation Update, and Designations Removals",https://ofac.treasury.gov/recent-actions/20240228,14
 343,2024-03-04,Termination of Emergency With Respect to the Situation in Zimbabwe; Global Magnitsky Designations; Issuance of Amended Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20240304,135
-344,2024-03-05,Cyber-related Designations; Global Magnitsky Designation Removal,https://ofac.treasury.gov/recent-actions/20240305,4
-345,2024-03-06,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20240306,2
+344,2024-03-05,Cyber-related Designations; Global Magnitsky Designation Removal,https://ofac.treasury.gov/recent-actions/20240305,8
+345,2024-03-06,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20240306,4
 346,2024-03-11,Counter Terrorism Designations; Issuance of General License; Publication of Amended Global Magnitsky Sanctions Regulations,https://ofac.treasury.gov/recent-actions/20240311,16
-347,2024-03-12,Counter Terrorism Designations and Designation Update,https://ofac.treasury.gov/recent-actions/20240312,2
-348,2024-03-13,Balkans-related Designations; Russia-related Removal,https://ofac.treasury.gov/recent-actions/20240313,2
-349,2024-03-14,West Bank-related Designations; Russia-related Designation; Counter Narcotics Designation and Designations Updates; Transnational Criminal Organizations Designation Update,https://ofac.treasury.gov/recent-actions/20240314,3
+347,2024-03-12,Counter Terrorism Designations and Designation Update,https://ofac.treasury.gov/recent-actions/20240312,5
+348,2024-03-13,Balkans-related Designations; Russia-related Removal,https://ofac.treasury.gov/recent-actions/20240313,4
+349,2024-03-14,West Bank-related Designations; Russia-related Designation; Counter Narcotics Designation and Designations Updates; Transnational Criminal Organizations Designation Update,https://ofac.treasury.gov/recent-actions/20240314,10
 350,2024-03-15,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20240315,2
-351,2024-03-20,Iran-related Designations; Non-Proliferation Designations; Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240320,2
+351,2024-03-20,Iran-related Designations; Non-Proliferation Designations; Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240320,19
 352,2024-03-21,Nicaragua-related Designation,https://ofac.treasury.gov/recent-actions/20240321,1
 353,2024-03-22,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20240322,21
 354,2024-03-25,Russia-related Designations; Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20240325,23
-355,2024-03-26,Counter Terrorism Designations; Syria Designations,https://ofac.treasury.gov/recent-actions/20240326,3
-356,2024-03-27,Counter Terrorism Designations; Counter Narcotics Designation Removal,https://ofac.treasury.gov/recent-actions/20240327,3
-357,2024-03-27,Non-Proliferation Designations; North Korea Designations and Designation Removal,https://ofac.treasury.gov/recent-actions/20240327_33,3
-358,2024-04-02,Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20240402,1
+355,2024-03-26,Counter Terrorism Designations; Syria Designations,https://ofac.treasury.gov/recent-actions/20240326,20
+356,2024-03-27,Counter Terrorism Designations; Counter Narcotics Designation Removal,https://ofac.treasury.gov/recent-actions/20240327,6
+357,2024-03-27,Non-Proliferation Designations; North Korea Designations and Designation Removal,https://ofac.treasury.gov/recent-actions/20240327_33,9
+358,2024-04-02,Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20240402,3
 359,2024-04-04,Counter Terrorism Designations and Designation Update; Iran-related Designation,https://ofac.treasury.gov/recent-actions/20240404,15
 360,2024-04-12,Counter Terrorism Designations; Balkans-related Designation Removal; Cyber-related Designation Update,https://ofac.treasury.gov/recent-actions/20240412,9
-361,2024-04-15,Belarus Designations; Issuance of Venezuela-related General License,https://ofac.treasury.gov/recent-actions/20240415,2
-362,2024-04-18,Iran-related Designations; Counter Terrorism Designations; Non-proliferation Designations; Russia-related Designations Updates,https://ofac.treasury.gov/recent-actions/20240418,3
-363,2024-04-19,Non-Proliferation Designations; West Bank-related Designations; Issuance of Russia-related General License,https://ofac.treasury.gov/recent-actions/20240419,3
-364,2024-04-23,Counter Terrorism Designations; Hostages and Wrongfully Detained U.S. Nationals Designations,https://ofac.treasury.gov/recent-actions/20240423,3
-365,2024-04-25,Counter Terrorism Designations; Iran-related Designations; Non-Proliferation Designations; Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240425,5
-366,2024-04-26,Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20240426,1
+361,2024-04-15,Belarus Designations; Issuance of Venezuela-related General License,https://ofac.treasury.gov/recent-actions/20240415,22
+362,2024-04-18,Iran-related Designations; Counter Terrorism Designations; Non-proliferation Designations; Russia-related Designations Updates,https://ofac.treasury.gov/recent-actions/20240418,29
+363,2024-04-19,Non-Proliferation Designations; West Bank-related Designations; Issuance of Russia-related General License,https://ofac.treasury.gov/recent-actions/20240419,7
+364,2024-04-23,Counter Terrorism Designations; Hostages and Wrongfully Detained U.S. Nationals Designations,https://ofac.treasury.gov/recent-actions/20240423,15
+365,2024-04-25,Counter Terrorism Designations; Iran-related Designations; Non-Proliferation Designations; Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240425,30
+366,2024-04-26,Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20240426,2
 367,2024-05-01,Russia-related Designations; Non-Proliferation Designations; Issuance of Russia-related General Licenses,https://ofac.treasury.gov/recent-actions/20240501,298
-368,2024-05-02,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20240502,2
-369,2024-05-03,Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20240503,1
+368,2024-05-02,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20240502,7
+369,2024-05-03,Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20240503,9
 370,2024-05-06,Ukraine-/Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20240506,1
 371,2024-05-07,Cyber-related Designation,https://ofac.treasury.gov/recent-actions/20240507,1
-372,2024-05-14,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240514,2
-373,2024-05-15,Nicaragua-related Designations; Sudan Designations; Policy Alert on Disrupting Irregular Migration: Best Practices in Response to Recent Developments in the Aviation Sector,https://ofac.treasury.gov/recent-actions/20240515,2
+372,2024-05-14,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240514,4
+373,2024-05-15,Nicaragua-related Designations; Sudan Designations; Policy Alert on Disrupting Irregular Migration: Best Practices in Response to Recent Developments in the Aviation Sector,https://ofac.treasury.gov/recent-actions/20240515,5
 374,2024-05-16,North Korea Designations; Amendment to the Iranian Transactions and Sanctions Regulations; Issuance of Iran-Related Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20240516,6
 375,2024-05-24,Counter Terrorism and Iran-Related Designations Removals and Updates,https://ofac.treasury.gov/recent-actions/20240524,6
-376,2024-05-28,Cyber-related Designations and Designation Update,https://ofac.treasury.gov/recent-actions/20240528_33,3
-377,2024-05-30,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240530,2
-378,2024-05-31,Iran-related Designations; Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20240531,2
-379,2024-06-06,Counter Narcotics Designations; Sudan Designations; West Bank-related Designation,https://ofac.treasury.gov/recent-actions/20240606,2
-380,2024-06-07,Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20240607,1
+376,2024-05-28,Cyber-related Designations and Designation Update,https://ofac.treasury.gov/recent-actions/20240528_33,7
+377,2024-05-30,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240530,3
+378,2024-05-31,Iran-related Designations; Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20240531,5
+379,2024-06-06,Counter Narcotics Designations; Sudan Designations; West Bank-related Designation,https://ofac.treasury.gov/recent-actions/20240606,10
+380,2024-06-07,Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20240607,30
 381,2024-06-10,"Human Rights-Related Designations; Issuance of Global Magnitsky Frequently Asked Question; OFAC to retire its FTP server (OFACFTP.treas.gov) on or about June 10, 2024",https://ofac.treasury.gov/recent-actions/20231208,22
 382,2024-06-10,"Russia-related Designations Updates; OFAC to retire its FTP server (OFACFTP.treas.gov) on or about June 10, 2024",https://ofac.treasury.gov/recent-actions/20240308,2
 383,2024-06-10,Counter Terrorism Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20240610,10
@@ -386,157 +386,157 @@ action_id,action_date,title,url,n_changes
 385,2024-06-12,Russia-related Designations; Publication of Russia-related Determination; Issuance of Russia-related General Licenses and Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20240612,377
 386,2024-06-14,Counter Terrorism Designations; West Bank-related Designation; Issuance of Amended Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20240614,10
 387,2024-06-17,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20240617,12
-388,2024-06-18,Balkans-related Designations; Publication of Balkans-Related General Licenses,https://ofac.treasury.gov/recent-actions/20240618,2
-389,2024-06-20,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20240620,1
-390,2024-06-21,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240621,1
+388,2024-06-18,Balkans-related Designations; Publication of Balkans-Related General Licenses,https://ofac.treasury.gov/recent-actions/20240618,9
+389,2024-06-20,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20240620,8
+390,2024-06-21,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20240621,12
 391,2024-06-25,Counter Terrorism and Iran-related Designations; Counter Narcotics Designations Removals,https://ofac.treasury.gov/recent-actions/20240625,119
 392,2024-06-27,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20240627,14
-393,2024-07-01,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20240701,1
-394,2024-07-03,Update to Certain Russia-related Listings,https://ofac.treasury.gov/recent-actions/20240703,3921
+393,2024-07-01,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20240701,3
+394,2024-07-03,Update to Certain Russia-related Listings,https://ofac.treasury.gov/recent-actions/20240703,3923
 395,2024-07-08,Cyber-related Designation Removal; Russia-related Designation Removal; Issuance of Venezuela General License 40C,https://ofac.treasury.gov/recent-actions/20240708,3
 396,2024-07-10,Issuance of Russia-related General License,https://ofac.treasury.gov/recent-actions/20240710,0
-397,2024-07-11,West Bank-related Designations; Transnational Criminal Organizations Designation,https://ofac.treasury.gov/recent-actions/20240711,2
+397,2024-07-11,West Bank-related Designations; Transnational Criminal Organizations Designation,https://ofac.treasury.gov/recent-actions/20240711,9
 398,2024-07-12,Iran-related Designation; Non-Proliferation Designation,https://ofac.treasury.gov/recent-actions/20240712,1
 399,2024-07-15,West Bank-related Designation Update,https://ofac.treasury.gov/recent-actions/20240715,1
-400,2024-07-16,Counter Narcotics Designations and Designation Update,https://ofac.treasury.gov/recent-actions/20240716,3
-401,2024-07-18,"Counter Terrorism Designations, Updates and Removal; Transnational Criminal Organizations Designations",https://ofac.treasury.gov/recent-actions/20240718,5
+400,2024-07-16,Counter Narcotics Designations and Designation Update,https://ofac.treasury.gov/recent-actions/20240716,8
+401,2024-07-18,"Counter Terrorism Designations, Updates and Removal; Transnational Criminal Organizations Designations",https://ofac.treasury.gov/recent-actions/20240718,26
 402,2024-07-19,Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20240719,2
-403,2024-07-23,Counter Narcotics Designations; Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20240723,2
-404,2024-07-24,Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20240724,2
+403,2024-07-23,Counter Narcotics Designations; Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20240723,7
+404,2024-07-24,Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20240724,11
 405,2024-07-25,Democratic Republic of the Congo-related Designations; Transnational Criminal Organizations Designations,https://ofac.treasury.gov/recent-actions/20240725,9
-406,2024-07-30,Non-Proliferation Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20240730,2
+406,2024-07-30,Non-Proliferation Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20240730,12
 407,2024-07-31,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20240731,6
 408,2024-08-06,Global Magnitsky Designation Update,https://ofac.treasury.gov/recent-actions/20240806,1
-409,2024-08-09,Belarus Designations and Designation Update; Russia-related Designations and Designation Removal; Issuance of Russia-related General License,https://ofac.treasury.gov/recent-actions/20240809,5
+409,2024-08-09,Belarus Designations and Designation Update; Russia-related Designations and Designation Removal; Issuance of Russia-related General License,https://ofac.treasury.gov/recent-actions/20240809,36
 410,2024-08-15,Counter Terrorism Designations and Update,https://ofac.treasury.gov/recent-actions/20240815,16
 411,2024-08-20,Publication of Regulatory Amendments; Counter Narcotics Identification,https://ofac.treasury.gov/recent-actions/20240820,1
 412,2024-08-23,Russia-related Designations and Designations Updates; Issuance of Russia-related General Licenses; Issuance and Amendment of Russia-related Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20240823,403
 413,2024-08-28,West Bank-related Designations; Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20240828,3
-414,2024-09-04,Russia-related Designations; Issuance of Russia-related General License; Publication of Russian Sanctions Evasion Alert; Publication of Amended Russia-related Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20240904,2
-415,2024-09-05,Russia-related Designations; Issuance of Russia-related General License,https://ofac.treasury.gov/recent-actions/20240905,2
+414,2024-09-04,Russia-related Designations; Issuance of Russia-related General License; Publication of Russian Sanctions Evasion Alert; Publication of Amended Russia-related Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20240904,12
+415,2024-09-05,Russia-related Designations; Issuance of Russia-related General License,https://ofac.treasury.gov/recent-actions/20240905,4
 416,2024-09-10,"Russia-related, Iran-related, Counterterrorism, Non-Proliferation, and Counter Narcotics Designations",https://ofac.treasury.gov/recent-actions/20240910,64
 417,2024-09-11,Counterterrorism Designations; Publication of Updated Syria Shipping Advisory; Publication of Interim Final Rule to Extend Recordkeeping Requirements; Publication of Request for Public Comments on Information Collected by OFAC,https://ofac.treasury.gov/recent-actions/20240911,10
-418,2024-09-12,"Global Magnitsky, Non-Proliferation, and Venezuela-related Designations; Issuance of Global Magnitsky General License; Issuance of New and Amended Frequently Asked Questions",https://ofac.treasury.gov/recent-actions/20240912,2
-419,2024-09-13,Russia-related Designations; Issuance of Russia-related General Licenses and Amended FAQ; Publication of BPI Regulatory Amendment; Reminder to File the 2024 Annual Report of Blocked Property,https://ofac.treasury.gov/recent-actions/20240913,2
-420,2024-09-16,Cyber-related Designations; Global Magnitsky Designations,https://ofac.treasury.gov/recent-actions/20240916,2
-421,2024-09-18,Iran-related Designations; Counter Terrorism Designation Update,https://ofac.treasury.gov/recent-actions/20240918,2
-422,2024-09-19,North Korea Designations and Designations Updates; Russia-related Designations and Designations Updates; Non-Proliferation Designation Update; Syria Designation Update,https://ofac.treasury.gov/recent-actions/20240919,3
-423,2024-09-24,Counter Narcotics Designations; Issuance of New Russia-related Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20240924,2
-424,2024-09-25,Counter Terrorism Designations; Global Magnitsky Designations,https://ofac.treasury.gov/recent-actions/20240925,3
+418,2024-09-12,"Global Magnitsky, Non-Proliferation, and Venezuela-related Designations; Issuance of Global Magnitsky General License; Issuance of New and Amended Frequently Asked Questions",https://ofac.treasury.gov/recent-actions/20240912,23
+419,2024-09-13,Russia-related Designations; Issuance of Russia-related General Licenses and Amended FAQ; Publication of BPI Regulatory Amendment; Reminder to File the 2024 Annual Report of Blocked Property,https://ofac.treasury.gov/recent-actions/20240913,5
+420,2024-09-16,Cyber-related Designations; Global Magnitsky Designations,https://ofac.treasury.gov/recent-actions/20240916,10
+421,2024-09-18,Iran-related Designations; Counter Terrorism Designation Update,https://ofac.treasury.gov/recent-actions/20240918,13
+422,2024-09-19,North Korea Designations and Designations Updates; Russia-related Designations and Designations Updates; Non-Proliferation Designation Update; Syria Designation Update,https://ofac.treasury.gov/recent-actions/20240919,8
+423,2024-09-24,Counter Narcotics Designations; Issuance of New Russia-related Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20240924,7
+424,2024-09-25,Counter Terrorism Designations; Global Magnitsky Designations,https://ofac.treasury.gov/recent-actions/20240925,16
 425,2024-09-26,Russia-related Designations; Cyber-related Designation,https://ofac.treasury.gov/recent-actions/20240926,2
-426,2024-09-27,Iran-related Designation; Foreign Interference in U.S. Election Designations,https://ofac.treasury.gov/recent-actions/20240927,1
+426,2024-09-27,Iran-related Designation; Foreign Interference in U.S. Election Designations,https://ofac.treasury.gov/recent-actions/20240927,7
 427,2024-09-30,Russia-related Designation Removals; Issuance of Russia-related General License; Russia-/Ukraine-related Identification Update,https://ofac.treasury.gov/recent-actions/20240930,8
-428,2024-10-01,"Cyber-related, Russia-related, and West Bank-related Designations; Counter Narcotics and Russia-related Designations Removals",https://ofac.treasury.gov/recent-actions/20241001,4
-429,2024-10-02,Counter Terrorism Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20241002,4
-430,2024-10-07,"Counter Terrorism Designations; Issuance of Counter Terrorism General Licenses; Amendment of the Reporting, Procedures and Penalties Regulations and Issuance of Related Frequently Asked Question",https://ofac.treasury.gov/recent-actions/20241007,2
+428,2024-10-01,"Cyber-related, Russia-related, and West Bank-related Designations; Counter Narcotics and Russia-related Designations Removals",https://ofac.treasury.gov/recent-actions/20241001,27
+429,2024-10-02,Counter Terrorism Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20241002,7
+430,2024-10-07,"Counter Terrorism Designations; Issuance of Counter Terrorism General Licenses; Amendment of the Reporting, Procedures and Penalties Regulations and Issuance of Related Frequently Asked Question",https://ofac.treasury.gov/recent-actions/20241007,15
 431,2024-10-08,Sudan Designation,https://ofac.treasury.gov/recent-actions/20241008,1
-432,2024-10-11,Iran-related Designations; Publication of Iran-related Determination,https://ofac.treasury.gov/recent-actions/20241011,3
+432,2024-10-11,Iran-related Designations; Publication of Iran-related Determination,https://ofac.treasury.gov/recent-actions/20241011,39
 433,2024-10-15,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20241015,2
-434,2024-10-16,Counter Terrorism Designations; Syria Designations,https://ofac.treasury.gov/recent-actions/20241016,2
-435,2024-10-17,Russia-related Designations; Counter Terrorism Designations and Removal; Iran-related Designation Removal,https://ofac.treasury.gov/recent-actions/20241017,4
-436,2024-10-23,Russia-/Ukraine-related Designation Removal,https://ofac.treasury.gov/recent-actions/20241023,1
+434,2024-10-16,Counter Terrorism Designations; Syria Designations,https://ofac.treasury.gov/recent-actions/20241016,10
+435,2024-10-17,Russia-related Designations; Counter Terrorism Designations and Removal; Iran-related Designation Removal,https://ofac.treasury.gov/recent-actions/20241017,24
+436,2024-10-23,Russia-/Ukraine-related Designation Removal,https://ofac.treasury.gov/recent-actions/20241023,2
 437,2024-10-24,Sudan Designation,https://ofac.treasury.gov/recent-actions/20241024,1
-438,2024-10-30,Russia-related Designations and Designation Removals; Issuance of Russia-related General Licenses; Issuance of New and Updated Russia-related Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20241030,369
-439,2024-10-31,Counter Narcotics Designations and Designations Updates; Sanctions Compliance Guidance for the Maritime Shipping Industry,https://ofac.treasury.gov/recent-actions/20241031,3
+438,2024-10-30,Russia-related Designations and Designation Removals; Issuance of Russia-related General Licenses; Issuance of New and Updated Russia-related Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20241030,406
+439,2024-10-31,Counter Narcotics Designations and Designations Updates; Sanctions Compliance Guidance for the Maritime Shipping Industry,https://ofac.treasury.gov/recent-actions/20241031,9
 440,2024-11-06,Balkans-related Designations; Issuance of Balkans-related General License,https://ofac.treasury.gov/recent-actions/20241106,2
 441,2024-11-12,Sudan Designation; Publication of Amended Burma Sanctions Regulations,https://ofac.treasury.gov/recent-actions/20241112,1
-442,2024-11-14,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20241114,4
+442,2024-11-14,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20241114,26
 443,2024-11-18,West Bank-related Designations; Issuance of West Bank-related General License,https://ofac.treasury.gov/recent-actions/20241118,6
-444,2024-11-19,Counter Narcotics Designations; Counter Terrorism Designations; Publication of Featured Story on Enhanced US-UK Sanctions Partnership,https://ofac.treasury.gov/recent-actions/20241119,1
-445,2024-11-21,Russia-related Designations and Updates; Issuance of Russia-related General Licenses and Frequently Asked Questions; Publication of Russia-related OFAC Alert,https://ofac.treasury.gov/recent-actions/20241121,120
-446,2024-11-26,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20241126,1
-447,2024-11-27,Venezuela-related Designations,https://ofac.treasury.gov/recent-actions/20241127,1
-448,2024-12-02,Global Magnitsky Designations,https://ofac.treasury.gov/recent-actions/20241202,1
-449,2024-12-03,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20241203,2
-450,2024-12-04,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20241204,2
-451,2024-12-09,Global Magnitsky Designations; Syria-related Designation Update,https://ofac.treasury.gov/recent-actions/20241209,3
+444,2024-11-19,Counter Narcotics Designations; Counter Terrorism Designations; Publication of Featured Story on Enhanced US-UK Sanctions Partnership,https://ofac.treasury.gov/recent-actions/20241119,17
+445,2024-11-21,Russia-related Designations and Updates; Issuance of Russia-related General Licenses and Frequently Asked Questions; Publication of Russia-related OFAC Alert,https://ofac.treasury.gov/recent-actions/20241121,128
+446,2024-11-26,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20241126,5
+447,2024-11-27,Venezuela-related Designations,https://ofac.treasury.gov/recent-actions/20241127,22
+448,2024-12-02,Global Magnitsky Designations,https://ofac.treasury.gov/recent-actions/20241202,3
+449,2024-12-03,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20241203,35
+450,2024-12-04,Russia-related Designations,https://ofac.treasury.gov/recent-actions/20241204,10
+451,2024-12-09,Global Magnitsky Designations; Syria-related Designation Update,https://ofac.treasury.gov/recent-actions/20241209,31
 452,2024-12-10,Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20241210,2
-453,2024-12-11,Counter Narcotics Designations Removals,https://ofac.treasury.gov/recent-actions/20241211,1
-454,2024-12-16,North Korea Designations; Non-Proliferation Designations; Russia-related Designations,https://ofac.treasury.gov/recent-actions/20241216,2
-455,2024-12-17,Counter Narcotics Designations; Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20241217,2
-456,2024-12-18,"Balkans-related, Iran-related, Non-Proliferation, and Russia-related Designations; Issuance of Russia-related General Licenses and Frequently Asked Questions",https://ofac.treasury.gov/recent-actions/20241218,3
-457,2024-12-19,Global Magnitsky Designations; Counter Terrorism and Iran-related Designations and Designation Update; Publication of Legal Payments Rule,https://ofac.treasury.gov/recent-actions/20241219,4
+453,2024-12-11,Counter Narcotics Designations Removals,https://ofac.treasury.gov/recent-actions/20241211,27
+454,2024-12-16,North Korea Designations; Non-Proliferation Designations; Russia-related Designations,https://ofac.treasury.gov/recent-actions/20241216,19
+455,2024-12-17,Counter Narcotics Designations; Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20241217,23
+456,2024-12-18,"Balkans-related, Iran-related, Non-Proliferation, and Russia-related Designations; Issuance of Russia-related General Licenses and Frequently Asked Questions",https://ofac.treasury.gov/recent-actions/20241218,49
+457,2024-12-19,Global Magnitsky Designations; Counter Terrorism and Iran-related Designations and Designation Update; Publication of Legal Payments Rule,https://ofac.treasury.gov/recent-actions/20241219,33
 458,2024-12-27,Russia-related Designation; Issuance of Russia-related General License and Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20241227,1
-459,2024-12-31,"Russia-related, Iran-related, Cyber-related, and Foreign Interference in U.S. Election Designations; Global Magnitsky Designation",https://ofac.treasury.gov/recent-actions/20241231,2
+459,2024-12-31,"Russia-related, Iran-related, Cyber-related, and Foreign Interference in U.S. Election Designations; Global Magnitsky Designation",https://ofac.treasury.gov/recent-actions/20241231,4
 460,2025-01-03,Cyber-related Designation,https://ofac.treasury.gov/recent-actions/20250103,1
-461,2025-01-07,Global Magnitsky Designation; Sudan-related Designations; Issuance of Amended Russia-related General License,https://ofac.treasury.gov/recent-actions/20250107,2
-462,2025-01-10,Russia-related and Russia-/Ukraine-related Designations; Venezuela-related Designations; Publication of Russia-related Determinations; Issuance of Russia-related General Licenses and Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20250110,439
-463,2025-01-13,Counter Terrorism Designations; Venezuela-related and Counter Narcotics Designation Removals; Publication of OFAC/OFSI Memorandum of Understanding,https://ofac.treasury.gov/recent-actions/20250113,3
-464,2025-01-15,Russia-related Designations; Issuance of Russia-related and Russia-/Ukraine-related General Licenses; Implementation of the Federal Civil Penalties Inflation Adjustment Act,https://ofac.treasury.gov/recent-actions/20250115,255
-465,2025-01-16,Issuance of Syria-related and Cyber-related Executive Orders; North Korea and Sudan Designations; Russia-related Designation Removal; Settlement Agreement between the U.S. Treasury's Office of Foreign Assets Control and Family International Realty LLC,https://ofac.treasury.gov/recent-actions/20250116,3
-466,2025-01-17,"Balkans-related, Counter Terrorism, and Cyber-related Designations; Issuance of Counter Terrorism General License; Settlement Agreement between the U.S. Department of the Treasury’s Office of Foreign Assets Control and Haas Automation, Inc.",https://ofac.treasury.gov/recent-actions/20250117,2
-467,2025-02-06,Counter Terrorism Designations; Iran-related Designations; RSS Feed Retirement,https://ofac.treasury.gov/recent-actions/20250206,4
-468,2025-02-11,Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20250211,2
+461,2025-01-07,Global Magnitsky Designation; Sudan-related Designations; Issuance of Amended Russia-related General License,https://ofac.treasury.gov/recent-actions/20250107,10
+462,2025-01-10,Russia-related and Russia-/Ukraine-related Designations; Venezuela-related Designations; Publication of Russia-related Determinations; Issuance of Russia-related General Licenses and Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20250110,443
+463,2025-01-13,Counter Terrorism Designations; Venezuela-related and Counter Narcotics Designation Removals; Publication of OFAC/OFSI Memorandum of Understanding,https://ofac.treasury.gov/recent-actions/20250113,29
+464,2025-01-15,Russia-related Designations; Issuance of Russia-related and Russia-/Ukraine-related General Licenses; Implementation of the Federal Civil Penalties Inflation Adjustment Act,https://ofac.treasury.gov/recent-actions/20250115,256
+465,2025-01-16,Issuance of Syria-related and Cyber-related Executive Orders; North Korea and Sudan Designations; Russia-related Designation Removal; Settlement Agreement between the U.S. Treasury's Office of Foreign Assets Control and Family International Realty LLC,https://ofac.treasury.gov/recent-actions/20250116,10
+466,2025-01-17,"Balkans-related, Counter Terrorism, and Cyber-related Designations; Issuance of Counter Terrorism General License; Settlement Agreement between the U.S. Department of the Treasury’s Office of Foreign Assets Control and Haas Automation, Inc.",https://ofac.treasury.gov/recent-actions/20250117,17
+467,2025-02-06,Counter Terrorism Designations; Iran-related Designations; RSS Feed Retirement,https://ofac.treasury.gov/recent-actions/20250206,21
+468,2025-02-11,Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20250211,3
 469,2025-02-13,Issuance of Executive Order Imposing Sanctions on the International Criminal Court; International Criminal Court-related Designation,https://ofac.treasury.gov/recent-actions/20250213,1
 470,2025-02-20,Democratic Republic of the Congo-related Designations; Counter Terrorism Designations; Counter Narcotics Designations Updates,https://ofac.treasury.gov/recent-actions/20250220,12
-471,2025-02-24,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250224,3
-472,2025-02-26,Non-Proliferation Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250226,1
+471,2025-02-24,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250224,35
+472,2025-02-26,Non-Proliferation Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250226,6
 473,2025-03-04,Counter Narcotics Designation; Issuance of Venezuela-related General License,https://ofac.treasury.gov/recent-actions/20250304,1
-474,2025-03-05,Cyber-related Designations; Counter Terrorism Designations and Designation Update; Issuance of Amended Counter Terrorism General Licenses and New Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20250305,3
+474,2025-03-05,Cyber-related Designations; Counter Terrorism Designations and Designation Update; Issuance of Amended Counter Terrorism General Licenses and New Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20250305,12
 475,2025-03-12,Transnational Criminal Organizations Designations,https://ofac.treasury.gov/recent-actions/20250312,2
 476,2025-03-13,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250313,31
 477,2025-03-18,Transnational Criminal Organizations Designation; Publication of a Counter Terrorism-related OFAC Alert,https://ofac.treasury.gov/recent-actions/20250318,1
-478,2025-03-20,Iran-related Designations; Publication of Final Rule to Extend Recordkeeping Requirements,https://ofac.treasury.gov/recent-actions/20250320,3
+478,2025-03-20,Iran-related Designations; Publication of Final Rule to Extend Recordkeeping Requirements,https://ofac.treasury.gov/recent-actions/20250320,22
 479,2025-03-21,Cyber-related Designation Removal; North Korea Designation Update and Removal,https://ofac.treasury.gov/recent-actions/20250321,2
-480,2025-03-25,Hostages and Wrongfully Detained U.S. Nationals Designations,https://ofac.treasury.gov/recent-actions/20250325,1
+480,2025-03-25,Hostages and Wrongfully Detained U.S. Nationals Designations,https://ofac.treasury.gov/recent-actions/20250325,3
 481,2025-03-28,Counter Terrorism Designations; Administrative List Updates: Addition of Secondary Sanctions Information,https://ofac.treasury.gov/recent-actions/20250328,1771
-482,2025-03-31,Counter Terrorism Designations; Counter Narcotics Designations; Hong Kong-related Designations,https://ofac.treasury.gov/recent-actions/20250331,2
-483,2025-04-01,Non-Proliferation Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250401,2
-484,2025-04-02,Counter Terrorism Designations and Designation Update; Russia-related Designation Removal; Reports for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement Act (TSRA),https://ofac.treasury.gov/recent-actions/20250402,5
-485,2025-04-09,"Counter Narcotics, Non-Proliferation, and Iran-related Designations",https://ofac.treasury.gov/recent-actions/20250409,3
-486,2025-04-10,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250410,3
-487,2025-04-15,Counter Terrorism Designations; Counter Narcotics Designations and Designation Updates; Global Magnitsky Designation Removal,https://ofac.treasury.gov/recent-actions/20250415,3
-488,2025-04-16,Iran-related Designations; Publication of Updated Iran Shipping Advisory,https://ofac.treasury.gov/recent-actions/20250416,2
-489,2025-04-17,Counter Terrorism Designations; Issuance of Counter Terrorism General License,https://ofac.treasury.gov/recent-actions/20250417,2
-490,2025-04-22,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250422,4
-491,2025-04-28,Counter Terrorism Designations and Designation Update; Iran-related Designation Update,https://ofac.treasury.gov/recent-actions/20250428,3
-492,2025-04-29,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250429,2
+482,2025-03-31,Counter Terrorism Designations; Counter Narcotics Designations; Hong Kong-related Designations,https://ofac.treasury.gov/recent-actions/20250331,19
+483,2025-04-01,Non-Proliferation Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250401,8
+484,2025-04-02,Counter Terrorism Designations and Designation Update; Russia-related Designation Removal; Reports for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement Act (TSRA),https://ofac.treasury.gov/recent-actions/20250402,18
+485,2025-04-09,"Counter Narcotics, Non-Proliferation, and Iran-related Designations",https://ofac.treasury.gov/recent-actions/20250409,7
+486,2025-04-10,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250410,39
+487,2025-04-15,Counter Terrorism Designations; Counter Narcotics Designations and Designation Updates; Global Magnitsky Designation Removal,https://ofac.treasury.gov/recent-actions/20250415,5
+488,2025-04-16,Iran-related Designations; Publication of Updated Iran Shipping Advisory,https://ofac.treasury.gov/recent-actions/20250416,12
+489,2025-04-17,Counter Terrorism Designations; Issuance of Counter Terrorism General License,https://ofac.treasury.gov/recent-actions/20250417,4
+490,2025-04-22,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250422,23
+491,2025-04-28,Counter Terrorism Designations and Designation Update; Iran-related Designation Update,https://ofac.treasury.gov/recent-actions/20250428,8
+492,2025-04-29,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250429,12
 493,2025-04-30,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250430,9
-494,2025-05-01,Counter Narcotics Designations; Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250501,2
-495,2025-05-02,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250502,1
-496,2025-05-05,Burma-related Designations; Transnational Criminal Organizations Designations,https://ofac.treasury.gov/recent-actions/20250505,2
+494,2025-05-01,Counter Narcotics Designations; Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250501,5
+495,2025-05-02,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250502,2
+496,2025-05-05,Burma-related Designations; Transnational Criminal Organizations Designations,https://ofac.treasury.gov/recent-actions/20250505,4
 497,2025-05-08,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250508,19
 498,2025-05-12,Non-Proliferation and Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250512,4
-499,2025-05-13,Counter Terrorism Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250513,3
+499,2025-05-13,Counter Terrorism Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250513,18
 500,2025-05-14,Non-Proliferation Designations; Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250514,18
-501,2025-05-15,Counter Terrorism Designations and Designation Removals; Issuance of New Russia-related General License; Publication of Updated Russia-related Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20250515,2
-502,2025-05-21,"Counter Narcotics, Counter Terrorism Designations and Designation Update; Venezuela-related Designation Removals",https://ofac.treasury.gov/recent-actions/20250521,3
-503,2025-05-28,"Balkans-related, Counter Narcotics, and Russia-related Designations Removals",https://ofac.treasury.gov/recent-actions/20250528,1
+501,2025-05-15,Counter Terrorism Designations and Designation Removals; Issuance of New Russia-related General License; Publication of Updated Russia-related Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20250515,11
+502,2025-05-21,"Counter Narcotics, Counter Terrorism Designations and Designation Update; Venezuela-related Designation Removals",https://ofac.treasury.gov/recent-actions/20250521,6
+503,2025-05-28,"Balkans-related, Counter Narcotics, and Russia-related Designations Removals",https://ofac.treasury.gov/recent-actions/20250528,8
 504,2025-05-29,Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20250529,2
-505,2025-06-05,Counter Narcotics Designations; International Criminal Court-related Designations; Issuance of International Criminal Court-related General Licenses,https://ofac.treasury.gov/recent-actions/20250605,1
+505,2025-06-05,Counter Narcotics Designations; International Criminal Court-related Designations; Issuance of International Criminal Court-related General Licenses,https://ofac.treasury.gov/recent-actions/20250605,10
 506,2025-06-06,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250606,37
-507,2025-06-09,Counter Narcotics and Counter Terrorism Designations and Designation Updates,https://ofac.treasury.gov/recent-actions/20250609,3
+507,2025-06-09,Counter Narcotics and Counter Terrorism Designations and Designation Updates,https://ofac.treasury.gov/recent-actions/20250609,16
 508,2025-06-10,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250610,11
 509,2025-06-12,"Counter Terrorism Designations; The U.S. Department of the Treasury's Office of Foreign Assets Control Assesses a Civil Monetary Penalty against GVA Capital, Ltd.",https://ofac.treasury.gov/recent-actions/20250612,2
 510,2025-06-18,Counter Narcotics and Counter Terrorism Designation and Designation Updates,https://ofac.treasury.gov/recent-actions/20250618,5
-511,2025-06-20,"Non-Proliferation Designations; Iran-related and Counter Terrorism Designations, Designation Updates, and Designation Removal",https://ofac.treasury.gov/recent-actions/20250620,5
+511,2025-06-20,"Non-Proliferation Designations; Iran-related and Counter Terrorism Designations, Designation Updates, and Designation Removal",https://ofac.treasury.gov/recent-actions/20250620,37
 512,2025-06-24,Counter Terrorism and Transnational Criminal Organizations Designation,https://ofac.treasury.gov/recent-actions/20250624,1
-513,2025-06-30,Revocation of Syria Sanctions; Publication of Syria Frequently Asked Questions; Syria and Syria-related Designation Updates and Removals,https://ofac.treasury.gov/recent-actions/20250630,1012
+513,2025-06-30,Revocation of Syria Sanctions; Publication of Syria Frequently Asked Questions; Syria and Syria-related Designation Updates and Removals,https://ofac.treasury.gov/recent-actions/20250630,1048
 514,2025-07-01,Cyber-related Designations; CAATSA - Russia-related Designations; Russia-related Designation Update and Removal,https://ofac.treasury.gov/recent-actions/20250701,10
-515,2025-07-03,Counter Terrorism Designations; Iran-related Designations; Counter Narcotics Designations Removals,https://ofac.treasury.gov/recent-actions/20250703,4
-516,2025-07-08,"North Korea and Cyber-related Designations; Counter Terrorism Designation Update; Settlement Agreement between the U.S. Department of the Treasury's Office of Foreign Assets Control and Harman International Industries, Inc.",https://ofac.treasury.gov/recent-actions/20250708_33,3
+515,2025-07-03,Counter Terrorism Designations; Iran-related Designations; Counter Narcotics Designations Removals,https://ofac.treasury.gov/recent-actions/20250703,49
+516,2025-07-08,"North Korea and Cyber-related Designations; Counter Terrorism Designation Update; Settlement Agreement between the U.S. Department of the Treasury's Office of Foreign Assets Control and Harman International Industries, Inc.",https://ofac.treasury.gov/recent-actions/20250708_33,7
 517,2025-07-09,"Counter Terrorism, Iran-related Designations and Designations Removals; Iraq-related Designation Removals",https://ofac.treasury.gov/recent-actions/20250709,52
 518,2025-07-09,International Criminal Court-related Designation; Issuance of International Criminal Court-related General License,https://ofac.treasury.gov/recent-actions/20250709_33,1
-519,2025-07-17,Counter Terrorism Designations and Designation Update; Transnational Criminal Organizations Designations,https://ofac.treasury.gov/recent-actions/20250717,2
-520,2025-07-22,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250722,2
+519,2025-07-17,Counter Terrorism Designations and Designation Update; Transnational Criminal Organizations Designations,https://ofac.treasury.gov/recent-actions/20250717,7
+520,2025-07-22,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250722,7
 521,2025-07-24,North Korea and Non-Proliferation Designations; Burma-related and North Korea Designation Removals,https://ofac.treasury.gov/recent-actions/20250724,37
 522,2025-07-25,Counter Terrorism Designation,https://ofac.treasury.gov/recent-actions/20250725,1
 523,2025-07-30,Global Magnitsky Designation,https://ofac.treasury.gov/recent-actions/20250730,1
 524,2025-07-30,Iran-related Designations; Issuance of Iran-related General License,https://ofac.treasury.gov/recent-actions/20250730_33,147
 525,2025-07-31,Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20250731,6
-526,2025-08-06,Counter Narcotics and Counter Terrorism Designations; Report for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement Act of 2000 (TSRA),https://ofac.treasury.gov/recent-actions/20250806,1
-527,2025-08-07,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250807,2
+526,2025-08-06,Counter Narcotics and Counter Terrorism Designations; Report for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement Act of 2000 (TSRA),https://ofac.treasury.gov/recent-actions/20250806,4
+527,2025-08-07,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250807,18
 528,2025-08-11,Counter Terrorism Designation Update,https://ofac.treasury.gov/recent-actions/20250811,1
 529,2025-08-12,Democratic Republic of the Congo-related Designations,https://ofac.treasury.gov/recent-actions/20250812,4
-530,2025-08-13,Counter Narcotics and Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250813,3
-531,2025-08-14,Counter Narcotics and Counter Terrorism Designations and Designation Updates; Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20250814,3
-532,2025-08-18,"Counter Narcotics Designations and Designation Removal; Counter Terrorism, Global Magnitsky, and Russia-related Designation Updates",https://ofac.treasury.gov/recent-actions/20250818,4
-533,2025-08-20,International Criminal Court-Related Designations; Issuance of International Criminal Court-Related General License,https://ofac.treasury.gov/recent-actions/20250820,1
-534,2025-08-21,Iran-related Designations; Belarus Designation Removals,https://ofac.treasury.gov/recent-actions/20250821,4
+530,2025-08-13,Counter Narcotics and Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250813,17
+531,2025-08-14,Counter Narcotics and Counter Terrorism Designations and Designation Updates; Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20250814,20
+532,2025-08-18,"Counter Narcotics Designations and Designation Removal; Counter Terrorism, Global Magnitsky, and Russia-related Designation Updates",https://ofac.treasury.gov/recent-actions/20250818,12
+533,2025-08-20,International Criminal Court-Related Designations; Issuance of International Criminal Court-Related General License,https://ofac.treasury.gov/recent-actions/20250820,4
+534,2025-08-21,Iran-related Designations; Belarus Designation Removals,https://ofac.treasury.gov/recent-actions/20250821,26
 535,2025-08-27,North Korea Designations; Issuance of Russia-related General License,https://ofac.treasury.gov/recent-actions/20250827,4
-536,2025-09-02,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250902,3
+536,2025-09-02,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20250902,17
 537,2025-09-03,Counter Narcotics Designations; Global Magnitsky Designation Removal; Libya Designation Removal and Libya-related Update,https://ofac.treasury.gov/recent-actions/20250903,9
-538,2025-09-04,International Criminal Court-related Designations; Counter Narcotics and Counter Terrorism Designation Updates; Issuance of International Criminal Court-related General License,https://ofac.treasury.gov/recent-actions/20250904,2
+538,2025-09-04,International Criminal Court-related Designations; Counter Narcotics and Counter Terrorism Designation Updates; Issuance of International Criminal Court-related General License,https://ofac.treasury.gov/recent-actions/20250904,5
 539,2025-09-08,Transnational Criminal Organizations Designations; Burma-related Designations; Global Magnitsky Designations; Cyber-related Designations,https://ofac.treasury.gov/recent-actions/20250908,19
 540,2025-09-11,Counter Terrorism Designations; Issuance of Belarus General License,https://ofac.treasury.gov/recent-actions/20250911,36
 541,2025-09-12,Sudan Designations,https://ofac.treasury.gov/recent-actions/20250912,2
@@ -545,24 +545,24 @@ action_id,action_date,title,url,n_changes
 544,2025-09-18,Counter Narcotics and Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20250918,24
 545,2025-09-22,Global Magnitsky Designations,https://ofac.treasury.gov/recent-actions/20250922,2
 546,2025-09-23,Counter Terrorism Designation,https://ofac.treasury.gov/recent-actions/20250923,1
-547,2025-09-24,Counter Narcotics Designations; Publication of Amendments to the Syria-Related Sanctions Regulations,https://ofac.treasury.gov/recent-actions/20250924,2
-548,2025-09-25,North Korea and Burma-related Designations,https://ofac.treasury.gov/recent-actions/20250925,2
+547,2025-09-24,Counter Narcotics Designations; Publication of Amendments to the Syria-Related Sanctions Regulations,https://ofac.treasury.gov/recent-actions/20250924,3
+548,2025-09-25,North Korea and Burma-related Designations,https://ofac.treasury.gov/recent-actions/20250925,6
 549,2025-10-01,Non-Proliferation Designations and Designation Update,https://ofac.treasury.gov/recent-actions/20251001,44
 550,2025-10-06,Counter Terrorism and Counter Narcotics Designations and Designation Update; Global Magnitsky Designations Removals,https://ofac.treasury.gov/recent-actions/20251006,29
-551,2025-10-09,Iran-related Designations; Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20251009,94
+551,2025-10-09,Iran-related Designations; Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20251009,95
 552,2025-10-09,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20251009_33,8
 553,2025-10-14,Transnational Criminal Organizations Designations; Issuance of TCO-related General License,https://ofac.treasury.gov/recent-actions/20251014,146
-554,2025-10-17,Counter Terrorism Designations; Balkans-related Designation Removals,https://ofac.treasury.gov/recent-actions/20251017,2
+554,2025-10-17,Counter Terrorism Designations; Balkans-related Designation Removals,https://ofac.treasury.gov/recent-actions/20251017,6
 555,2025-10-22,Russia-related Designations; Issuance of New and Amended Russia-related General Licenses,https://ofac.treasury.gov/recent-actions/20251022,47
-556,2025-10-24,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20251024,1
+556,2025-10-24,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20251024,4
 557,2025-10-29,Balkans-related Designation Removals; Issuance of New Russia-related General License and Amended Russia-related Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20251029,71
 558,2025-10-30,Transnational Criminal Organizations Designations and Designation Updates,https://ofac.treasury.gov/recent-actions/20251030,24
 559,2025-11-04,Cyber-related Designations; North Korea Designations and Designation Update; Belarus Designations Removals; Issuance of Belarus General License,https://ofac.treasury.gov/recent-actions/20251104,16
-560,2025-11-06,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20251106,1
-561,2025-11-07,Counter Terrorism Designations Removals,https://ofac.treasury.gov/recent-actions/20251107,1
-562,2025-11-12,Counter Terrorism Designations; Burma-related Designations; Cyber-related Designations; Non-Proliferation Designations and Designation Updates; Iran-related Designation Update,https://ofac.treasury.gov/recent-actions/20251112,3
+560,2025-11-06,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20251106,3
+561,2025-11-07,Counter Terrorism Designations Removals,https://ofac.treasury.gov/recent-actions/20251107,7
+562,2025-11-12,Counter Terrorism Designations; Burma-related Designations; Cyber-related Designations; Non-Proliferation Designations and Designation Updates; Iran-related Designation Update,https://ofac.treasury.gov/recent-actions/20251112,42
 563,2025-11-13,Transnational Criminal Organizations Designations,https://ofac.treasury.gov/recent-actions/20251113,27
-564,2025-11-13,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20251113_33,1
+564,2025-11-13,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20251113_33,4
 565,2025-11-19,Cyber-related Designations; CAATSA - Russia-related Designations; Issuance of Russia-related Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20251119,12
 566,2025-11-19,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20251119_33,19
 567,2025-11-20,"Iran-related Designations; Counter Terrorism Designations, Updates, and Removals; Balkans-related Designation Removal",https://ofac.treasury.gov/recent-actions/20251120,69
@@ -570,50 +570,50 @@ action_id,action_date,title,url,n_changes
 569,2025-12-03,Counter Terrorism Designations; Transnational Criminal Organizations Designations,https://ofac.treasury.gov/recent-actions/20251203,11
 570,2025-12-09,Sudan-related Designations; Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20251209,11
 571,2025-12-11,Counter Narcotics Designations; Venezuela-related Designations; Non-Proliferation Designation Updates,https://ofac.treasury.gov/recent-actions/20251211,18
-572,2025-12-12,Global Magnitsky Designations Removals,https://ofac.treasury.gov/recent-actions/20251212,1
+572,2025-12-12,Global Magnitsky Designations Removals,https://ofac.treasury.gov/recent-actions/20251212,4
 573,2025-12-16,Counter Terrorism Designation Update,https://ofac.treasury.gov/recent-actions/20251216,1
 574,2025-12-17,Transnational Criminal Organizations Designations; Issuance of Amended Russia-related General Licenses; Publication of Updated Russia-related Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20251217,2
 575,2025-12-18,Iran-related Designations; International Criminal Court-related Designations; Russia-related Designations Removals; Foreign Sanctions Evaders Determination Removal; Issuance of Iran-related and International Criminal Court-related General Licenses,https://ofac.treasury.gov/recent-actions/20251218,64
-576,2025-12-19,Venezuela-related Designations; Issuance of Venezuela-related General License; Publication of Amended Venezuela-related Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20251219,1
+576,2025-12-19,Venezuela-related Designations; Issuance of Venezuela-related General License; Publication of Amended Venezuela-related Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20251219,7
 577,2025-12-23,Promoting Accountability for Assad and Regional Stabilization Sanctions (PAARSS)-related Designations Updates; Publication of Amended Tri-Seal Advisory: Sanctions and Export Controls Relief for Syria,https://ofac.treasury.gov/recent-actions/20251223,16
 578,2025-12-30,Non-Proliferation and Iran-related Designations; Cyber-related and Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20251230,16
 579,2025-12-31,Venezuela-related Designations,https://ofac.treasury.gov/recent-actions/20251231,8
 580,2026-01-02,Counter Narcotics Designation Update,https://ofac.treasury.gov/recent-actions/20260102,1
-581,2026-01-08,Russia-related Designation Update and Designation Removal,https://ofac.treasury.gov/recent-actions/20260108,2
-582,2026-01-13,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20260113,2
+581,2026-01-08,Russia-related Designation Update and Designation Removal,https://ofac.treasury.gov/recent-actions/20260108,4
+582,2026-01-13,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20260113,4
 583,2026-01-15,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20260115,24
 584,2026-01-16,Counter Terrorism Designations and Designation Update,https://ofac.treasury.gov/recent-actions/20260116,23
 585,2026-01-21,Counter Terrorism Designations and Designations Removals,https://ofac.treasury.gov/recent-actions/20260121,10
 586,2026-01-22,Counter Narcotics Designations,https://ofac.treasury.gov/recent-actions/20260122,10
-587,2026-01-23,Iran-related Designations; Issuance of Iran-related General License,https://ofac.treasury.gov/recent-actions/20260123,2
+587,2026-01-23,Iran-related Designations; Issuance of Iran-related General License,https://ofac.treasury.gov/recent-actions/20260123,17
 588,2026-01-30,Iran-related Designations; Counter Terrorism Designations; Non-Proliferation Designation Update and Designation Removal,https://ofac.treasury.gov/recent-actions/20260130,17
 589,2026-02-02,Issuance of Venezuela-related General License and Amended Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20260202,0
 590,2026-02-06,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20260206,31
-591,2026-02-10,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20260210,3
-592,2026-02-19,Counter Terrorism and Counter Narcotics Designations; Sudan-related Designations and Designation Update; Russia-related Designation Update; Issuance of Counter Terrorism General License,https://ofac.treasury.gov/recent-actions/20260219,3
-593,2026-02-24,Cyber-related Designations; CAATSA - Russia-related Designations; PAIPA Designations,https://ofac.treasury.gov/recent-actions/20260224,5
+591,2026-02-10,Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20260210,8
+592,2026-02-19,Counter Terrorism and Counter Narcotics Designations; Sudan-related Designations and Designation Update; Russia-related Designation Update; Issuance of Counter Terrorism General License,https://ofac.treasury.gov/recent-actions/20260219,29
+593,2026-02-24,Cyber-related Designations; CAATSA - Russia-related Designations; PAIPA Designations,https://ofac.treasury.gov/recent-actions/20260224,8
 594,2026-02-25,Iran-related Designations; Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20260225,32
 595,2026-02-26,Nicaragua-related Designations; Issuance of Amended Russia-related General License and Associated Frequently Asked Questions,https://ofac.treasury.gov/recent-actions/20260226,5
 596,2026-02-27,Russia-related Designations Removals; Lebanon Designation Removal,https://ofac.treasury.gov/recent-actions/20260227,4
-597,2026-03-02,Democratic Republic of the Congo-related Designations; Issuance of Associated General License,https://ofac.treasury.gov/recent-actions/20260302,2
-598,2026-03-05,Venezuela-related Designations Removals; Issuance of Amended Russia-related General License,https://ofac.treasury.gov/recent-actions/20260305,4
+597,2026-03-02,Democratic Republic of the Congo-related Designations; Issuance of Associated General License,https://ofac.treasury.gov/recent-actions/20260302,5
+598,2026-03-05,Venezuela-related Designations Removals; Issuance of Amended Russia-related General License,https://ofac.treasury.gov/recent-actions/20260305,5
 599,2026-03-06,Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20260306,1
 600,2026-03-09,Counter Terrorism Designations; Sudan-related Designation Update,https://ofac.treasury.gov/recent-actions/20260309,2
-601,2026-03-12,Counter Terrorism Designations; North Korea Designations and Designation Update; Counter Narcotics Designation Removal,https://ofac.treasury.gov/recent-actions/20260312,4
+601,2026-03-12,Counter Terrorism Designations; North Korea Designations and Designation Update; Counter Narcotics Designation Removal,https://ofac.treasury.gov/recent-actions/20260312,16
 602,2026-03-13,Cyber-related Designations Removals,https://ofac.treasury.gov/recent-actions/20260313,8
 603,2026-03-18,Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20260318_33,12
-604,2026-03-20,Counter Terrorism Designations; Counter Narcotics and Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20260320,3
-605,2026-03-26,Belarus Designations Removals; Issuance of Belarus General License; Rescission of Belarus Directive 1,https://ofac.treasury.gov/recent-actions/20260326,1
+604,2026-03-20,Counter Terrorism Designations; Counter Narcotics and Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20260320,25
+605,2026-03-26,Belarus Designations Removals; Issuance of Belarus General License; Rescission of Belarus Directive 1,https://ofac.treasury.gov/recent-actions/20260326,20
 606,2026-03-27,Global Magnitsky Designations Removals; Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20260327,7
-607,2026-03-31,Counter Narcotics Designations Removals; Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20260331,1
-608,2026-04-01,Venezuela-related Designation Removal,https://ofac.treasury.gov/recent-actions/20260401,1
-609,2026-04-03,Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20260403,1
-610,2026-04-14,"Counter Narcotics, Counter Terrorism Designations; Issuance of Related General License; Issuance of Amended Russia-related General Licenses and Frequently Asked Question",https://ofac.treasury.gov/recent-actions/20260414,2
+607,2026-03-31,Counter Narcotics Designations Removals; Russia-related Designations Removals,https://ofac.treasury.gov/recent-actions/20260331,16
+608,2026-04-01,Venezuela-related Designation Removal,https://ofac.treasury.gov/recent-actions/20260401,2
+609,2026-04-03,Russia-related Designation Removal,https://ofac.treasury.gov/recent-actions/20260403,2
+610,2026-04-14,"Counter Narcotics, Counter Terrorism Designations; Issuance of Related General License; Issuance of Amended Russia-related General Licenses and Frequently Asked Question",https://ofac.treasury.gov/recent-actions/20260414,6
 611,2026-04-14,Venezuela-related Designation Removal; Issuance of Venezuela-related General Licenses and Frequently Asked Question; Publication of Report for Licensing Activities Undertaken Pursuant to the Trade Sanctions Reform and Export Enhancement Act (TSRA),https://ofac.treasury.gov/recent-actions/20260414_33,1
-612,2026-04-15,Iran-related Designations; Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20260415,28
-613,2026-04-16,Nicaragua-related Designations; Issuance of Nicaragua-related General License,https://ofac.treasury.gov/recent-actions/20260416,2
-614,2026-04-17,Counter Terrorism Designations; Sudan Designations,https://ofac.treasury.gov/recent-actions/20260417,2
-615,2026-04-21,Counter Terrorism Designations; Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20260421,3
+612,2026-04-15,Iran-related Designations; Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20260415,29
+613,2026-04-16,Nicaragua-related Designations; Issuance of Nicaragua-related General License,https://ofac.treasury.gov/recent-actions/20260416,14
+614,2026-04-17,Counter Terrorism Designations; Sudan Designations,https://ofac.treasury.gov/recent-actions/20260417,12
+615,2026-04-21,Counter Terrorism Designations; Non-Proliferation Designations,https://ofac.treasury.gov/recent-actions/20260421,14
 616,2026-04-23,"Counter Terrorism, Counter Narcotics, and Cyber-related Designations; Issuance of Cyber-related General License",https://ofac.treasury.gov/recent-actions/20260423,52
 617,2026-04-24,Iran-related Designations; Counter Terrorism and Iran-related Designation Update; Issuance of Iran-related General License,https://ofac.treasury.gov/recent-actions/20260424,40
 618,2026-04-28,Counter Terrorism Designation; Iran-related Designations; Issuance of Frequently Asked Question; Publication of Iran-related OFAC Alert,https://ofac.treasury.gov/recent-actions/20260428,35
@@ -650,11 +650,11 @@ action_id,action_date,title,url,n_changes
 649,2026-07-13,Cyber-related Designations; Cuba Designations; Issuance of Cuba-related Frequently Asked Question,https://ofac.treasury.gov/recent-actions/20260713,13
 650,2026-07-14,Iran-related Designations; Iran-related and Counter Terrorism Designation Update; Issuance of Iran-related General License,https://ofac.treasury.gov/recent-actions/20260714,55
 651,2026-07-15,Non-Proliferation Designations; Counter Terrorism Designations,https://ofac.treasury.gov/recent-actions/20260715,9
-652,2026-07-17,Hong Kong-related Designations Updates and Removals,https://ofac.treasury.gov/recent-actions/20260717,94
+652,2026-07-17,Hong Kong-related Designations Updates and Removals,https://ofac.treasury.gov/recent-actions/20260717,133
 653,2026-07-20,Russia-related Designations Updates,https://ofac.treasury.gov/recent-actions/20260720,2
 654,2026-07-23,Counter Terrorism Designations; Counter Narcotics Designations; Cuba Designations; Belarus-related Designation Removal; Issuance of Cuba-related General Licenses,https://ofac.treasury.gov/recent-actions/20260723,74
 655,2026-07-24,Iran-related Designations; Issuance of Amended Russia-related General License and Frequently Asked Questions; Issuance of Amended Venezuela-related Frequently Asked Question; Publication of Regulatory Amendments,https://ofac.treasury.gov/recent-actions/20260724,13
-656,2026-07-27,Sanctions List Removals; Sanctions List Updates,https://ofac.treasury.gov/recent-actions/20260727,345
+656,2026-07-27,Sanctions List Removals; Sanctions List Updates,https://ofac.treasury.gov/recent-actions/20260727,350
 657,2026-07-29,Iran-related Designations,https://ofac.treasury.gov/recent-actions/20260729,18
 658,2026-07-30,Counter Terrorism Designations; Non-Proliferation Designation Update,https://ofac.treasury.gov/recent-actions/20260730,7
 659,2026-08-05,Counter Terrorism Designations Removals and Update,https://ofac.treasury.gov/recent-actions/20260805,6
