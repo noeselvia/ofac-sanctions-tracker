@@ -5,8 +5,8 @@
 An end-to-end analytics project: Python ingestion → change parsing → SQLite star schema →
 Power BI model + a public web dashboard, refreshed every day by GitHub Actions.
 
-> 22,297 list changes · 688 official OFAC releases · Jan 2021 – Oct 2026
-> 11,677 SDN additions · 3,677 removals · 6,620 updates
+> 24,100 list changes · 688 official OFAC releases · Jan 2021 – Oct 2026
+> 12,967 SDN additions · 4,006 removals · 6,751 updates
 
 ![Dashboard preview](docs/preview.png)
 
