@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>New SDN Designations</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Every entry OFAC has added to the SDN list since 2021, grouped by release, with aliases, linked parties and the published entry text.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: navy masthead -> latest-release spotlight -> filter bar + KPI ledger -> cadence chart -> release-grouped register. */
+:root{
+  --navy:#0b1f3f; --cobalt:#1f5fd1; --on-navy:#e8eefb; --on-navy-2:#a9bbdf; --navy-line:#24406e;
+  --bg:#f4f6fa; --surface:#ffffff; --surface-2:#f7f9fc; --line:#dde3ee; --grid:#e8ecf3;
+  --fg:#0d1a2e; --fg-2:#4a5870; --fg-3:#76839a;
+  --bar:#2a78d6; --chip:#eef2fa; --chip-on:#0b1f3f; --chip-on-fg:#ffffff;
+  --t-ind:#2a78d6; --t-ent:#0b1f3f; --t-ves:#1baf7a; --t-air:#eda100;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --navy:#081529; --cobalt:#5b8ff0; --on-navy:#e8eefb; --on-navy-2:#9fb2d8; --navy-line:#1d3358;
+  --bg:#0c1424; --surface:#121c30; --surface-2:#0f182a; --line:#24324c; --grid:#1d2940;
+  --fg:#e8edf6; --fg-2:#aab6cb; --fg-3:#7d8aa3;
+  --bar:#3987e5; --chip:#1a2640; --chip-on:#e8eefb; --chip-on-fg:#0b1f3f;
+  --t-ind:#3987e5; --t-ent:#9fb2d8; --t-ves:#199e70; --t-air:#c98500; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --navy:#081529; --cobalt:#5b8ff0; --on-navy:#e8eefb; --on-navy-2:#9fb2d8; --navy-line:#1d3358;
+  --bg:#0c1424; --surface:#121c30; --surface-2:#0f182a; --line:#24324c; --grid:#1d2940;
+  --fg:#e8edf6; --fg-2:#aab6cb; --fg-3:#7d8aa3;
+  --bar:#3987e5; --chip:#1a2640; --chip-on:#e8eefb; --chip-on-fg:#0b1f3f;
+  --t-ind:#3987e5; --t-ent:#9fb2d8; --t-ves:#199e70; --t-air:#c98500; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 var(--body)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--cobalt)}
+.mast{background:var(--navy);color:var(--on-navy)}
+.mast .wrap{padding-block:24px 22px}
+.topline{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.eyebrow{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy-2)}
+.back{font:500 12px/1 var(--mono);color:var(--on-navy-2);text-decoration:none;border:1px solid var(--navy-line);padding:6px 10px;border-radius:999px}
+.back:hover{color:var(--on-navy);border-color:var(--on-navy-2)}
+h1{font:800 clamp(30px,5vw,46px)/1 var(--display);font-stretch:80%;margin:12px 0 8px;text-wrap:balance}
+.lede{margin:0;color:var(--on-navy-2);max-width:66ch}
+
+/* spotlight */
+.spot{background:var(--navy);color:var(--on-navy);border-bottom:3px solid var(--cobalt)}
+.spot .wrap{padding-block:4px 26px;display:grid;gap:16px}
+.spot-head{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:baseline;border-top:1px solid var(--navy-line);padding-top:18px}
+.spot-n{font:800 56px/0.9 var(--display);font-stretch:80%;font-variant-numeric:tabular-nums}
+.spot-meta{display:grid;gap:2px;min-width:0;flex:1 1 320px}
+.spot-meta .lab{font:500 11px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--on-navy-2)}
+.spot-meta a{color:var(--on-navy);font-weight:500;text-decoration:none}
+.spot-meta a:hover{text-decoration:underline}
+.spot-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.spot-col{border:1px solid var(--navy-line);border-radius:8px;padding:12px 14px;min-width:0}
+.spot-col h3{margin:0 0 8px;font:600 12px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--on-navy-2);display:flex;justify-content:space-between}
+.spot-col ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;max-height:220px;overflow-y:auto}
+.spot-col li{font-size:13.5px;line-height:1.35}
+.spot-col li small{display:block;color:var(--on-navy-2);font-size:12px}
+
+.filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding-block:16px;border-bottom:1px solid var(--line)}
+.fgroup{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.flabel{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);margin-right:2px}
+.chip{border:1px solid var(--line);background:var(--chip);color:var(--fg);font:500 13px/1 var(--body);padding:7px 11px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--chip-on);color:var(--chip-on-fg);border-color:var(--chip-on)}
+select,input[type=search]{font:14px var(--body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:6px 8px;max-width:100%}
+input[type=search]{min-width:min(260px,100%)}
+:focus-visible{outline:2px solid var(--cobalt);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-block:20px 16px;border-radius:8px;overflow:hidden}
+.kpi{background:var(--surface);padding:12px 14px}
+.kpi .k{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);display:flex;gap:6px;align-items:center}
+.kpi .v{font:700 28px/1.1 var(--display);font-stretch:85%;margin-top:6px;font-variant-numeric:tabular-nums}
+.sw{width:10px;height:10px;border-radius:2px;display:inline-block;flex:none}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px;min-width:0}
+h2{font:700 18px/1.2 var(--display);font-stretch:90%;margin:0 0 2px}
+.sub{font-size:13px;color:var(--fg-3);margin:0 0 10px}
+svg text{fill:var(--fg-3);font:11px var(--mono)}
+.tip{position:fixed;pointer-events:none;background:var(--navy);color:var(--on-navy);font:12px/1.45 var(--body);padding:8px 10px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:20;max-width:280px}
+.tip b{font-family:var(--mono);font-weight:500}
+
+.reg-head{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap;margin:22px 0 10px}
+.btn{font:500 13px/1 var(--body);border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:8px 12px;border-radius:6px;cursor:pointer}
+.btn:hover{border-color:var(--cobalt);color:var(--cobalt)}
+.status{font-size:12.5px;color:var(--fg-3);margin-left:8px}
+.release{background:var(--surface);border:1px solid var(--line);border-radius:8px;margin-bottom:12px;overflow:hidden}
+.rel-h{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;align-items:baseline;padding:12px 14px;background:var(--surface-2);border-bottom:1px solid var(--line)}
+.rel-h .d{font:500 13px/1.3 var(--mono);color:var(--fg)}
+.rel-h a{color:var(--fg);text-decoration:none;font-size:13.5px;min-width:0}
+.rel-h a:hover{color:var(--cobalt);text-decoration:underline}
+.rel-h .n{font:500 12px/1.3 var(--mono);color:var(--fg-2);white-space:nowrap}
+@media (max-width:640px){.rel-h{grid-template-columns:1fr auto}.rel-h a{grid-column:1 / -1;grid-row:2}}
+.ent{display:grid;grid-template-columns:minmax(0,2.2fr) 92px minmax(0,1fr) minmax(0,1.3fr);gap:6px 14px;padding:10px 14px;border-bottom:1px solid var(--grid);font-size:13.5px}
+.ent:last-child{border-bottom:0}
+.ent .nm{font-weight:600;overflow-wrap:anywhere}
+.ent .aka{display:block;font-weight:400;color:var(--fg-3);font-size:12.5px;margin-top:2px}
+.ent .lk{display:block;font-weight:400;color:var(--fg-2);font-size:12.5px;margin-top:2px}
+.ent .ct{color:var(--fg-2)}
+.ent .pg{font:12px/1.4 var(--mono);color:var(--fg-2);overflow-wrap:anywhere}
+.ent details{grid-column:1 / -1}
+.ent summary{font:500 12px var(--mono);color:var(--cobalt);cursor:pointer;width:max-content}
+.ent .raw{margin:6px 0 2px;font:12px/1.55 var(--mono);color:var(--fg-2);background:var(--surface-2);border:1px solid var(--grid);border-radius:6px;padding:8px 10px;overflow-wrap:anywhere}
+@media (max-width:760px){.ent{grid-template-columns:1fr auto}.ent .ct,.ent .pg{grid-column:1 / -1}}
+.tp{display:inline-flex;align-items:center;gap:6px;font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--fg-2);white-space:nowrap}
+.more{display:flex;justify-content:center;margin:6px 0 10px}
+.empty{color:var(--fg-3);font-size:14px;padding:28px 0;text-align:center}
+footer{margin-block:28px 40px;color:var(--fg-3);font-size:12.5px;display:grid;gap:6px;max-width:100ch}
+footer strong{color:var(--fg-2)}
+mark{background:color-mix(in srgb,var(--bar) 22%,transparent);color:inherit;border-radius:2px}
+</style>
+
+</head><body>
+<header class="mast">
+  <div class="wrap">
+    <div class="topline">
+      <div class="eyebrow">OFAC · Specially Designated Nationals · New designations</div>
+      <a class="back" href="index.html">Full tracker →</a>
+    </div>
+    <h1>New SDN Designations</h1>
+    <p class="lede">Every person, company, vessel and aircraft OFAC has added to the SDN list, grouped by release, with aliases and linked parties as published.</p>
+  </div>
+</header>
+<section class="spot" aria-label="Latest release">
+  <div class="wrap" id="spot"></div>
+</section>
+
+<main class="wrap">
+  <div class="filters" role="group" aria-label="Filters">
+    <div class="fgroup" id="periods"><span class="flabel">Period</span></div>
+    <div class="fgroup"><label class="flabel" for="f-family">Program</label><select id="f-family"></select></div>
+    <div class="fgroup"><label class="flabel" for="f-type">Type</label><select id="f-type"></select></div>
+    <div class="fgroup"><label class="flabel" for="f-country">Country</label><select id="f-country"></select></div>
+  </div>
+
+  <section class="kpis" id="kpis" aria-label="Key figures"></section>
+
+  <section class="panel">
+    <h2 id="chart-title">New entries per release</h2>
+    <p class="sub" id="chart-sub"></p>
+    <div id="chart"></div>
+  </section>
+
+  <div class="reg-head">
+    <div>
+      <h2>Designation register</h2>
+      <p class="sub" style="margin:0" id="reg-sub"></p>
+    </div>
+    <div class="fgroup">
+      <input type="search" id="q" placeholder="Search name, alias, linked party" aria-label="Search designations">
+      <button class="btn" id="copy" type="button">Copy as table</button><span class="status" id="copy-status" role="status"></span>
+    </div>
+  </div>
+  <div id="register"></div>
+  <div class="more"><button class="btn" id="more" type="button" hidden>Show more</button></div>
+
+  <footer>
+    <div><strong>Source:</strong> public notices from <a href="https://ofac.treasury.gov/recent-actions/sanctions-list-updates" target="_blank" rel="noopener">OFAC Recent Actions</a>, parsed automatically. Full entry text is kept for releases in the last 120 days.</div>
+    <div><strong>Not a screening tool.</strong> Independent analytics project. Do not use it for compliance decisions; use OFAC's official Sanctions List Search.</div>
+    <div>Built by Elvis Guzmán Rosario · Personal project using only public data.</div>
+  </footer>
+</main>
+<div class="tip" id="tip" hidden></div>
+<textarea id="copybuf" aria-hidden="true" tabindex="-1" style="position:fixed;left:-9999px;top:0"></textarea>
+
+<script id="incl-data" type="application/json">__DATA__</script>
+<script>
+(async function(){
+  let D;
+  const inline=document.getElementById('incl-data').textContent.trim();
+  if(inline && inline[0]==='{'){D=JSON.parse(inline)}else{D=await (await fetch('inclusions.json')).json()}
+  const TYPES=D.types, TL={individual:'Individual',entity:'Entity',vessel:'Vessel',aircraft:'Aircraft'}, TLP={individual:'Individuals',entity:'Entities',vessel:'Vessels',aircraft:'Aircraft'};
+  const TC={individual:'var(--t-ind)',entity:'var(--t-ent)',vessel:'var(--t-ves)',aircraft:'var(--t-air)'};
+  const REL=Object.fromEntries(D.releases.map(r=>[r.id,r]));
+  const items=D.items.map((x,i)=>({i,rel:REL[x[0]],type:TYPES[x[1]],name:x[2],country:x[3],programs:x[4],family:x[5],aliases:x[6]?x[6].split('|'):[],linked:x[7]?x[7].split('|'):[],entry:x[8]}));
+  items.forEach(it=>it.hay=(it.name+' '+it.aliases.join(' ')+' '+it.linked.join(' ')+' '+it.country+' '+it.programs).toLowerCase());
+  const fmt=n=>n.toLocaleString('en-US');
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const fmtDate=d=>new Date(d+'T00:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});
+  const latest=D.releases[0];
+  const anchor=new Date(D.generated_at.slice(0,10)+'T00:00:00Z');
+  const daysAgo=n=>new Date(anchor-n*864e5).toISOString().slice(0,10);
+
+  // ---- spotlight: latest release
+  (function(){
+    const its=items.filter(x=>x.rel.id===latest.id);
+    const by={};its.forEach(x=>(by[x.type]=by[x.type]||[]).push(x));
+    document.getElementById('spot').innerHTML=`
+      <div class="spot-head">
+        <div class="spot-n">${fmt(its.length)}</div>
+        <div class="spot-meta"><span class="lab">New entries in the latest release · ${fmtDate(latest.date)}</span>
+        <a href="${esc(latest.url)}" target="_blank" rel="noopener">${esc(latest.title)}</a></div>
+      </div>
+      <div class="spot-cols">${TYPES.filter(t=>by[t]).map(t=>`
+        <div class="spot-col"><h3><span>${by[t].length>1?TLP[t]:TL[t]}</span><span>${by[t].length}</span></h3>
+        <ul>${by[t].map(x=>`<li>${esc(x.name)}<small>${esc(x.country)} · ${esc(x.programs.replace(/\|/g,' · '))}</small></li>`).join('')}</ul></div>`).join('')}
+      </div>`;
+  })();
+
+  // ---- filters
+  const years=[...new Set(D.releases.map(r=>r.date.slice(0,4)))];
+  const periods=[['latest','Latest release'],['30','30 days'],['90','90 days'],['365','12 months'],...years.map(y=>[y,y]),['all','All']];
+  const st={period:'90',family:'',type:'',country:''};
+  try{Object.assign(st,JSON.parse(localStorage.getItem('ofac-incl')||'{}'))}catch(e){}
+  const pg=document.getElementById('periods');
+  periods.forEach(([k,l])=>{const b=document.createElement('button');b.className='chip';b.type='button';b.textContent=l;b.dataset.k=k;b.onclick=()=>{st.period=k;render()};pg.appendChild(b)});
+  const opts=(sel,label,vals,fmtv=v=>v)=>{sel.innerHTML=`<option value="">${label}</option>`+vals.map(v=>`<option value="${esc(v)}">${esc(fmtv(v))}</option>`).join('')};
+  const sF=document.getElementById('f-family'),sT=document.getElementById('f-type'),sC=document.getElementById('f-country');
+  const count=k=>{const o={};items.forEach(x=>o[x[k]]=(o[x[k]]||0)+1);return Object.entries(o).sort((a,b)=>b[1]-a[1]).map(e=>e[0])};
+  opts(sF,'All programs',count('family'));opts(sT,'All types',TYPES,v=>TL[v]);opts(sC,'All countries',count('country').filter(c=>c!=='Unknown').sort().concat(['Unknown']));
+  sF.onchange=()=>{st.family=sF.value;render()};sT.onchange=()=>{st.type=sT.value;render()};sC.onchange=()=>{st.country=sC.value;render()};
+  const q=document.getElementById('q');let qt;q.oninput=()=>{clearTimeout(qt);qt=setTimeout(render,120)};
+
+  const inPeriod=d=>st.period==='all'?true:st.period==='latest'?d===latest.date:/^\d{4}$/.test(st.period)?d.startsWith(st.period):d>=daysAgo(+st.period);
+  let current=[],shown=0;const PAGE=250;
+
+  // ---- tooltip + chart
+  const tip=document.getElementById('tip');
+  const showTip=(e,h)=>{tip.innerHTML=h;tip.hidden=false;tip.style.left=Math.min(e.clientX+14,innerWidth-tip.offsetWidth-8)+'px';tip.style.top=Math.min(e.clientY+14,innerHeight-tip.offsetHeight-8)+'px'};
+  const hideTip=()=>tip.hidden=true;
+  const NS='http://www.w3.org/2000/svg';
+  const el=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);p&&p.appendChild(e);return e};
+  const nice=v=>{const p=Math.pow(10,Math.floor(Math.log10(v||1)));for(const s of [1,2,2.5,5,10])if(s*p>=v)return s*p;return 10*p};
+  function chart(list){
+    const box=document.getElementById('chart');box.innerHTML='';
+    const monthly=!(st.period==='latest'||st.period==='30'||st.period==='90');
+    const key=x=>monthly?x.rel.date.slice(0,7):x.rel.date;
+    const agg={};list.forEach(x=>{const k=key(x);agg[k]=(agg[k]||0)+1});
+    let keys=Object.keys(agg).sort();
+    if(monthly&&keys.length){const out=[];let [y,m]=keys[0].split('-').map(Number);const end=keys[keys.length-1];while(true){const k=`${y}-${String(m).padStart(2,'0')}`;out.push(k);if(k>=end)break;m++;if(m>12){m=1;y++}}keys=out}
+    document.getElementById('chart-title').textContent=monthly?'New entries per month':'New entries per release';
+    document.getElementById('chart-sub').textContent=monthly?'SDN additions by month of the OFAC release.':'Each bar is one OFAC release date.';
+    if(!keys.length){box.innerHTML='<p class="empty">No designations in this selection.</p>';return}
+    const W=Math.max(300,box.clientWidth),H=200,ml=40,mr=6,mt=8,mb=24,ih=H-mt-mb;
+    const max=nice(Math.max(...keys.map(k=>agg[k]||0)));
+    const svg=el('svg',{viewBox:`0 0 ${W} ${H}`,width:'100%',role:'img','aria-label':'New SDN entries over time'},box);
+    [0,max/2,max].forEach(v=>{const y=mt+ih-v/max*ih;el('line',{x1:ml,x2:W-mr,y1:y,y2:y,stroke:v?'var(--grid)':'var(--fg-3)'},svg);const t=el('text',{x:ml-6,y:y+4,'text-anchor':'end'},svg);t.textContent=fmt(v)});
+    const bw=(W-ml-mr)/keys.length,w=Math.max(1,Math.min(46,bw-2));
+    const step=Math.ceil(keys.length/Math.max(1,Math.floor((W-ml)/(monthly?62:78))));
+    keys.forEach((k,i)=>{const v=agg[k]||0,x=ml+i*bw+(bw-w)/2,h=v/max*ih;
+      if(v)el('rect',{x,y:mt+ih-h,width:w,height:h,rx:Math.min(3,w/2),fill:'var(--bar)'},svg);
+      const hit=el('rect',{x:ml+i*bw,y:mt,width:bw,height:ih,fill:'transparent'},svg);
+      const lbl=monthly?new Date(k+'-01T00:00:00Z').toLocaleString('en-US',{month:'short',year:'numeric',timeZone:'UTC'}):fmtDate(k);
+      hit.onmousemove=e=>showTip(e,`${lbl}<br><b>${fmt(v)}</b> new SDN entr${v===1?'y':'ies'}`);hit.onmouseleave=hideTip;
+      if(i%step===0){const t=el('text',{x:ml+i*bw+bw/2,y:H-6,'text-anchor':'middle'},svg);t.textContent=monthly?k:k.slice(5)}});
+  }
+
+  // ---- register
+  const hl=(s,term)=>{const e=esc(s);if(!term)return e;const i=s.toLowerCase().indexOf(term);if(i<0)return e;return esc(s.slice(0,i))+'<mark>'+esc(s.slice(i,i+term.length))+'</mark>'+esc(s.slice(i+term.length))};
+  function rows(from,to,term){
+    let html='',lastRel=null;
+    current.slice(from,to).forEach(x=>{
+      if(x.rel.id!==lastRel){
+        if(lastRel!==null)html+='</div>';
+        const n=current.filter(y=>y.rel.id===x.rel.id).length;
+        html+=`<div class="release"><div class="rel-h"><span class="d">${x.rel.date}</span><a href="${esc(x.rel.url)}" target="_blank" rel="noopener">${esc(x.rel.title)}</a><span class="n">${n} new</span></div>`;
+        lastRel=x.rel.id;}
+      html+=`<div class="ent"><div class="nm">${hl(x.name,term)}${x.aliases.length?`<span class="aka">a.k.a. ${x.aliases.map(a=>hl(a,term)).join('; ')}</span>`:''}${x.linked.length?`<span class="lk">Linked to: ${x.linked.map(a=>hl(a,term)).join('; ')}</span>`:''}</div>
+        <div><span class="tp"><i class="sw" style="background:${TC[x.type]}"></i>${TL[x.type]}</span></div>
+        <div class="ct">${esc(x.country)}</div><div class="pg">${esc(x.programs.replace(/\|/g,' · '))}</div>
+        ${x.entry?`<details><summary>OFAC entry</summary><div class="raw">${esc(x.entry)}</div></details>`:''}</div>`;
+    });
+    return html+(lastRel!==null?'</div>':'');
+  }
+  // group-aware pagination: keep each release in one block
+  function renderRegister(reset){
+    const reg=document.getElementById('register'),term=q.value.trim().toLowerCase();
+    if(reset){reg.innerHTML='';shown=0}
+    if(!current.length){reg.innerHTML='<p class="empty">No designations match. Try a wider period or clear the search.</p>';document.getElementById('more').hidden=true;return}
+    let to=Math.min(current.length,shown+PAGE);
+    while(to<current.length&&current[to].rel.id===current[to-1].rel.id)to++;
+    reg.insertAdjacentHTML('beforeend',rows(shown,to,term));shown=to;
+    const m=document.getElementById('more');m.hidden=shown>=current.length;m.textContent=`Show more (${fmt(current.length-shown)} left)`;
+  }
+  document.getElementById('more').onclick=()=>renderRegister(false);
+
+  function render(){
+    try{localStorage.setItem('ofac-incl',JSON.stringify(st))}catch(e){}
+    document.querySelectorAll('#periods .chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===st.period));
+    sF.value=st.family;sT.value=st.type;sC.value=st.country;
+    const term=q.value.trim().toLowerCase();
+    const base=items.filter(x=>inPeriod(x.rel.date)&&(!st.family||x.family===st.family)&&(!st.type||x.type===st.type)&&(!st.country||x.country===st.country));
+    current=term?base.filter(x=>x.hay.includes(term)):base;
+    const tcount=t=>current.filter(x=>x.type===t).length;
+    const rels=new Set(current.map(x=>x.rel.id)).size, ctys=new Set(current.filter(x=>x.country!=='Unknown').map(x=>x.country)).size;
+    document.getElementById('kpis').innerHTML=[['New entries',current.length],['Releases',rels],['Countries',ctys],
+      ['Individuals',tcount('individual'),TC.individual],['Entities',tcount('entity'),TC.entity],['Vessels',tcount('vessel'),TC.vessel],['Aircraft',tcount('aircraft'),TC.aircraft]]
+      .map(([k,v,c])=>`<div class="kpi"><div class="k">${c?`<i class="sw" style="background:${c}"></i>`:''}${k}</div><div class="v">${fmt(v)}</div></div>`).join('');
+    const pl=periods.find(p=>p[0]===st.period)[1];
+    document.getElementById('reg-sub').textContent=`${fmt(current.length)} entries · ${pl.toLowerCase()}${st.period==='latest'?' ('+fmtDate(latest.date)+')':''} · newest first`;
+    chart(base);renderRegister(true);
+  }
+
+  // ---- copy as table (TSV pastes cleanly into Excel / Outlook)
+  document.getElementById('copy').onclick=async()=>{
+    const head=['Release date','Name','Type','Country','Programs','Aliases','Linked to','OFAC release'];
+    const tsv=[head.join('\t'),...current.map(x=>[x.rel.date,x.name,TL[x.type],x.country,x.programs.replace(/\|/g,', '),x.aliases.join('; '),x.linked.join('; '),x.rel.url].join('\t'))].join('\n');
+    const s=document.getElementById('copy-status');
+    try{await navigator.clipboard.writeText(tsv);s.textContent=`Copied ${fmt(current.length)} rows`}
+    catch(e){const t=document.getElementById('copybuf');t.value=tsv;t.select();try{document.execCommand('copy');s.textContent=`Copied ${fmt(current.length)} rows`}catch(_){s.textContent='Copy blocked by the browser'}}
+    setTimeout(()=>s.textContent='',3500);
+  };
+
+  render();
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>chart(items.filter(x=>inPeriod(x.rel.date)&&(!st.family||x.family===st.family)&&(!st.type||x.type===st.type)&&(!st.country||x.country===st.country))),150)});
+})();
+</script>
+
+</body></html>

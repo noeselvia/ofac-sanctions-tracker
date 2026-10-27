@@ -40,11 +40,37 @@ class ListChange:
     name: str
     programs: list[str] = field(default_factory=list)
     country: str = "Unknown"
+    aliases: list[str] = field(default_factory=list)
+    linked_to: list[str] = field(default_factory=list)
+    entry_text: str = ""     # OFAC's published entry text (new version for updates)
 
     def to_dict(self) -> dict:
         d = asdict(self)
-        d["programs"] = "|".join(self.programs)
+        for k in ("programs", "aliases", "linked_to"):
+            d[k] = "|".join(getattr(self, k))
         return d
+
+
+AKA_RE = re.compile(r"\b[af]\.k\.a\.,?\s+\"?([^;()\"]+)")
+LINKED_RE = re.compile(r"Linked To:\s*([^;)]+)")
+
+
+def extract_aliases(entry: str) -> list[str]:
+    out = []
+    for a in AKA_RE.findall(entry):
+        a = a.strip(" ,")
+        if a and a not in out:
+            out.append(a)
+    return out
+
+
+def extract_linked(entry: str) -> list[str]:
+    out = []
+    for a in LINKED_RE.findall(entry):
+        a = a.strip(" ,")
+        if a and a not in out:
+            out.append(a)
+    return out
 
 
 def classify_action(text: str) -> str | None:
@@ -157,6 +183,9 @@ def parse_entry(raw: str, action: str, list_name: str) -> ListChange:
         name=extract_name(entry),
         programs=extract_programs(entry),
         country=extract_country(entry, etype),
+        aliases=extract_aliases(entry),
+        linked_to=extract_linked(entry),
+        entry_text=entry.strip(),
     )
 
 

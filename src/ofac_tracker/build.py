@@ -7,6 +7,7 @@ Usage:
 from __future__ import annotations
 
 import csv
+import os
 import datetime as dt
 import json
 import re
@@ -22,6 +23,8 @@ RAW = ROOT / "data" / "raw" / "ofac_recent_actions_raw.json"
 DB = ROOT / "data" / "ofac_tracker.sqlite"
 PBI = ROOT / "data" / "powerbi"
 DASH = ROOT / "docs" / "data.json"
+INCL = ROOT / "docs" / "inclusions.json"
+ENTRY_TEXT_DAYS = 120  # keep OFAC's full entry text for inclusions in this window
 SCHEMA = ROOT / "sql" / "schema.sql"
 
 COUNTRY_ALIASES = {
@@ -63,7 +66,7 @@ def build(raw_path: Path = RAW) -> dict:
         DROP TABLE IF EXISTS fact_list_change; DROP TABLE IF EXISTS dim_action; DROP TABLE IF EXISTS dim_date;""")
     con.executescript(SCHEMA.read_text())
 
-    change_rows, bridge_rows = [], []
+    change_rows, bridge_rows, entry_text = [], [], {}
     cid = 0
     for aid, a in enumerate(actions, start=1):
         changes = parse_body(a["body"])
@@ -75,12 +78,15 @@ def build(raw_path: Path = RAW) -> dict:
             cid += 1
             fam = primary_family(ch.programs)
             row = (cid, aid, a["date"], ch.action, ch.list_name, ch.entity_type, ch.name,
-                   norm_country(ch.country), "|".join(ch.programs) or "UNSPECIFIED", fam)
+                   norm_country(ch.country), "|".join(ch.programs) or "UNSPECIFIED", fam,
+                   "|".join(ch.aliases), "|".join(ch.linked_to))
             change_rows.append(row)
+            if ch.action == "added" and ch.list_name == "SDN":
+                entry_text[cid] = ch.entry_text
             for p in ch.programs or ["UNSPECIFIED"]:
                 bridge_rows.append((cid, p, family(p) if p != "UNSPECIFIED" else "Unspecified"))
 
-    con.executemany("INSERT INTO fact_list_change VALUES (?,?,?,?,?,?,?,?,?,?)", change_rows)
+    con.executemany("INSERT INTO fact_list_change VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", change_rows)
     con.executemany("INSERT INTO bridge_change_program VALUES (?,?,?)", bridge_rows)
 
     # date dimension
@@ -98,6 +104,7 @@ def build(raw_path: Path = RAW) -> dict:
 
     _export_csv(con)
     summary = _export_dashboard(con)
+    _export_inclusions(con, entry_text)
     con.close()
     return summary
 
@@ -141,16 +148,66 @@ def _export_dashboard(con: sqlite3.Connection) -> dict:
 
 
 
+def _export_inclusions(con: sqlite3.Connection, entry_text: dict) -> None:
+    """docs/inclusions.json: every SDN addition, grouped by OFAC release."""
+    rel = con.execute("""SELECT a.action_id, a.action_date, a.title, a.url, COUNT(f.change_id)
+                         FROM dim_action a JOIN fact_list_change f USING(action_id)
+                         WHERE f.action='added' AND f.list_name='SDN'
+                         GROUP BY 1 ORDER BY a.action_date DESC, a.action_id DESC""").fetchall()
+    rows = con.execute("""SELECT change_id, action_id, change_date, entity_type, name, country, programs,
+                                 program_family, aliases, linked_to
+                          FROM fact_list_change WHERE action='added' AND list_name='SDN'
+                          ORDER BY change_date DESC, change_id""").fetchall()
+    last = rel[0][1] if rel else None
+    cutoff = (dt.date.fromisoformat(last) - dt.timedelta(days=ENTRY_TEXT_DAYS)).isoformat() if last else ""
+    TYPES = {"individual": 0, "entity": 1, "vessel": 2, "aircraft": 3}
+    items = []
+    for cid, aid, d, t, name, country, progs, fam, akas, linked in rows:
+        items.append([aid, TYPES.get(t, 1), name, country, progs, fam, akas, linked,
+                      entry_text.get(cid, "") if d >= cutoff else ""])
+    out = {
+        "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "latest_release": last,
+        "entry_text_since": cutoff,
+        "types": list(TYPES),
+        "releases": [{"id": r[0], "date": r[1], "title": r[2], "url": r[3], "n": r[4]} for r in rel],
+        "fields": ["release", "type", "name", "country", "programs", "family", "aliases", "linked_to", "entry"],
+        "items": items,
+    }
+    INCL.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")))
+
+
+# Where each page links to the other. docs/ (GitHub Pages) uses relative links;
+# the self-contained dist/ files use the published artifact URLs (override via env).
+DIST_TRACKER_URL = os.environ.get("OFAC_TRACKER_URL", "https://claude.ai/artifact/HNfW39QhVtLBN84dh92VC5")
+DIST_INCL_URL = os.environ.get("OFAC_INCL_URL", "https://claude.ai/artifact/KCgzakQxBZSqUrZHuLX9Si")
+
+HEAD = ("<!doctype html>\n<html lang=\"en\"><head><meta charset=\"utf-8\">"
+        "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\">\n")
+
+
+def _as_document(tpl: str, first_body_tag: str) -> str:
+    return HEAD + tpl.replace(first_body_tag, "</head><body>\n" + first_body_tag, 1) + "\n</body></html>\n"
+
+
 def render_dashboards() -> None:
-    """docs/index.html (GitHub Pages, fetches data.json) + dist/ofac_dashboard.html (self-contained)."""
-    tpl = (ROOT / "dashboard" / "template.html").read_text()
-    head = "<!doctype html>\n<html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\">\n"
-    page = tpl.replace("<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">", "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">", 1)
-    (ROOT / "docs" / "index.html").write_text(head + page.replace("<header class=\"mast\">", "</head><body>\n<header class=\"mast\">", 1) + "\n</body></html>\n")
+    """docs/*.html (GitHub Pages, fetch JSON) + dist/*.html (self-contained, data embedded)."""
     dist = ROOT / "dist"
     dist.mkdir(exist_ok=True)
+    tracker = (ROOT / "dashboard" / "template.html").read_text()
+    incl = (ROOT / "dashboard" / "inclusions.html").read_text()
+
+    (ROOT / "docs" / "index.html").write_text(
+        _as_document(tracker.replace("__INCL_URL__", "inclusions.html"), '<header class="mast">'))
+    (ROOT / "docs" / "inclusions.html").write_text(
+        _as_document(incl.replace("__TRACKER_URL__", "index.html"), '<header class="mast">'))
+
     data = DASH.read_text().replace("</", "<\\/")
-    (dist / "ofac_dashboard.html").write_text(tpl.replace("__DATA__", data))
+    (dist / "ofac_dashboard.html").write_text(
+        tracker.replace("__INCL_URL__", DIST_INCL_URL).replace("__DATA__", data))
+    idata = INCL.read_text().replace("</", "<\\/")
+    (dist / "ofac_new_designations.html").write_text(
+        incl.replace("__TRACKER_URL__", DIST_TRACKER_URL).replace("__DATA__", idata))
 
 
 if __name__ == "__main__":

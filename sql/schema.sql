@@ -18,7 +18,9 @@ CREATE TABLE fact_list_change (
     name            TEXT NOT NULL,
     country         TEXT NOT NULL,
     programs        TEXT NOT NULL,        -- pipe-separated OFAC program tags
-    program_family  TEXT NOT NULL         -- readable grouping (see programs.py)
+    program_family  TEXT NOT NULL,        -- readable grouping (see programs.py)
+    aliases         TEXT NOT NULL DEFAULT '',  -- pipe-separated a.k.a. names
+    linked_to       TEXT NOT NULL DEFAULT ''   -- pipe-separated linked SDN parties
 );
 
 CREATE TABLE bridge_change_program (

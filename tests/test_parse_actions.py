@@ -34,6 +34,8 @@ def test_fields():
     ch = parse_body(BODY)
     assert ch[0].name == "DOE, John"
     assert ch[0].country == "Panama"
+    assert ch[0].aliases == ["DOE, Johnny"]
+    assert ch[0].linked_to == ["ACME LTD"]
     assert ch[0].entity_type == "individual"
     assert ch[1].country == "Venezuela"
     assert ch[2].entity_type == "entity" and ch[2].country == "Singapore"

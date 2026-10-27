@@ -11,6 +11,8 @@ Power BI model + a public web dashboard, refreshed every day by GitHub Actions.
 ![Dashboard preview](docs/preview.png)
 
 **Live dashboard:** `https://<your-user>.github.io/ofac-sanctions-tracker/` (GitHub Pages, `docs/` folder)
+**New designations page:** `.../inclusions.html`: every SDN addition grouped by OFAC release, with aliases,
+linked parties, the published entry text (last 120 days), filters and a one-click "Copy as table" for Excel/Outlook.
 
 ---
 
@@ -71,7 +73,8 @@ Outputs:
 - `data/ofac_tracker.sqlite`: analytical database
 - `data/powerbi/*.csv`: tables for Power BI
 - `docs/index.html` + `docs/data.json`: web dashboard
-- `dist/ofac_dashboard.html`: self-contained dashboard (single file, data embedded)
+- `docs/inclusions.html` + `docs/inclusions.json`: new designations page
+- `dist/ofac_dashboard.html`, `dist/ofac_new_designations.html`: self-contained pages (single file, data embedded)
 - `data/snapshot_changes.csv`: day-over-day diff log from the official SDN snapshots
 
 ## Power BI

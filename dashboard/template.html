@@ -38,6 +38,10 @@ h1{font:800 clamp(30px,5vw,46px)/1 var(--display);font-stretch:80%;letter-spacin
 .lede{margin:0;color:var(--on-navy-2);max-width:62ch}
 .stamp{font:400 12px/1.6 var(--mono);color:var(--on-navy-2);text-align:right}
 .stamp b{color:var(--on-navy);font-weight:500}
+.side{display:grid;gap:12px;justify-items:end}
+.incl-link{font:500 12px/1 var(--mono);color:var(--on-navy);text-decoration:none;border:1px solid var(--cobalt);background:var(--cobalt);padding:8px 12px;border-radius:999px}
+.incl-link:hover{filter:brightness(1.1)}
+@media (max-width:640px){.side{justify-items:start}.stamp{text-align:left}}
 .filters{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding-block:16px;border-bottom:1px solid var(--line)}
 .fgroup{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
 .flabel{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);margin-right:2px}
@@ -98,7 +102,7 @@ footer strong{color:var(--fg-2)}
       <h1>OFAC Sanctions Tracker</h1>
       <p class="lede">Every addition, removal and update to the Specially Designated Nationals list, parsed from OFAC's official release notices and refreshed daily.</p>
     </div>
-    <div class="stamp" id="stamp"></div>
+    <div class="side"><div class="stamp" id="stamp"></div><a class="incl-link" href="__INCL_URL__">New designations →</a></div>
   </div>
 </header>
 
