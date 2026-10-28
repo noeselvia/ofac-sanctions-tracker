@@ -24099,3 +24099,16 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 24098,688,2026-10-21,removed,SDN,individual,"RYBAKOV, Andrei Alekseevich",Belarus,BELARUS,Belarus,"RYBAKOU, Andrei|RYBAKOU, Andrei Aliakseevich",
 24099,688,2026-10-21,removed,SDN,individual,"RYBAKOU, Andrei Aliakseevich",Belarus,BELARUS,Belarus,"RYBAKOU, Andrei|RYBAKOV, Andrei Alekseevich",
 24100,688,2026-10-21,removed,SDN,individual,"RYBAKOU, Andrei",Belarus,BELARUS,Belarus,"RYBAKOU, Andrei Aliakseevich|RYBAKOV, Andrei Alekseevich",
+24101,689,2026-10-28,added,SDN,individual,"BOYKOV, Ilya Aleksandrovich",Russia,DPRK2,North Korea,,LIMITED LIABILITY COMPANY ALIS
+24102,689,2026-10-28,added,SDN,individual,"HAN, Yu Song",North Korea,DPRK3,North Korea,"HAN, Yu-so'ng",FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER
+24103,689,2026-10-28,added,SDN,individual,"HYON, Se Il",North Korea,DPRK3,North Korea,"HYO'N, Se-il",FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER
+24104,689,2026-10-28,added,SDN,individual,"KIM, Hyo Dong",North Korea,DPRK2,North Korea,"KIM, Hyo-tong",CHINYONG INFORMATION TECHNOLOGY COOPERATION COMPANY
+24105,689,2026-10-28,added,SDN,individual,"KIM, Ki Hyok",North Korea,DPRK2,North Korea,"KIM, Ki-hyo'k",CHINYONG INFORMATION TECHNOLOGY COOPERATION COMPANY
+24106,689,2026-10-28,added,SDN,individual,"KIM, Kyong Ju",North Korea,DPRK3,North Korea,"KIM, Kyo'ng-chu",FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER
+24107,689,2026-10-28,added,SDN,individual,"KIM, Sung Gwan",North Korea,DPRK3,North Korea,"KIM, Su'ng-kwan",FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER
+24108,689,2026-10-28,added,SDN,individual,"OBERTAS, Vitold Viktorovich",Russia,DPRK2,North Korea,,
+24109,689,2026-10-28,added,SDN,individual,"RI, Thae Chol",North Korea,DPRK3,North Korea,"RI, T'ae-ch'o'l",FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER
+24110,689,2026-10-28,added,SDN,individual,"SO, Hyong Jin",North Korea,DPRK3,North Korea,"SO', Hyo'n-chin",FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER
+24111,689,2026-10-28,added,SDN,entity,FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER,North Korea,DPRK3,North Korea,,
+24112,689,2026-10-28,added,SDN,entity,MINISTRY OF DEFENCE OF THE REPUBLIC OF RWANDA,Rwanda,DRCONGO,Africa (other),MINADEF OF THE REPUBLIC OF RWANDA|MOD OF THE REPUBLIC OF RWANDA|RWANDAN MINISTRY OF DEFENCE,
+24113,689,2026-10-28,added,SDN,entity,ZIGAMA CREDIT AND SAVINGS SOCIETY,Rwanda,DRCONGO,Africa (other),ZIGAMA CREDIT AND SAVINGS BANK|ZIGAMA CSS,
