@@ -73,6 +73,8 @@ def main(argv: list[str] | None = None) -> int:
     from .overview import build_all
     build_all()
     build.render_dashboards()
+    from .showcase import render as render_showcase
+    render_showcase()
     print(json.dumps(summary["coverage"]))
     return 0
 

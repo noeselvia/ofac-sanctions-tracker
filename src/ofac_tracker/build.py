@@ -232,4 +232,6 @@ if __name__ == "__main__":
     from .overview import build_all
     build_all()
     render_dashboards()
+    from .showcase import render as render_showcase
+    render_showcase()
     print(f"Built {len(s['cube'])} cube rows; coverage {s['coverage']}")
