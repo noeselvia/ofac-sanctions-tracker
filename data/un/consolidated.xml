@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.un.org/sc/resources/sc-sanctions.xsd" dateGenerated="2026-10-28T23:00:05.544Z">
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.un.org/sc/resources/sc-sanctions.xsd" dateGenerated="2026-10-29T23:00:03.345Z">
   <INDIVIDUALS>
     <INDIVIDUAL>
       <DATAID>6907993</DATAID>
@@ -36154,6 +36154,7 @@ regime</VALUE>
         <VALUE>2013-04-22</VALUE>
         <VALUE>2026-03-10</VALUE>
         <VALUE>2026-04-28</VALUE>
+        <VALUE>2026-10-29</VALUE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2010-07-27</VALUE>
@@ -36207,6 +36208,11 @@ regime</VALUE>
         <ISSUING_COUNTRY>Afghanistan</ISSUING_COUNTRY>
         <DATE_OF_ISSUE>2024-11-13</DATE_OF_ISSUE>
         <DATE_OF_EXPIRY>2029-11-13</DATE_OF_EXPIRY>
+      </INDIVIDUAL_DOCUMENT>
+      <INDIVIDUAL_DOCUMENT>
+        <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+        <NUMBER>P05629010</NUMBER>
+        <ISSUING_COUNTRY>Afghanistan</ISSUING_COUNTRY>
       </INDIVIDUAL_DOCUMENT>
       <SORT_KEY/>
       <SORT_KEY_LAST_MOD/>
@@ -37103,6 +37109,7 @@ regime</VALUE>
         <VALUE>2012-02-13</VALUE>
         <VALUE>2026-03-10</VALUE>
         <VALUE>2026-04-13</VALUE>
+        <VALUE>2026-10-29</VALUE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2010-06-01</VALUE>
@@ -37149,6 +37156,11 @@ regime</VALUE>
         <ISSUING_COUNTRY>Afghanistan</ISSUING_COUNTRY>
         <DATE_OF_ISSUE>2025-02-04</DATE_OF_ISSUE>
         <NOTE>expires 4 Feb. 2035</NOTE>
+      </INDIVIDUAL_DOCUMENT>
+      <INDIVIDUAL_DOCUMENT>
+        <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+        <NUMBER>P02444826</NUMBER>
+        <ISSUING_COUNTRY>Afghanistan</ISSUING_COUNTRY>
       </INDIVIDUAL_DOCUMENT>
       <SORT_KEY/>
       <SORT_KEY_LAST_MOD/>
@@ -37246,6 +37258,7 @@ regime</VALUE>
         <VALUE>2011-11-29</VALUE>
         <VALUE>2026-03-10</VALUE>
         <VALUE>2026-04-13</VALUE>
+        <VALUE>2026-10-29</VALUE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2010-07-21</VALUE>
@@ -37301,6 +37314,18 @@ regime</VALUE>
         <ISSUING_COUNTRY>Afghanistan</ISSUING_COUNTRY>
         <DATE_OF_ISSUE>2021-12-13</DATE_OF_ISSUE>
         <NOTE>expires on 13 Dec. 2026</NOTE>
+      </INDIVIDUAL_DOCUMENT>
+      <INDIVIDUAL_DOCUMENT>
+        <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+        <NUMBER>D0010741</NUMBER>
+        <ISSUING_COUNTRY>Afghanistan</ISSUING_COUNTRY>
+        <DATE_OF_ISSUE>2026-08-05</DATE_OF_ISSUE>
+        <DATE_OF_EXPIRY>2031-08-05</DATE_OF_EXPIRY>
+      </INDIVIDUAL_DOCUMENT>
+      <INDIVIDUAL_DOCUMENT>
+        <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+        <NUMBER>P02444824</NUMBER>
+        <ISSUING_COUNTRY>Afghanistan</ISSUING_COUNTRY>
       </INDIVIDUAL_DOCUMENT>
       <SORT_KEY/>
       <SORT_KEY_LAST_MOD/>
@@ -39644,6 +39669,7 @@ Taliban regime</VALUE>
         <VALUE>2026-03-10</VALUE>
         <VALUE>2026-04-28</VALUE>
         <VALUE>2026-07-30</VALUE>
+        <VALUE>2026-10-29</VALUE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2010-07-27</VALUE>
@@ -39700,6 +39726,11 @@ Taliban regime</VALUE>
         <DATE_OF_ISSUE>2026-03-29</DATE_OF_ISSUE>
         <DATE_OF_EXPIRY>2031-03-29</DATE_OF_EXPIRY>
         <NOTE>Name in Latin script: Abdulhaq Waseeq, name in original script: عبد الحق وثيق</NOTE>
+      </INDIVIDUAL_DOCUMENT>
+      <INDIVIDUAL_DOCUMENT>
+        <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+        <NUMBER>P00429350</NUMBER>
+        <ISSUING_COUNTRY>Afghanistan</ISSUING_COUNTRY>
       </INDIVIDUAL_DOCUMENT>
       <SORT_KEY/>
       <SORT_KEY_LAST_MOD/>
@@ -40222,6 +40253,7 @@ regime</VALUE>
         <VALUE>2016-09-07</VALUE>
         <VALUE>2026-03-10</VALUE>
         <VALUE>2026-04-28</VALUE>
+        <VALUE>2026-10-29</VALUE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2010-07-23</VALUE>
@@ -40266,6 +40298,11 @@ regime</VALUE>
         <CITY_OF_ISSUE>Kabul</CITY_OF_ISSUE>
         <COUNTRY_OF_ISSUE>Afghanistan</COUNTRY_OF_ISSUE>
         <NOTE>Name in Latin script: KHIRULLAH KHAIRKHWA, name in original script: خيرالله خيرخواه</NOTE>
+      </INDIVIDUAL_DOCUMENT>
+      <INDIVIDUAL_DOCUMENT>
+        <TYPE_OF_DOCUMENT>Passport</TYPE_OF_DOCUMENT>
+        <NUMBER>P04411676</NUMBER>
+        <ISSUING_COUNTRY>Afghanistan</ISSUING_COUNTRY>
       </INDIVIDUAL_DOCUMENT>
       <SORT_KEY/>
       <SORT_KEY_LAST_MOD/>

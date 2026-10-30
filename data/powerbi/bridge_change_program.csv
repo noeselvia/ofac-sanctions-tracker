@@ -214,7 +214,7 @@ change_id,program,program_family
 171,BURMA-EO14014,Burma
 172,FTO,Counter Terrorism
 172,SDGT,Counter Terrorism
-172,DRCONGO,Africa (other)
+172,DRCONGO,DR Congo
 173,SDGT,Counter Terrorism
 173,GLOMAG,Global Magnitsky
 174,HK-EO13936,China / Hong Kong
@@ -2507,16 +2507,16 @@ change_id,program,program_family
 2251,BELARUS,Belarus
 2252,UKRAINE-EO13661,Russia / Ukraine
 2252,RUSSIA-EO14024,Russia / Ukraine
-2253,DRCONGO,Africa (other)
-2254,DRCONGO,Africa (other)
-2255,DRCONGO,Africa (other)
-2256,DRCONGO,Africa (other)
-2257,DRCONGO,Africa (other)
-2258,DRCONGO,Africa (other)
-2259,DRCONGO,Africa (other)
-2260,DRCONGO,Africa (other)
-2261,DRCONGO,Africa (other)
-2262,DRCONGO,Africa (other)
+2253,DRCONGO,DR Congo
+2254,DRCONGO,DR Congo
+2255,DRCONGO,DR Congo
+2256,DRCONGO,DR Congo
+2257,DRCONGO,DR Congo
+2258,DRCONGO,DR Congo
+2259,DRCONGO,DR Congo
+2260,DRCONGO,DR Congo
+2261,DRCONGO,DR Congo
+2262,DRCONGO,DR Congo
 2263,ILLICIT-DRUGS-EO,Counter Narcotics
 2264,ILLICIT-DRUGS-EO,Counter Narcotics
 2265,ILLICIT-DRUGS-EO,Counter Narcotics
@@ -7069,22 +7069,22 @@ change_id,program,program_family
 6589,IRAQ2,Iraq
 6590,IRAQ2,Iraq
 6591,RUSSIA-EO14024,Russia / Ukraine
-6592,DRCONGO,Africa (other)
+6592,DRCONGO,DR Congo
 6593,RUSSIA-EO14024,Russia / Ukraine
 6594,RUSSIA-EO14024,Russia / Ukraine
 6595,RUSSIA-EO14024,Russia / Ukraine
-6596,DRCONGO,Africa (other)
+6596,DRCONGO,DR Congo
 6597,RUSSIA-EO14024,Russia / Ukraine
 6598,RUSSIA-EO14024,Russia / Ukraine
 6599,RUSSIA-EO14024,Russia / Ukraine
 6600,RUSSIA-EO14024,Russia / Ukraine
-6601,DRCONGO,Africa (other)
-6602,DRCONGO,Africa (other)
+6601,DRCONGO,DR Congo
+6602,DRCONGO,DR Congo
 6603,RUSSIA-EO14024,Russia / Ukraine
 6604,RUSSIA-EO14024,Russia / Ukraine
 6605,RUSSIA-EO14024,Russia / Ukraine
-6606,DRCONGO,Africa (other)
-6607,DRCONGO,Africa (other)
+6606,DRCONGO,DR Congo
+6607,DRCONGO,DR Congo
 6608,RUSSIA-EO14024,Russia / Ukraine
 6609,GLOMAG,Global Magnitsky
 6609,RUSSIA-EO14024,Russia / Ukraine
@@ -10249,12 +10249,12 @@ change_id,program,program_family
 9621,GLOMAG,Global Magnitsky
 9622,GLOMAG,Global Magnitsky
 9623,GLOMAG,Global Magnitsky
-9624,DRCONGO,Africa (other)
+9624,DRCONGO,DR Congo
 9625,SDGT,Counter Terrorism
-9626,DRCONGO,Africa (other)
+9626,DRCONGO,DR Congo
 9627,CAR,Africa (other)
 9628,SOUTH SUDAN,Sudan / South Sudan
-9629,DRCONGO,Africa (other)
+9629,DRCONGO,DR Congo
 9630,RUSSIA-EO14024,Russia / Ukraine
 9631,RUSSIA-EO14024,Russia / Ukraine
 9632,SDGT,Counter Terrorism
@@ -15073,15 +15073,15 @@ change_id,program,program_family
 14200,NPWMD,Non-Proliferation
 14201,NPWMD,Non-Proliferation
 14202,NPWMD,Non-Proliferation
-14203,DRCONGO,Africa (other)
+14203,DRCONGO,DR Congo
 14204,TCO,Transnational Crime
 14205,TCO,Transnational Crime
 14206,TCO,Transnational Crime
-14207,DRCONGO,Africa (other)
-14208,DRCONGO,Africa (other)
+14207,DRCONGO,DR Congo
+14208,DRCONGO,DR Congo
 14209,TCO,Transnational Crime
-14210,DRCONGO,Africa (other)
-14211,DRCONGO,Africa (other)
+14210,DRCONGO,DR Congo
+14211,DRCONGO,DR Congo
 14212,NPWMD,Non-Proliferation
 14213,NPWMD,Non-Proliferation
 14214,NPWMD,Non-Proliferation
@@ -18099,12 +18099,12 @@ change_id,program,program_family
 16654,CYBER3,Cyber
 16655,CYBER3,Cyber
 16656,ICC-EO14203,ICC
-16657,DRCONGO,Africa (other)
-16658,DRCONGO,Africa (other)
+16657,DRCONGO,DR Congo
+16658,DRCONGO,DR Congo
 16659,FTO,Counter Terrorism
 16659,SDGT,Counter Terrorism
-16660,DRCONGO,Africa (other)
-16661,DRCONGO,Africa (other)
+16660,DRCONGO,DR Congo
+16661,DRCONGO,DR Congo
 16662,SDNTK,Counter Narcotics
 16662,FTO,Counter Terrorism
 16662,SDGT,Counter Terrorism
@@ -19485,7 +19485,7 @@ change_id,program,program_family
 17775,IRGC,Iran
 17776,FTO,Counter Terrorism
 17776,SDGT,Counter Terrorism
-17776,DRCONGO,Africa (other)
+17776,DRCONGO,DR Congo
 17777,FTO,Counter Terrorism
 17777,SDGT,Counter Terrorism
 17778,SDGT,Counter Terrorism
@@ -22550,10 +22550,10 @@ change_id,program,program_family
 20329,IRAN-EO13902,Iran
 20330,FTO,Counter Terrorism
 20330,SDGT,Counter Terrorism
-20331,DRCONGO,Africa (other)
-20332,DRCONGO,Africa (other)
-20333,DRCONGO,Africa (other)
-20334,DRCONGO,Africa (other)
+20331,DRCONGO,DR Congo
+20332,DRCONGO,DR Congo
+20333,DRCONGO,DR Congo
+20334,DRCONGO,DR Congo
 20335,SDGT,Counter Terrorism
 20335,ILLICIT-DRUGS-EO14059,Counter Narcotics
 20336,SDGT,Counter Terrorism
@@ -24055,11 +24055,11 @@ change_id,program,program_family
 21630,RUSSIA-EO14024,Russia / Ukraine
 21631,RUSSIA-EO14024,Russia / Ukraine
 21632,RUSSIA-EO14024,Russia / Ukraine
-21633,DRCONGO,Africa (other)
-21634,DRCONGO,Africa (other)
-21635,DRCONGO,Africa (other)
-21636,DRCONGO,Africa (other)
-21637,DRCONGO,Africa (other)
+21633,DRCONGO,DR Congo
+21634,DRCONGO,DR Congo
+21635,DRCONGO,DR Congo
+21636,DRCONGO,DR Congo
+21637,DRCONGO,DR Congo
 21638,VENEZUELA-EO13850,Venezuela
 21639,VENEZUELA-EO13850,Venezuela
 21640,VENEZUELA-EO13850,Venezuela
@@ -24395,7 +24395,7 @@ change_id,program,program_family
 21954,IRAN-EO13902,Iran
 21955,SDGT,Counter Terrorism
 21956,IRAN-EO13902,Iran
-21957,DRCONGO,Africa (other)
+21957,DRCONGO,DR Congo
 21958,IRAN-EO13902,Iran
 21959,IRAN-EO13846,Iran
 21960,IRAN-EO13902,Iran
@@ -24848,8 +24848,8 @@ change_id,program,program_family
 22363,SDGT,Counter Terrorism
 22364,SDGT,Counter Terrorism
 22365,SDGT,Counter Terrorism
-22366,DRCONGO,Africa (other)
-22367,DRCONGO,Africa (other)
+22366,DRCONGO,DR Congo
+22367,DRCONGO,DR Congo
 22368,SDGT,Counter Terrorism
 22368,IRAN-EO13902,Iran
 22369,IRAN,Iran
@@ -24983,12 +24983,12 @@ change_id,program,program_family
 22489,RUSSIA-EO14024,Russia / Ukraine
 22490,RUSSIA-EO14024,Russia / Ukraine
 22491,RUSSIA-EO14024,Russia / Ukraine
-22492,DRCONGO,Africa (other)
-22493,DRCONGO,Africa (other)
-22494,DRCONGO,Africa (other)
-22495,DRCONGO,Africa (other)
-22496,DRCONGO,Africa (other)
-22497,DRCONGO,Africa (other)
+22492,DRCONGO,DR Congo
+22493,DRCONGO,DR Congo
+22494,DRCONGO,DR Congo
+22495,DRCONGO,DR Congo
+22496,DRCONGO,DR Congo
+22497,DRCONGO,DR Congo
 22498,SUDAN-EO14098,Sudan / South Sudan
 22499,SUDAN-EO14098,Sudan / South Sudan
 22500,SUDAN-EO14098,Sudan / South Sudan
@@ -26261,14 +26261,14 @@ change_id,program,program_family
 23636,ETHIOPIA-EO14046,Africa (other)
 23637,ETHIOPIA-EO14046,Africa (other)
 23638,ETHIOPIA-EO14046,Africa (other)
-23639,DRCONGO,Africa (other)
-23640,DRCONGO,Africa (other)
-23641,DRCONGO,Africa (other)
-23642,DRCONGO,Africa (other)
-23643,DRCONGO,Africa (other)
-23644,DRCONGO,Africa (other)
-23645,DRCONGO,Africa (other)
-23646,DRCONGO,Africa (other)
+23639,DRCONGO,DR Congo
+23640,DRCONGO,DR Congo
+23641,DRCONGO,DR Congo
+23642,DRCONGO,DR Congo
+23643,DRCONGO,DR Congo
+23644,DRCONGO,DR Congo
+23645,DRCONGO,DR Congo
+23646,DRCONGO,DR Congo
 23647,NPWMD,Non-Proliferation
 23648,SDGT,Counter Terrorism
 23648,ILLICIT-DRUGS-EO14059,Counter Narcotics
@@ -26807,5 +26807,5 @@ change_id,program,program_family
 24109,DPRK3,North Korea
 24110,DPRK3,North Korea
 24111,DPRK3,North Korea
-24112,DRCONGO,Africa (other)
-24113,DRCONGO,Africa (other)
+24112,DRCONGO,DR Congo
+24113,DRCONGO,DR Congo

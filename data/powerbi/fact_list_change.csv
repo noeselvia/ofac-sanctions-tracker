@@ -2251,16 +2251,16 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 2250,117,2022-03-15,added,SDN,entity,KURCHALOI DISTRICT OF THE CHECHEN REPUBLIC BRANCH OF THE MINISTRY OF INTERNAL AFFAIRS OF THE RUSSIAN FEDERATION,Russia,MAGNIT,Russia / Ukraine,KURCHALOI DISTRICT BRANCH OF THE MVD OF RUSSIA|KURCHALOI DISTRICT MVD BRANCH|KURCHALOI DISTRICT POLICE DEPARTMENT|KURCHALOI OMVD|KURCHALOI POLICE|KURCHALOI ROVD|KURCHALOY DIVISION OF THE RUSSIAN MINISTRY OF INTERNAL AFFAIRS|KURCHALOY POLICE DEPARTMENT|KURCHALOYEVSKY DISTRICT POLICE DEPARTMENT|KURCHALOYEVSKY POLICE DEPARTMENT|MINISTRY OF INTERNAL AFFAIRS IN KURCHALOYEVSKY DISTRICT,
 2251,117,2022-03-15,updated,SDN,individual,"LUKASHENKA, Alyaksandr Ryhorovich",Belarus,BELARUS,Belarus,"LUKASHENKA, Alyaksandr Hryhoryavich|LUKASHENKO, Aleksander Grigoriyevich|LUKASHENKO, Aleksandr Grigorevich|LUKASHENKO, Alexander Grigoryevich|LUKASHENKO, Alexandr Grigorievich",
 2252,117,2022-03-15,updated,SDN,individual,"ZOLOTOV, Viktor",Russia,UKRAINE-EO13661|RUSSIA-EO14024,Russia / Ukraine,"ZOLOTOV, Viktor Vasilyevich",
-2253,118,2022-03-17,added,SDN,individual,"GOETZ, Alain Francois Viviane",Belgium,DRCONGO,Africa (other),"GOETZ, Alain|GOZ, Alen",AFRICAN GOLD REFINERY LIMITED
-2254,118,2022-03-17,added,SDN,entity,AFRICAN GOLD REFINERY LIMITED,Uganda,DRCONGO,Africa (other),AFRICAN GOLD REFINERY UGANDA,"GOETZ, Alain Francois Viviane"
-2255,118,2022-03-17,added,SDN,entity,AGOR DMCC,United Arab Emirates,DRCONGO,Africa (other),AGOR LTD|AGOR PRECIOUS METALS,"GOETZ, Alain Francois Viviane"
-2256,118,2022-03-17,added,SDN,entity,AGR INTERNATIONAL LIMITED,Seychelles,DRCONGO,Africa (other),,"GOETZ, Alain Francois Viviane"
-2257,118,2022-03-17,added,SDN,entity,ALAXY,Belgium,DRCONGO,Africa (other),ALAXY BVBA|BERKENRODE BVBA,"GOETZ, Alain Francois Viviane"
-2258,118,2022-03-17,added,SDN,entity,CG - VASTGOED INVEST,Belgium,DRCONGO,Africa (other),,"GOETZ, Alain Francois Viviane"
-2259,118,2022-03-17,added,SDN,entity,GOETZ GOLD LLC,United Arab Emirates,DRCONGO,Africa (other),PGR GOLD LLC|PGR GOLD TRADING LLC,"GOETZ, Alain Francois Viviane"
-2260,118,2022-03-17,added,SDN,entity,OROFINO NV,Belgium,DRCONGO,Africa (other),OROFINO,"GOETZ, Alain Francois Viviane"
-2261,118,2022-03-17,added,SDN,entity,PREMIER GOLD REFINERY LLC,United Arab Emirates,DRCONGO,Africa (other),,"GOETZ, Alain Francois Viviane"
-2262,118,2022-03-17,added,SDN,entity,WWG DIAMONDS,Belgium,DRCONGO,Africa (other),,"GOETZ, Alain Francois Viviane"
+2253,118,2022-03-17,added,SDN,individual,"GOETZ, Alain Francois Viviane",Belgium,DRCONGO,DR Congo,"GOETZ, Alain|GOZ, Alen",AFRICAN GOLD REFINERY LIMITED
+2254,118,2022-03-17,added,SDN,entity,AFRICAN GOLD REFINERY LIMITED,Uganda,DRCONGO,DR Congo,AFRICAN GOLD REFINERY UGANDA,"GOETZ, Alain Francois Viviane"
+2255,118,2022-03-17,added,SDN,entity,AGOR DMCC,United Arab Emirates,DRCONGO,DR Congo,AGOR LTD|AGOR PRECIOUS METALS,"GOETZ, Alain Francois Viviane"
+2256,118,2022-03-17,added,SDN,entity,AGR INTERNATIONAL LIMITED,Seychelles,DRCONGO,DR Congo,,"GOETZ, Alain Francois Viviane"
+2257,118,2022-03-17,added,SDN,entity,ALAXY,Belgium,DRCONGO,DR Congo,ALAXY BVBA|BERKENRODE BVBA,"GOETZ, Alain Francois Viviane"
+2258,118,2022-03-17,added,SDN,entity,CG - VASTGOED INVEST,Belgium,DRCONGO,DR Congo,,"GOETZ, Alain Francois Viviane"
+2259,118,2022-03-17,added,SDN,entity,GOETZ GOLD LLC,United Arab Emirates,DRCONGO,DR Congo,PGR GOLD LLC|PGR GOLD TRADING LLC,"GOETZ, Alain Francois Viviane"
+2260,118,2022-03-17,added,SDN,entity,OROFINO NV,Belgium,DRCONGO,DR Congo,OROFINO,"GOETZ, Alain Francois Viviane"
+2261,118,2022-03-17,added,SDN,entity,PREMIER GOLD REFINERY LLC,United Arab Emirates,DRCONGO,DR Congo,,"GOETZ, Alain Francois Viviane"
+2262,118,2022-03-17,added,SDN,entity,WWG DIAMONDS,Belgium,DRCONGO,DR Congo,,"GOETZ, Alain Francois Viviane"
 2263,119,2022-03-18,added,SDN,individual,"MOLINA LOPEZ, Eugenio Dario",Guatemala,ILLICIT-DRUGS-EO,Counter Narcotics,,
 2264,119,2022-03-18,added,SDN,individual,"MOLINA MONTEJO, Werner Dario",Guatemala,ILLICIT-DRUGS-EO,Counter Narcotics,,
 2265,119,2022-03-18,added,SDN,individual,"MONTEJO SAENZ, Axel Bladimir",Guatemala,ILLICIT-DRUGS-EO,Counter Narcotics,MOSH,
@@ -6590,22 +6590,22 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 6589,276,2023-08-23,removed,SDN,individual,"TABRAH, Asil Sami Mohamad Madhi",Unknown,IRAQ2,Iraq,"TABRA, Asil",
 6590,276,2023-08-23,removed,SDN,individual,"TABRA, Asil",Unknown,IRAQ2,Iraq,"TABRAH, Asil Sami Mohamad Madhi",
 6591,277,2023-08-24,added,SDN,individual,"AGEEVA, Irina Anatolyevna",Russia,RUSSIA-EO14024,Russia / Ukraine,"AGEYEVA, Irina Anatolyevna",
-6592,277,2023-08-24,added,SDN,individual,"BYAMUNGU, Bernard",Democratic Republic of the Congo,DRCONGO,Africa (other),"MHESHE, Bernard Byamungu",M23
+6592,277,2023-08-24,added,SDN,individual,"BYAMUNGU, Bernard",Democratic Republic of the Congo,DRCONGO,DR Congo,"MHESHE, Bernard Byamungu",M23
 6593,277,2023-08-24,added,SDN,individual,"CHALAEV, Zamid Alievich",Russia,RUSSIA-EO14024,Russia / Ukraine,"CHALAYEV, Zamid Alievich",
 6594,277,2023-08-24,added,SDN,individual,"CHERKASOVA, Irina Aleksandrovna",Russia,RUSSIA-EO14024,Russia / Ukraine,"CHERKASOVA, Iryna Oleksandrivna",
 6595,277,2023-08-24,added,SDN,individual,"FEDORENKO, Konstantin Albertovich",Russia,RUSSIA-EO14024,Russia / Ukraine,,FEDERAL STATE BUDGETARY EDUCATIONAL INSTITUTE INTERNATIONAL CHILDREN CENTER ARTEK
-6596,277,2023-08-24,added,SDN,individual,"HAKIZIMANA, Apollinaire",Rwanda,DRCONGO,Africa (other),"LEPIC, Amikwe|POETE",FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA
+6596,277,2023-08-24,added,SDN,individual,"HAKIZIMANA, Apollinaire",Rwanda,DRCONGO,DR Congo,"LEPIC, Amikwe|POETE",FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA
 6597,277,2023-08-24,added,SDN,individual,"KADYROVA, Aymani Nesievna",Russia,RUSSIA-EO14024,Russia / Ukraine,"KADYROVA, Aimana",AKHMAT KADYROV FOUNDATION
 6598,277,2023-08-24,added,SDN,individual,"KHUCHIEV, Muslim Magomedovich",Russia,RUSSIA-EO14024,Russia / Ukraine,,
 6599,277,2023-08-24,added,SDN,individual,"KOVALENKO, Vladimir Vladislavovich",Ukraine,RUSSIA-EO14024,Russia / Ukraine,,ALL RUSSIAN CHILDREN AND YOUTH MILITARY PATRIOTIC PUBLIC MOVEMENT YOUTH ARMY
 6600,277,2023-08-24,added,SDN,individual,"NECHAEV, Vladimir Dmitrievich",Russia,RUSSIA-EO14024,Russia / Ukraine,,
-6601,277,2023-08-24,added,SDN,individual,"NYAMVUMBA, Andrew",Rwanda,DRCONGO,Africa (other),"NYAMVUMBA, Andre",
-6602,277,2023-08-24,added,SDN,individual,"PROTOGENE, Ruvugayimikore",Rwanda,DRCONGO,Africa (other),"MIDENDE, Zorro|RUHINDA, Gaby",FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA
+6601,277,2023-08-24,added,SDN,individual,"NYAMVUMBA, Andrew",Rwanda,DRCONGO,DR Congo,"NYAMVUMBA, Andre",
+6602,277,2023-08-24,added,SDN,individual,"PROTOGENE, Ruvugayimikore",Rwanda,DRCONGO,DR Congo,"MIDENDE, Zorro|RUHINDA, Gaby",FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA
 6603,277,2023-08-24,added,SDN,individual,"PYATYKH, Galina Anatolevna",Russia,RUSSIA-EO14024,Russia / Ukraine,,
 6604,277,2023-08-24,added,SDN,individual,"SHAPUROVA, Olena Oleksandrivna",Ukraine,RUSSIA-EO14024,Russia / Ukraine,"SHAPUROVA, Alyona Aleksandrovna|SHAPUROVA, Elena Aleksandrovna",
 6605,277,2023-08-24,added,SDN,individual,"SOLTAEV, Mansur Mussaevich",Russia,RUSSIA-EO14024,Russia / Ukraine,"SOLTAEV, Mansur Mussayevitch|SOLTAJEV, Mansur Mussajevic|SOLTAYEV, Mansur Mussayevich",
-6606,277,2023-08-24,added,SDN,individual,"TOKOLONGA, Salomon",Democratic Republic of the Congo,DRCONGO,Africa (other),"BENDET, Salomon Tokolonga",
-6607,277,2023-08-24,added,SDN,individual,"UWIMBABAZI, Sebastien",Rwanda,DRCONGO,Africa (other),"KIMENYI, Gilbert|KIMENYI, Nyembo|MANZI|NYEMBO",FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA
+6606,277,2023-08-24,added,SDN,individual,"TOKOLONGA, Salomon",Democratic Republic of the Congo,DRCONGO,DR Congo,"BENDET, Salomon Tokolonga",
+6607,277,2023-08-24,added,SDN,individual,"UWIMBABAZI, Sebastien",Rwanda,DRCONGO,DR Congo,"KIMENYI, Gilbert|KIMENYI, Nyembo|MANZI|NYEMBO",FORCES DEMOCRATIQUES DE LIBERATION DU RWANDA
 6608,277,2023-08-24,added,SDN,entity,FEDERAL STATE BUDGETARY EDUCATIONAL INSTITUTE INTERNATIONAL CHILDREN CENTER ARTEK,Ukraine,RUSSIA-EO14024,Russia / Ukraine,THE FEDERAL STATE BUDGET EDUCATIONAL INSTITUTION ARTEK INTERNATIONAL CHILDRENS CENTER,
 6609,277,2023-08-24,updated,SDN,entity,AKHMAT KADYROV FOUNDATION,Russia,GLOMAG|RUSSIA-EO14024,Global Magnitsky,AKHMAD KADYROV FUND|HERO OF RUSSIA AKHMAT KADYROV REGIONAL PUBLIC FUND|REGIONAL PUBLIC FUND NAMED AFTER HERO OF RUSSIA AKHMAT HAJI KADYROV|REGIONALNY OBSHCHESTVENNY FOND IMENI GEROYA ROSSII AKHMATA KADYROVA,
 6610,278,2023-08-31,added,SDN,individual,"JON, Jin Yong",North Korea,DPRK2,North Korea,"CHO'N, Chin-yo'ng|ZYON, Zin Yon",
@@ -9622,12 +9622,12 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 9621,381,2024-06-10,added,SDN,individual,"JOSEPH, Wilson",Haiti,GLOMAG,Global Magnitsky,"BEENIE|BIG CHIEF|LAMO SANJOU|LANMO SAN JOU|LANMOU100JOU|WILSON, Joseph",
 9622,381,2024-06-10,added,SDN,individual,"KOIJEE, Jefferson",Liberia,GLOMAG,Global Magnitsky,"KOIJEE, Jefferson Tamba",
 9623,381,2024-06-10,added,SDN,individual,"MAHMOOD, Fariduddin",Afghanistan,GLOMAG,Global Magnitsky,"MAHMOOD, Maulvi Fariduddin|MAHMOUD, Sheikh Farid-ud-Den|MAHMUD, Mawlawi Fariduddin",
-9624,381,2024-06-10,added,SDN,individual,"NGOMA, Willy",Rwanda,DRCONGO,Africa (other),"Pap|RUTIKANGA, Ngarurira Ingoma",M23
+9624,381,2024-06-10,added,SDN,individual,"NGOMA, Willy",Rwanda,DRCONGO,DR Congo,"Pap|RUTIKANGA, Ngarurira Ingoma",M23
 9625,381,2024-06-10,added,SDN,individual,"NKALUBO, Mohamed Ali",Uganda,SDGT,Counter Terrorism,"NKALUBO, Meddie|LEE, Meddie",ISLAMIC STATE OF IRAQ AND SYRIA - DEMOCRATIC REPUBLIC OF THE CONGO
-9626,381,2024-06-10,added,SDN,individual,"RUKUNDA, Michel",Democratic Republic of the Congo,DRCONGO,Africa (other),Makanika,
+9626,381,2024-06-10,added,SDN,individual,"RUKUNDA, Michel",Democratic Republic of the Congo,DRCONGO,DR Congo,Makanika,
 9627,381,2024-06-10,added,SDN,individual,"SALLEH ADOUM KETTE, Mahamat",Central African Republic,CAR,Africa (other),"SALEH, Mahamat|SALLE, Mahamat|SALLEH, Mahamat|SALLEH, Mama|SALLET, Mahamar",
 9628,381,2024-06-10,added,SDN,individual,"WAJANG, Joseph Mantiel",South Sudan,SOUTH SUDAN,Sudan / South Sudan,"WEJANG, Nguen Monytuil|WEJJANG, Joseph Monytuil|WEJANG, Joseph Manytuil",
-9629,381,2024-06-10,added,SDN,individual,"YAKUTUMBA, William Amuri",Democratic Republic of the Congo,DRCONGO,Africa (other),,
+9629,381,2024-06-10,added,SDN,individual,"YAKUTUMBA, William Amuri",Democratic Republic of the Congo,DRCONGO,DR Congo,,
 9630,382,2024-06-10,updated,SDN,entity,BOIS ROUGE SARLU,Central African Republic,RUSSIA-EO14024,Russia / Ukraine,WOOD INTERNATIONAL GROUP SARLU,PRIVATE MILITARY COMPANY 'WAGNER'
 9631,382,2024-06-10,updated,SDN,entity,LIMITED LIABILITY COMPANY BROKER EXPERT,Russia,RUSSIA-EO14024,Russia / Ukraine,BROKER EKSPERT LLC|LLC BROKER EXPERT,BOIS ROUGE SARLU
 9632,383,2024-06-10,added,SDN,individual,"AL-JAMAL, 'Abdallah Najib Ahmad",Yemen,SDGT,Counter Terrorism,"AL-JAMAL, 'Abdallah|SALIH, Qasim Nasir Muhammad","AL-JAMAL, Sa'id Ahmad Muhammad"
@@ -14201,15 +14201,15 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 14200,404,2024-07-24,added,SDN,entity,QIDONG HENGCHENG ELECTRONICS FACTORY,China,NPWMD,Non-Proliferation,,"SHI, Anhui"
 14201,404,2024-07-24,added,SDN,entity,SHENZHEN CITY MEAN WELL ELECTRONICS CO.,China,NPWMD,Non-Proliferation,"SHENZHEN MINGWEI ELECTRIC APPLIANCE CO., LTD.","SHI, Anhui"
 14202,404,2024-07-24,added,SDN,entity,YIDATONG TIANJIN METAL MATERIALS CO.,China,NPWMD,Non-Proliferation,,"HAN, Dejian"
-14203,405,2024-07-25,added,SDN,individual,"BISIMWA, Bertrand",Democratic Republic of the Congo,DRCONGO,Africa (other),,
+14203,405,2024-07-25,added,SDN,individual,"BISIMWA, Bertrand",Democratic Republic of the Congo,DRCONGO,DR Congo,,
 14204,405,2024-07-25,added,SDN,individual,"HERNANDEZ VANEGAS, Karen Stefany",Guatemala,TCO,Transnational Crime,,LOPEZ HUMAN SMUGGLING ORGANIZATION
 14205,405,2024-07-25,added,SDN,individual,"LOPEZ AMBROSIO, Whiskey Hans",Guatemala,TCO,Transnational Crime,,LOPEZ HUMAN SMUGGLING ORGANIZATION
 14206,405,2024-07-25,added,SDN,individual,"LOPEZ ESCOBAR, Ronaldo Galindo",Guatemala,TCO,Transnational Crime,Tio Roni,LOPEZ HUMAN SMUGGLING ORGANIZATION
-14207,405,2024-07-25,added,SDN,individual,"SEMATAMA, Charles",Democratic Republic of the Congo,DRCONGO,Africa (other),Sebanyana,
-14208,405,2024-07-25,added,SDN,entity,CONGO RIVER ALLIANCE,Democratic Republic of the Congo,DRCONGO,Africa (other),ALLIANCE FLEUVE CONGO|AFC,
+14207,405,2024-07-25,added,SDN,individual,"SEMATAMA, Charles",Democratic Republic of the Congo,DRCONGO,DR Congo,Sebanyana,
+14208,405,2024-07-25,added,SDN,entity,CONGO RIVER ALLIANCE,Democratic Republic of the Congo,DRCONGO,DR Congo,ALLIANCE FLEUVE CONGO|AFC,
 14209,405,2024-07-25,added,SDN,entity,LOPEZ HUMAN SMUGGLING ORGANIZATION,Mexico,TCO,Transnational Crime,,
-14210,405,2024-07-25,added,SDN,entity,TWIRWANEHO,Democratic Republic of the Congo,DRCONGO,Africa (other),,
-14211,405,2024-07-25,updated,SDN,individual,"NANGAA, Corneille Yobeluo",Democratic Republic of the Congo,DRCONGO,Africa (other),"YOBELUO, Corneille Nangaa",
+14210,405,2024-07-25,added,SDN,entity,TWIRWANEHO,Democratic Republic of the Congo,DRCONGO,DR Congo,,
+14211,405,2024-07-25,updated,SDN,individual,"NANGAA, Corneille Yobeluo",Democratic Republic of the Congo,DRCONGO,DR Congo,"YOBELUO, Corneille Nangaa",
 14212,406,2024-07-30,added,SDN,individual,"ABDOLLAHI, Mohammad",Iran,NPWMD,Non-Proliferation,"RICHTER, Aurik",ELECTRO OPTIC SAIRAN INDUSTRIES CO.
 14213,406,2024-07-30,added,SDN,individual,"HASHEMI, Sayyed Ali Seraj",Iran,NPWMD,Non-Proliferation,"HASHEMI, Ali|SERAJHASHEMI, Seyed Ali","BEIJING SHINY NIGHTS TECHNOLOGY DEVELOPMENT CO., LTD"
 14214,406,2024-07-30,added,SDN,individual,"JAVAR, Saeed Hamidi",Iran,NPWMD,Non-Proliferation,"JOVAR, Said Hamidi","BEIJING SHINY NIGHTS TECHNOLOGY DEVELOPMENT CO., LTD"
@@ -16655,11 +16655,11 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 16654,468,2025-02-11,added,SDN,individual,"MISHIN, Alexander Igorevich",Russia,CYBER3,Cyber,"MISHIN, Aleksandr Igorvich|ALEX560560|JAMES1789|KLICHKO, Ivan P|PIPPIN, James|SASHA-BRN|TRIPLEX560",ZSERVERS
 16655,468,2025-02-11,added,SDN,entity,ZSERVERS,Russia,CYBER3,Cyber,,
 16656,469,2025-02-13,added,SDN,individual,"KHAN, Karim Asad Ahmad",United Kingdom,ICC-EO14203,ICC,,
-16657,470,2025-02-20,added,SDN,individual,"KABAREBE, James",Rwanda,DRCONGO,Africa (other),,
-16658,470,2025-02-20,added,SDN,individual,"KINGSTON, Lawrence Kanyuka",Democratic Republic of the Congo,DRCONGO,Africa (other),"KANYUKA, Lawrence Kingston",M23
+16657,470,2025-02-20,added,SDN,individual,"KABAREBE, James",Rwanda,DRCONGO,DR Congo,,
+16658,470,2025-02-20,added,SDN,individual,"KINGSTON, Lawrence Kanyuka",Democratic Republic of the Congo,DRCONGO,DR Congo,"KANYUKA, Lawrence Kingston",M23
 16659,470,2025-02-20,added,SDN,entity,CARTELES UNIDOS,Mexico,FTO|SDGT,Counter Terrorism,CARTEL DE TEPALCATEPEC|CARTEL DEL ABUELO|TEPALCATEPEC CARTEL|CARTEL DE LOS REYES|THE GRANDFATHER CARTEL|UNITED CARTELS,
-16660,470,2025-02-20,added,SDN,entity,KINGSTON FRESH LTD,United Kingdom,DRCONGO,Africa (other),,"KINGSTON, Lawrence Kanyuka"
-16661,470,2025-02-20,added,SDN,entity,KINGSTON HOLDING,France,DRCONGO,Africa (other),,"KINGSTON, Lawrence Kanyuka"
+16660,470,2025-02-20,added,SDN,entity,KINGSTON FRESH LTD,United Kingdom,DRCONGO,DR Congo,,"KINGSTON, Lawrence Kanyuka"
+16661,470,2025-02-20,added,SDN,entity,KINGSTON HOLDING,France,DRCONGO,DR Congo,,"KINGSTON, Lawrence Kanyuka"
 16662,470,2025-02-20,updated,SDN,entity,CARTEL DE JALISCO NUEVA GENERACION,Mexico,SDNTK|FTO|SDGT|ILLICIT-DRUGS-EO14059,Counter Narcotics,CJNG|JALISCO NEW GENERATION CARTEL|NEW GENERATION CARTEL OF JALISCO,
 16663,470,2025-02-20,updated,SDN,entity,GULF CARTEL,Mexico,SDNTK|FTO|SDGT|ILLICIT-DRUGS-EO14059,Counter Narcotics,CARTEL DEL GOLFO|OSIEL CARDENAS-GUILLEN ORGANIZATION|CDG,
 16664,470,2025-02-20,updated,SDN,entity,LA NUEVA FAMILIA MICHOACANA,Mexico,FTO|SDGT|ILLICIT-DRUGS-EO14059,Counter Terrorism,LNFM,
@@ -20329,10 +20329,10 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 20328,527,2025-08-07,added,SDN,entity,RUNC EXCHANGE SYSTEM COMPANY,Iran,IRAN-EO13902,Iran,RUNC INTERNATIONAL BANKING SOLUTIONS|SHERKAT-E SAMANEH PAYA PAY-E RUNC,
 20329,527,2025-08-07,added,SDN,entity,SHERKAT-E BARID FANAVAR ARIAN,Iran,IRAN-EO13902,Iran,BARAN TELECOM COMPANY|BARID FANAVAR ARYAN,PASARGAD ARIAN INFORMATION AND COMMUNICATION TECHNOLOGY COMPANY
 20330,528,2025-08-11,updated,SDN,entity,BALOCHISTAN LIBERATION ARMY,Pakistan,FTO|SDGT,Counter Terrorism,BALOCH LIBERATION ARMY|MAJEED BRIGADE|ZEPHYR INTELLIGENCE RESEARCH AND ANALYSIS BUREAU|BLA|FATEH SQUAD,
-20331,529,2025-08-12,added,SDN,entity,COALITION OF CONGOLESE PATRIOTIC RESISTANCE-FORCE DE FRAPPE,Democratic Republic of the Congo,DRCONGO,Africa (other),COALITION DES PATRIOTES RESISTANTS CONGOLAIS-FORCE DE FRAPPE|PARECO|PARECO-FF,
-20332,529,2025-08-12,added,SDN,entity,COOPERATIVE DES ARTISANAUX MINIERS DU CONGO,Democratic Republic of the Congo,DRCONGO,Africa (other),CDMC|CDMC ENTITE SARL|CDMC SARL,
-20333,529,2025-08-12,added,SDN,entity,EAST RISE CORPORATION LIMITED,China,DRCONGO,Africa (other),,
-20334,529,2025-08-12,added,SDN,entity,STAR DRAGON CORPORATION LIMITED,China,DRCONGO,Africa (other),,
+20331,529,2025-08-12,added,SDN,entity,COALITION OF CONGOLESE PATRIOTIC RESISTANCE-FORCE DE FRAPPE,Democratic Republic of the Congo,DRCONGO,DR Congo,COALITION DES PATRIOTES RESISTANTS CONGOLAIS-FORCE DE FRAPPE|PARECO|PARECO-FF,
+20332,529,2025-08-12,added,SDN,entity,COOPERATIVE DES ARTISANAUX MINIERS DU CONGO,Democratic Republic of the Congo,DRCONGO,DR Congo,CDMC|CDMC ENTITE SARL|CDMC SARL,
+20333,529,2025-08-12,added,SDN,entity,EAST RISE CORPORATION LIMITED,China,DRCONGO,DR Congo,,
+20334,529,2025-08-12,added,SDN,entity,STAR DRAGON CORPORATION LIMITED,China,DRCONGO,DR Congo,,
 20335,530,2025-08-13,added,SDN,individual,"IBARRA DIAZ JR., Michael",Mexico,SDGT|ILLICIT-DRUGS-EO14059,Counter Terrorism,,CARTEL DE JALISCO NUEVA GENERACION
 20336,530,2025-08-13,added,SDN,entity,AKALI REALTORS,Mexico,SDGT|ILLICIT-DRUGS-EO14059,Counter Terrorism,,"IBARRA DIAZ JR., Michael"
 20337,530,2025-08-13,added,SDN,entity,CENTRO MEDIADOR DE LA COSTA,Mexico,SDGT|ILLICIT-DRUGS-EO14059,Counter Terrorism,,"IBARRA DIAZ JR., Michael"
@@ -21631,11 +21631,11 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 21630,596,2026-02-27,removed,SDN,individual,"BAGAYOKO, Adama",Mali,RUSSIA-EO14024,Russia / Ukraine,,PRIVATE MILITARY COMPANY 'WAGNER'
 21631,596,2026-02-27,removed,SDN,individual,"DIARRA, Alou Boi",Mali,RUSSIA-EO14024,Russia / Ukraine,,PRIVATE MILITARY COMPANY 'WAGNER'
 21632,596,2026-02-27,removed,SDN,individual,"CAMARA, Sadio",Mali,RUSSIA-EO14024,Russia / Ukraine,,PRIVATE MILITARY COMPANY 'WAGNER'
-21633,597,2026-03-02,added,SDN,individual,"GASHUGI, Stanislas",Rwanda,DRCONGO,Africa (other),,
-21634,597,2026-03-02,added,SDN,individual,"KARUSISI, Ruki",Rwanda,DRCONGO,Africa (other),,
-21635,597,2026-03-02,added,SDN,individual,"MUGANGA, Mubarakh",Rwanda,DRCONGO,Africa (other),MK MUBARKH,
-21636,597,2026-03-02,added,SDN,individual,"NYAKARUNDI, Vincent",Rwanda,DRCONGO,Africa (other),,
-21637,597,2026-03-02,added,SDN,entity,RWANDA DEFENCE FORCE,Rwanda,DRCONGO,Africa (other),RDF,
+21633,597,2026-03-02,added,SDN,individual,"GASHUGI, Stanislas",Rwanda,DRCONGO,DR Congo,,
+21634,597,2026-03-02,added,SDN,individual,"KARUSISI, Ruki",Rwanda,DRCONGO,DR Congo,,
+21635,597,2026-03-02,added,SDN,individual,"MUGANGA, Mubarakh",Rwanda,DRCONGO,DR Congo,MK MUBARKH,
+21636,597,2026-03-02,added,SDN,individual,"NYAKARUNDI, Vincent",Rwanda,DRCONGO,DR Congo,,
+21637,597,2026-03-02,added,SDN,entity,RWANDA DEFENCE FORCE,Rwanda,DRCONGO,DR Congo,RDF,
 21638,598,2026-03-05,removed,SDN,entity,ARCTIC VOYAGER INCORPORATED,Marshall Islands,VENEZUELA-EO13850,Venezuela,ARCTIC VOYAGER INC,
 21639,598,2026-03-05,removed,SDN,entity,ARCTIC VOYAGER INC,Marshall Islands,VENEZUELA-EO13850,Venezuela,ARCTIC VOYAGER INCORPORATED,
 21640,598,2026-03-05,removed,SDN,vessel,KIARA M,Panama,VENEZUELA-EO13850,Venezuela,,ARCTIC VOYAGER INCORPORATED
@@ -21955,7 +21955,7 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 21954,618,2026-04-28,added,SDN,entity,SHUQUN LTD,United Kingdom,IRAN-EO13902,Iran,,
 21955,618,2026-04-28,added,SDN,entity,TAI LUNG TRADING LIMITED,China,SDGT,Counter Terrorism,,SEYYED MOHAMMAD MOSANNA'I NAJIBI AND PARTNERS COMPANY
 21956,618,2026-04-28,added,SDN,entity,TEJARAT SARIR AFROOZ KISH COMPANY,Iran,IRAN-EO13902,Iran,,
-21957,619,2026-04-30,added,SDN,individual,"KABILA, Joseph Kabange",Democratic Republic of the Congo,DRCONGO,Africa (other),,M23|CONGO RIVER ALLIANCE
+21957,619,2026-04-30,added,SDN,individual,"KABILA, Joseph Kabange",Democratic Republic of the Congo,DRCONGO,DR Congo,,M23|CONGO RIVER ALLIANCE
 21958,620,2026-05-01,added,SDN,individual,"GHASEMI RAD, Nasser",Iran,IRAN-EO13902,Iran,,
 21959,620,2026-05-01,added,SDN,individual,"LI, Xinchun",China,IRAN-EO13846,Iran,,"QINGDAO HAIYE OIL TERMINAL CO., LTD."
 21960,620,2026-05-01,added,SDN,individual,"PIROUZAN, Pedram",Iran,IRAN-EO13902,Iran,,
@@ -22364,8 +22364,8 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 22363,635,2026-06-02,added,SDN,individual,"AGHAMIR MOHAMMAD ALI, Seyed Mohammad",Iran,SDGT,Counter Terrorism,"AGHAMIR, Mohammad|KHARRAZI, Mohammad",NOBITEX
 22364,635,2026-06-02,added,SDN,individual,"AGHAMIR MOHAMMAD ALI, Seyed Mohammad Ali",Iran,SDGT,Counter Terrorism,"AGHAMIR, Ali|AHMAD HOSSEIN, Ali|KHARRAZI, Ali",NOBITEX
 22365,635,2026-06-02,added,SDN,individual,"KHOEE, Seyed Ali",Iran,SDGT,Counter Terrorism,"KHOUEI, Ali",NOBITEX
-22366,635,2026-06-02,added,SDN,individual,"KUBWAYO, Gustave",Rwanda,DRCONGO,Africa (other),SIRKOFF|SIRKOOF,
-22367,635,2026-06-02,added,SDN,individual,"NZENZE, John Imani",Democratic Republic of the Congo,DRCONGO,Africa (other),"IDI, Imani Nzenze",
+22366,635,2026-06-02,added,SDN,individual,"KUBWAYO, Gustave",Rwanda,DRCONGO,DR Congo,SIRKOFF|SIRKOOF,
+22367,635,2026-06-02,added,SDN,individual,"NZENZE, John Imani",Democratic Republic of the Congo,DRCONGO,DR Congo,"IDI, Imani Nzenze",
 22368,635,2026-06-02,added,SDN,individual,"RAD, Amir Hossein",Iran,SDGT|IRAN-EO13902,Counter Terrorism,"RAD, Amir|RAD, Amirhossein",
 22369,635,2026-06-02,added,SDN,entity,BITPIN,Iran,IRAN|IRAN-EO13902,Iran,SANA AYMAN MUBADALA,
 22370,635,2026-06-02,added,SDN,entity,NOBITEX,Iran,IRAN|SDGT|IRAN-EO13902,Iran,RAHKAR FANAVARI NOOYAN,
@@ -22490,12 +22490,12 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 22489,642,2026-06-24,removed,SDN,entity,IDA ELEVATOR INDUSTRY AND TRADE LIMITED COMPANY,Turkey,RUSSIA-EO14024,Russia / Ukraine,IDA ASANSOR SAN VE TIC LTD|IDA ASANSOR SANAYII VE TICARET LIMITED SIRKETI,
 22490,642,2026-06-24,removed,SDN,entity,IDA ASANSOR SAN VE TIC LTD,Turkey,RUSSIA-EO14024,Russia / Ukraine,IDA ASANSOR SANAYII VE TICARET LIMITED SIRKETI|IDA ELEVATOR INDUSTRY AND TRADE LIMITED COMPANY,
 22491,642,2026-06-24,removed,SDN,entity,DEIN DANISMANLIK PAZARLAMA VE TICARET ANONIM SIRKETI,Turkey,RUSSIA-EO14024,Russia / Ukraine,,
-22492,643,2026-06-25,added,SDN,individual,"KALIMA KAREKEZI, Jean Malic",Rwanda,DRCONGO,Africa (other),,GASABO GOLD REFINERY LTD
-22493,643,2026-06-25,added,SDN,individual,"KAYOBOTSI, Bosco",Rwanda,DRCONGO,Africa (other),,GASABO GOLD REFINERY LTD
-22494,643,2026-06-25,added,SDN,entity,BUGAMBIRA MINES LTD,Rwanda,DRCONGO,Africa (other),MULTISERVE CONSULTS LTD,"KALIMA KAREKEZI, Jean Malic"
-22495,643,2026-06-25,added,SDN,entity,GASABO GOLD REFINERY LTD,Rwanda,DRCONGO,Africa (other),,M23
-22496,643,2026-06-25,added,SDN,entity,RWINKWAVU MINING CORPORATION LTD,Rwanda,DRCONGO,Africa (other),,"KALIMA KAREKEZI, Jean Malic"
-22497,643,2026-06-25,added,SDN,entity,WOLFRAM MINING AND PROCESSING LTD,Rwanda,DRCONGO,Africa (other),,"KALIMA KAREKEZI, Jean Malic"
+22492,643,2026-06-25,added,SDN,individual,"KALIMA KAREKEZI, Jean Malic",Rwanda,DRCONGO,DR Congo,,GASABO GOLD REFINERY LTD
+22493,643,2026-06-25,added,SDN,individual,"KAYOBOTSI, Bosco",Rwanda,DRCONGO,DR Congo,,GASABO GOLD REFINERY LTD
+22494,643,2026-06-25,added,SDN,entity,BUGAMBIRA MINES LTD,Rwanda,DRCONGO,DR Congo,MULTISERVE CONSULTS LTD,"KALIMA KAREKEZI, Jean Malic"
+22495,643,2026-06-25,added,SDN,entity,GASABO GOLD REFINERY LTD,Rwanda,DRCONGO,DR Congo,,M23
+22496,643,2026-06-25,added,SDN,entity,RWINKWAVU MINING CORPORATION LTD,Rwanda,DRCONGO,DR Congo,,"KALIMA KAREKEZI, Jean Malic"
+22497,643,2026-06-25,added,SDN,entity,WOLFRAM MINING AND PROCESSING LTD,Rwanda,DRCONGO,DR Congo,,"KALIMA KAREKEZI, Jean Malic"
 22498,644,2026-06-26,added,SDN,individual,"CHOUDHARI, Alok",India,SUDAN-EO14098,Sudan / South Sudan,,SBL ENERGY LIMITED
 22499,644,2026-06-26,added,SDN,individual,"DERMAN GUZMAN, Jack Peter",Panama,SUDAN-EO14098,Sudan / South Sudan,,"TALENT BRIDGE, S.A."
 22500,644,2026-06-26,added,SDN,individual,"LOPEZ OCAMPO, Fredy Alejandro",Colombia,SUDAN-EO14098,Sudan / South Sudan,,"TALENT BRIDGE, S.A."
@@ -23637,14 +23637,14 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 23636,675,2026-09-18,removed,SDN,entity,ERITREAN DEFENSE FORCE,Eritrea,ETHIOPIA-EO14046,Africa (other),ERITREAN DEFENSE FORCES,
 23637,675,2026-09-18,removed,SDN,entity,RED SEA TRADING CORPORATION,Eritrea,ETHIOPIA-EO14046,Africa (other),,
 23638,675,2026-09-18,removed,SDN,entity,HIDRI TRUST,Eritrea,ETHIOPIA-EO14046,Africa (other),,
-23639,676,2026-09-23,removed,SDN,individual,"OLENGA, Francois",Democratic Republic of the Congo,DRCONGO,Africa (other),"OKUNJI, Francois|OLENGA TATE, Francois|OLENGA TETE, Francois|OTSHUNDI, Francois",
-23640,676,2026-09-23,removed,SDN,individual,"OLENGA TETE, Francois",Democratic Republic of the Congo,DRCONGO,Africa (other),"OKUNJI, Francois|OLENGA TATE, Francois|OLENGA, Francois|OTSHUNDI, Francois",
-23641,676,2026-09-23,removed,SDN,individual,"OLENGA TATE, Francois",Democratic Republic of the Congo,DRCONGO,Africa (other),"OKUNJI, Francois|OLENGA TETE, Francois|OLENGA, Francois|OTSHUNDI, Francois",
-23642,676,2026-09-23,removed,SDN,individual,"OKUNJI, Francois",Democratic Republic of the Congo,DRCONGO,Africa (other),"OLENGA TATE, Francois|OLENGA TETE, Francois|OLENGA, Francois|OTSHUNDI, Francois",
-23643,676,2026-09-23,removed,SDN,individual,"OTSHUNDI, Francois",Democratic Republic of the Congo,DRCONGO,Africa (other),"OKUNJI, Francois|OLENGA TATE, Francois|OLENGA TETE, Francois|OLENGA, Francois",
-23644,676,2026-09-23,removed,SDN,entity,SAFARI CLUB,Democratic Republic of the Congo,DRCONGO,Africa (other),CENTRE DE LOISIR SAFARI CLUB|SAFARI BEACH,"OLENGA, Francois"
-23645,676,2026-09-23,removed,SDN,entity,CENTRE DE LOISIR SAFARI CLUB,Democratic Republic of the Congo,DRCONGO,Africa (other),SAFARI CLUB|SAFARI BEACH,"OLENGA, Francois"
-23646,676,2026-09-23,removed,SDN,entity,"""SAFARI BEACH""",Democratic Republic of the Congo,DRCONGO,Africa (other),CENTRE DE LOISIR SAFARI CLUB|SAFARI CLUB,"OLENGA, Francois"
+23639,676,2026-09-23,removed,SDN,individual,"OLENGA, Francois",Democratic Republic of the Congo,DRCONGO,DR Congo,"OKUNJI, Francois|OLENGA TATE, Francois|OLENGA TETE, Francois|OTSHUNDI, Francois",
+23640,676,2026-09-23,removed,SDN,individual,"OLENGA TETE, Francois",Democratic Republic of the Congo,DRCONGO,DR Congo,"OKUNJI, Francois|OLENGA TATE, Francois|OLENGA, Francois|OTSHUNDI, Francois",
+23641,676,2026-09-23,removed,SDN,individual,"OLENGA TATE, Francois",Democratic Republic of the Congo,DRCONGO,DR Congo,"OKUNJI, Francois|OLENGA TETE, Francois|OLENGA, Francois|OTSHUNDI, Francois",
+23642,676,2026-09-23,removed,SDN,individual,"OKUNJI, Francois",Democratic Republic of the Congo,DRCONGO,DR Congo,"OLENGA TATE, Francois|OLENGA TETE, Francois|OLENGA, Francois|OTSHUNDI, Francois",
+23643,676,2026-09-23,removed,SDN,individual,"OTSHUNDI, Francois",Democratic Republic of the Congo,DRCONGO,DR Congo,"OKUNJI, Francois|OLENGA TATE, Francois|OLENGA TETE, Francois|OLENGA, Francois",
+23644,676,2026-09-23,removed,SDN,entity,SAFARI CLUB,Democratic Republic of the Congo,DRCONGO,DR Congo,CENTRE DE LOISIR SAFARI CLUB|SAFARI BEACH,"OLENGA, Francois"
+23645,676,2026-09-23,removed,SDN,entity,CENTRE DE LOISIR SAFARI CLUB,Democratic Republic of the Congo,DRCONGO,DR Congo,SAFARI CLUB|SAFARI BEACH,"OLENGA, Francois"
+23646,676,2026-09-23,removed,SDN,entity,"""SAFARI BEACH""",Democratic Republic of the Congo,DRCONGO,DR Congo,CENTRE DE LOISIR SAFARI CLUB|SAFARI CLUB,"OLENGA, Francois"
 23647,677,2026-09-29,added,SDN,individual,"AHMADY, Ali Fotowat",Iran,NPWMD,Non-Proliferation,"AHMADI, Ali Fotovat|AHMADI, Ali Fotowat",KAVOSHCOM ASIA R AND D GROUP
 23648,677,2026-09-29,added,SDN,individual,"BUENROSTRO MARTIN, Rafael",Mexico,SDGT|ILLICIT-DRUGS-EO14059,Counter Terrorism,,SINALOA CARTEL
 23649,677,2026-09-29,added,SDN,individual,"CASTILLO MALDONADO, Lorenzo",Mexico,SDGT|ILLICIT-DRUGS-EO14059,Counter Terrorism,,SINALOA CARTEL
@@ -24110,5 +24110,5 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 24109,689,2026-10-28,added,SDN,individual,"RI, Thae Chol",North Korea,DPRK3,North Korea,"RI, T'ae-ch'o'l",FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER
 24110,689,2026-10-28,added,SDN,individual,"SO, Hyong Jin",North Korea,DPRK3,North Korea,"SO', Hyo'n-chin",FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER
 24111,689,2026-10-28,added,SDN,entity,FIRST FINANCIAL AND TECHNICAL DEVELOPMENT CENTER,North Korea,DPRK3,North Korea,,
-24112,689,2026-10-28,added,SDN,entity,MINISTRY OF DEFENCE OF THE REPUBLIC OF RWANDA,Rwanda,DRCONGO,Africa (other),MINADEF OF THE REPUBLIC OF RWANDA|MOD OF THE REPUBLIC OF RWANDA|RWANDAN MINISTRY OF DEFENCE,
-24113,689,2026-10-28,added,SDN,entity,ZIGAMA CREDIT AND SAVINGS SOCIETY,Rwanda,DRCONGO,Africa (other),ZIGAMA CREDIT AND SAVINGS BANK|ZIGAMA CSS,
+24112,689,2026-10-28,added,SDN,entity,MINISTRY OF DEFENCE OF THE REPUBLIC OF RWANDA,Rwanda,DRCONGO,DR Congo,MINADEF OF THE REPUBLIC OF RWANDA|MOD OF THE REPUBLIC OF RWANDA|RWANDAN MINISTRY OF DEFENCE,
+24113,689,2026-10-28,added,SDN,entity,ZIGAMA CREDIT AND SAVINGS SOCIETY,Rwanda,DRCONGO,DR Congo,ZIGAMA CREDIT AND SAVINGS BANK|ZIGAMA CSS,
