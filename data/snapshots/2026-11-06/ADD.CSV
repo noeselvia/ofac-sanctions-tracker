@@ -9430,6 +9430,7 @@
 27424,41694,-0- ,"Panama City","Panama",-0- 
 27425,41695,-0- ,-0- ,-0- ,-0- 
 27426,41697,"Arch Makariou III Avenue 284, Fortuna Court, Block B, 2nd Floor","Limassol","Cyprus",-0- 
+27426,90781,"Entre 5ta y 7ma, Calle 20, Miramar","Playa, Havana","Cuba",-0- 
 27427,41700,-0- ,"Caracas, Capital District","Venezuela",-0- 
 27428,41701,-0- ,"Panama City","Panama",-0- 
 27429,41704,-0- ,"Panama City","Panama",-0- 
@@ -10562,6 +10563,7 @@
 30467,46093,-0- ,"Damascus","Syria",-0- 
 30502,46123,"Block A 6-23F, No. 17 Fuxing Road, Haidian District","Beijing 100036","China",-0- 
 30502,46124,"Calle Orinoco, Torre Nordic, Piso 6, Las Mercedes","Caracas 1060","Venezuela",-0- 
+30502,90810,"Room 1706, 17th Floor, Building 3, No. 17, Zhongguancun South Street, Haidian District","Beijing 100089","China",-0- 
 30517,46154,-0- ,"Minsk Oblast","Belarus",-0- 
 30518,46182,-0- ,"Karachi","Pakistan",-0- 
 30519,46208,-0- ,"Karachi","Pakistan",-0- 
@@ -24949,9 +24951,23 @@
 58560,90147,-0- ,"Baghdad","Iraq",-0- 
 58561,90149,-0- ,"Baghdad","Iraq",-0- 
 58562,90151,-0- ,-0- ,"Iraq",-0- 
+58563,90153,-0- ,"Phnom Penh","Cambodia",-0- 
+58564,90155,-0- ,"Phnom Penh","Cambodia",-0- 
+58565,90157,-0- ,"Phnom Penh","Cambodia",-0- 
+58566,90159,-0- ,"Phnom Penh","Cambodia",-0- 
+58567,90161,-0- ,"Phnom Penh","Cambodia",-0- 
+58568,90163,-0- ,"Kandal Province","Cambodia",-0- 
+58569,90165,-0- ,"Phnom Penh","Cambodia",-0- 
+58570,90167,-0- ,"Phnom Penh","Cambodia",-0- 
 58571,90169,"Arasat Ave, Karada","Baghdad","Iraq",-0- 
 58571,90170,"Karrada, Hay Babil Dist. 929, Arasat Ave., St No. 21, Building 1","Baghdad 10069","Iraq",-0- 
+58572,90172,-0- ,"Phnom Penh","Cambodia",-0- 
+58573,90174,-0- ,"Phnom Penh","Cambodia",-0- 
+58574,90176,-0- ,"Phnom Penh","Cambodia",-0- 
+58575,90341,-0- ,-0- ,"Cambodia",-0- 
+58595,90195,-0- ,-0- ,"Cambodia",-0- 
 58596,90199,-0- ,"Rawalpindi, Punjab","Pakistan",-0- 
+58597,90198,"Phum 2, Boeng Keng Kang Muoy, Chamkar Mon","Phnom Penh 12302","Cambodia",-0- 
 58598,90201,"Plot 101-103, Humak Industrial Area, Sihala Road","Islamabad","Pakistan",-0- 
 58599,90203,-0- ,"Riyadh, Riyadh","Saudi Arabia",-0- 
 58600,90205,"Block No: 2, Aos 55th Street, 42 Maslak Neighborhood A Door No: 25, Maslak, Sariyer","Istanbul, Marmara","Turkey",-0- 
@@ -24964,12 +24980,27 @@
 58619,90279,"No. 2, 35th Street, Alvand Street, Argentina Square","Tehran","Iran",-0- 
 58620,90249,"Kish Sadaf Fazyek Kh Hananeh Shiday Yakom","Kish Island","Iran",-0- 
 58624,90257,-0- ,"Mexicali, Baja California","Mexico",-0- 
+58625,90262,-0- ,-0- ,"Cambodia",-0- 
 58626,90264,-0- ,-0- ,"Russia",-0- 
 58626,90265,-0- ,-0- ,"Kyrgyzstan",-0- 
 58626,90266,-0- ,-0- ,"Nigeria",-0- 
 58626,90267,-0- ,-0- ,"Zimbabwe",-0- 
+58627,90270,"Phum 2, Boeng Keng Kang Muoy, Chamkar Mon","Phnom Penh 12302","Cambodia",-0- 
+58628,90272,"Phum 2, Boeng Keng Kang Muoy, Chamkar Mon","Phnom Penh 12302","Cambodia",-0- 
+58629,90274,"Boeng Kak Pir, Tuol Kouk","Phnom Penh","Cambodia",-0- 
 58630,90276,"Unit 7, Building 20, Esmail, Zarafshan Southern, Veranda East, Town West","Tehran","Iran",-0- 
 58631,90278,"KH Shari'ati KH Va'zi P40 Vahda 3","Tehran","Iran",-0- 
+58632,90281,"Boeng Kak Pir, Tuol Kouk","Phnom Penh","Cambodia",-0- 
+58636,90303,"Boeng Kak Pir, Tuol Kouk","Phnom Penh","Cambodia",-0- 
+58637,90305,"Chongthnal Khang Kaeut, Teuk Thla, Sen Sok","Phnom Penh","Cambodia",-0- 
+58638,90307,"Tonle Basak, Chamkar Mon","Phnom Penh","Cambodia",-0- 
+58639,90309,"Veal Vong, Prampi Makara","Phnom Penh","Cambodia",-0- 
+58640,90311,"Boeng Prolit, Prampi Makara","Phnom Penh","Cambodia",-0- 
+58641,90313,"Phum 2, Boeng Keng Kang Muoy, Chamkar Mon","Phnom Penh 12302","Cambodia",-0- 
+58642,90315,"Phum 2, Boeng Keng Kang Muoy, Chamkar Mon","Phnom Penh 12302","Cambodia",-0- 
+58644,90320,"Sir Virgil Naz Street, Citadelle Mall","Port Louis","Mauritius",-0- 
+58645,90322,"3 Wallich Street, 41-07, Wallich Residence","Singapore 078882","Singapore",-0- 
+58646,90324,"14A, Jalan Tun Mohd Fuad, Taman Tun Dr Ismail","Kuala Lumpur 60000","Malaysia",-0- 
 58647,90326,"Loma S/N, Entre Santa Ana Y Conill, Nuevo Vedado, Plaza De La Revolucion","Havana","Cuba",-0- 
 58648,90328,"58 #2906 Eyrpto, Playa","Havana","Cuba",-0- 
 58649,90330,"Estrada Palma No. 13, Casablanca, Regla","Havana","Cuba",-0- 
@@ -24979,6 +25010,22 @@
 58652,90336,-0- ,-0- ,"Cuba",-0- 
 58653,90338,"Santa Ana S/N, Entre 47 Y Reforma, Nuevo Vedado, Plaza De La Revolucion","Havana","Cuba",-0- 
 58654,90374,-0- ,"Beijing","China",-0- 
+58655,90343,-0- ,"Hong Kong","China",-0- 
+58656,90345,"2 Jalan Kilang Barat, #08-01","Singapore 159346","Singapore",-0- 
+58657,90347,-0- ,-0- ,"Virgin Islands, British",-0- 
+58658,90349,"Room D17, 5/F. Mai Gar Industrial Building, 146 Wai Yip Street, Kwun Tong, Kowloon","Hong Kong","China",-0- 
+58659,90351,"Room D17, 5/F. Mai Gar Industrial Building, 146 Wai Yip Street, Kwun Tong, Kowloon","Hong Kong","China",-0- 
+58660,90353,"Room D17, 5/F. Mai Gar Industrial Building, 146 Wai Yip Street, Kwun Tong, Kowloon","Hong Kong","China",-0- 
+58661,90355,"Room D17, 5/F. Mai Gar Industrial Building, 146 Wai Yip Street, Kwun Tong, Kowloon","Hong Kong","China",-0- 
+58662,90357,"Wickhams Cay II","Road Town, Tortola VG1110","Virgin Islands, British",-0- 
+58663,90359,"Room D17, 5/F. Mai Gar Industrial Building, 146 Wai Yip Street, Kwun Tong, Kowloon","Hong Kong","China",-0- 
+58664,90361,"Wickhams Cay II","Road Town, Tortola VG1110","Virgin Islands, British",-0- 
+58665,90363,"Unit 802, 8/F, 68 Kimberley Road, Tsim Sha Tsui, Kowloon","Hong Kong","China",-0- 
+58666,90365,"Wickhams Cay II","Road Town, Tortola VG1110","Virgin Islands, British",-0- 
+58667,90367,-0- ,-0- ,"Virgin Islands, British",-0- 
+58668,90369,-0- ,-0- ,"Virgin Islands, British",-0- 
+58669,90371,-0- ,-0- ,"Virgin Islands, British",-0- 
+58670,90373,-0- ,-0- ,"Virgin Islands, British",-0- 
 58693,90411,-0- ,"Cancun, Quintana Roo","Mexico",-0- 
 58694,90413,-0- ,"Tijuana, Baja California","Mexico",-0- 
 58694,90414,-0- ,"Culiacan, Sinaloa","Mexico",-0- 
@@ -25118,6 +25165,13 @@
 58888,90772,-0- ,-0- ,"Russia",-0- 
 58888,90773,-0- ,-0- ,"Laos",-0- 
 58889,90775,-0- ,-0- ,"Russia",-0- 
+58890,90777,-0- ,"Havana","Cuba",-0- 
+58910,90797,-0- ,-0- ,-0- ,-0- 
+58911,90799,-0- ,"Panama City","Panama",-0- 
+58912,90813,-0- ,"Panama City","Panama",-0- 
+58913,90802,-0- ,"Havana","Cuba",-0- 
+58915,90805,-0- ,"Havana","Cuba",-0- 
+58917,90812,"Room 624, Building 2, No. 5, Tongbei Street, Wulu Road (Desheng Park), Xicheng District","Beijing 100032","China",-0- 
 58930,90839,-0- ,-0- ,"Iran",-0- 
 58931,90818,-0- ,-0- ,"Panama",-0- 
 58931,90819,"5th Floor, 90 Iroon Politechneiou Avenue","Piraeus 185 36","Greece",-0- 
@@ -25164,6 +25218,7 @@
 58992,90899,"North Unit, First Floor, No. 14, Shahid Davoud Jahanbaksh Nejad Street, Farmanieh","Tajrish, Tehran 1957944813","Iran",-0- 
 58997,90926,"Oficina 506, Edificio Santa Clara, Centro de Negocios Miramar, Calle 3 entre 76 y 78, Miramar, Playa","Havana","Cuba",-0- 
 59050,90998,"Gayrettepe Mh. Vefabey Sk. No: 16 Inner Door No: 4, Besiktas","Istanbul","Turkey",-0- 
+59052,91057,-0- ,"Antananarivo","Madagascar",-0- 
 59053,91005,-0- ,"Chandigarh","India",-0- 
 59054,91007,-0- ,"Chandigarh","India",-0- 
 59055,91009,"S.C.O. 86, Sector 44C","Chandigarh 160047","India",-0- 
@@ -25178,6 +25233,9 @@
 59063,91026,"SCO-318, 1st Floor Sector 38-D","Chandigarh 160036","India",-0- 
 59064,91028,"Building No 4, Pallippuram P O, Pallippuram, Cherthala","Alappuzha, Kerala 688541","India",-0- 
 59065,91030,"SCO 373, Sector 37 D","Chandigarh","India",-0- 
+59066,91032,-0- ,"Miramar, Havana","Cuba",-0- 
+59067,91034,-0- ,"Havana","Cuba",-0- 
+59068,91035,-0- ,-0- ,-0- ,-0- 
 59069,91037,"Ministry of Defence, KG 1 Roundabout","Kigali","Rwanda",-0- 
 59090,91078,"Str. 5, Bld. 6, Khripan Village, Ramenskiy Rayon","Moscow Oblast 140163","Russia",-0- 
 
