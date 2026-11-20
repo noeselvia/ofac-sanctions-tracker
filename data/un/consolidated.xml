@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://scsanctions.un.org/sc-sanctions.xsd" dateGenerated="2026-11-19T00:00:03.388Z">
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://scsanctions.un.org/sc-sanctions.xsd" dateGenerated="2026-11-20T07:50:34.182Z">
   <INDIVIDUALS>
     <INDIVIDUAL>
       <DATAID>6907993</DATAID>
@@ -14765,6 +14765,7 @@ Place of issue: Essouck, Mali</NOTE>
         <VALUE>2010-06-15</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -15107,6 +15108,7 @@ Arabic: سيف العدل </NOTE>
         <VALUE>2010-06-21</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY/>
@@ -15299,6 +15301,7 @@ Arabic: سيف العدل </NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2010-06-15</VALUE>
         <VALUE>2020-11-24</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -16517,6 +16520,7 @@ Feb. 2001</NOTE>
         <VALUE>2010-04-22</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -16742,6 +16746,7 @@ Feb. 2001</NOTE>
         <VALUE>2010-04-22</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -17084,6 +17089,7 @@ Feb. 2001</NOTE>
         <VALUE>2010-06-21</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -17952,6 +17958,7 @@ Feb. 2001</NOTE>
         <VALUE>2010-05-25</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -18084,6 +18091,7 @@ Feb. 2001</NOTE>
         <VALUE>2010-05-25</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -18174,6 +18182,7 @@ Feb. 2001</NOTE>
         <VALUE>2014-03-06</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -18311,6 +18320,7 @@ Feb. 2001</NOTE>
         <VALUE>2009-10-19</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -19053,6 +19063,7 @@ province, Algeria</NOTE>
         <VALUE>2010-06-21</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -19183,6 +19194,7 @@ province, Algeria</NOTE>
         <VALUE>2010-06-08</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -19236,6 +19248,7 @@ province, Algeria</NOTE>
         <VALUE>2010-06-21</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY/>
@@ -19422,6 +19435,7 @@ province, Algeria</NOTE>
         <VALUE>2010-07-27</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -19674,6 +19688,7 @@ province, Algeria</NOTE>
         <VALUE>2010-07-27</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -20366,6 +20381,7 @@ province, Algeria</NOTE>
         <VALUE>2010-07-29</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -20475,6 +20491,7 @@ province, Algeria</NOTE>
         <VALUE>2009-10-05</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -21216,6 +21233,7 @@ province, Algeria</NOTE>
         <VALUE>2009-10-05</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -21272,6 +21290,7 @@ province, Algeria</NOTE>
         <VALUE>2009-11-24</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -21336,6 +21355,7 @@ province, Algeria</NOTE>
         <VALUE>2009-11-24</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -21468,6 +21488,7 @@ province, Algeria</NOTE>
         <VALUE>2009-09-14</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -21650,6 +21671,7 @@ province, Algeria</NOTE>
         <VALUE>2009-09-14</VALUE>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -21738,6 +21760,7 @@ province, Algeria</NOTE>
         <VALUE>2010-05-13</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -21809,6 +21832,7 @@ province, Algeria</NOTE>
         <VALUE>2010-05-13</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -21883,6 +21907,7 @@ province, Algeria</NOTE>
         <VALUE>2010-05-13</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -22033,6 +22058,7 @@ province, Algeria</NOTE>
         <VALUE>2010-05-13</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -22113,6 +22139,7 @@ province, Algeria</NOTE>
         <VALUE>2010-05-13</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -22310,6 +22337,7 @@ province, Algeria</NOTE>
         <VALUE>2010-05-13</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -22509,6 +22537,7 @@ province, Algeria</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2020-11-24</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -22858,6 +22887,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -22939,6 +22969,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -23019,6 +23050,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -23198,6 +23230,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -23268,6 +23301,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -23320,6 +23354,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -23400,6 +23435,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -23460,6 +23496,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -23644,6 +23681,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -23700,6 +23738,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -23933,6 +23972,7 @@ expired on 15 Sep. 2009.</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -24727,6 +24767,7 @@ number</TYPE_OF_DOCUMENT2>
       <LAST_REVIEWED_ON>
         <VALUE>2020-11-24</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -25241,6 +25282,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -25320,6 +25362,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -25462,6 +25505,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -25513,6 +25557,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -25581,6 +25626,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -25710,6 +25756,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -25836,6 +25883,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -25888,6 +25936,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -26549,6 +26598,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -26675,6 +26725,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -26942,6 +26993,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -27103,6 +27155,7 @@ Abdul Rosyid Ridho Ba’asyir</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -28328,6 +28381,7 @@ Rembang, Jawa Tengah, Indonesia</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -28882,6 +28936,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -28951,6 +29006,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -29396,6 +29452,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -29622,6 +29679,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -30027,6 +30085,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -30403,6 +30462,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       <LAST_REVIEWED_ON>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -30460,6 +30520,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -30516,6 +30577,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -30580,6 +30642,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -30793,6 +30856,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -30845,6 +30909,7 @@ Federation for the Republic Karachayevo-Cherkessia</NOTE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
@@ -30900,6 +30965,7 @@ Dec. 2014</NOTE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -31450,6 +31516,7 @@ Dec. 2014</NOTE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
@@ -32396,6 +32463,9 @@ Feb. 2020</NOTE>
       <LAST_DAY_UPDATED>
         <VALUE/>
       </LAST_DAY_UPDATED>
+      <LAST_REVIEWED_ON>
+        <VALUE>2026-11-02</VALUE>
+      </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
         <ALIAS_NAME>Mohamad Abdulkarim</ALIAS_NAME>
@@ -32497,6 +32567,9 @@ Feb. 2020</NOTE>
       <LAST_DAY_UPDATED>
         <VALUE>2022-04-01</VALUE>
       </LAST_DAY_UPDATED>
+      <LAST_REVIEWED_ON>
+        <VALUE>2026-11-02</VALUE>
+      </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Low</QUALITY>
         <ALIAS_NAME>Abu Jihad TNT</ALIAS_NAME>
@@ -32574,6 +32647,9 @@ Feb. 2020</NOTE>
         <VALUE>2024-04-25</VALUE>
         <VALUE>2026-09-04</VALUE>
       </LAST_DAY_UPDATED>
+      <LAST_REVIEWED_ON>
+        <VALUE>2026-11-02</VALUE>
+      </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
         <ALIAS_NAME>Dr. Shahab al Muhajir</ALIAS_NAME>
@@ -32661,6 +32737,9 @@ Feb. 2020</NOTE>
       <LAST_DAY_UPDATED>
         <VALUE/>
       </LAST_DAY_UPDATED>
+      <LAST_REVIEWED_ON>
+        <VALUE>2026-11-02</VALUE>
+      </LAST_REVIEWED_ON>
       <INDIVIDUAL_ALIAS>
         <QUALITY>Good</QUALITY>
         <ALIAS_NAME>Ashraf al-Gizani</ALIAS_NAME>
@@ -51187,6 +51266,7 @@ Listed pursuant to paragraphs 10(a), 10 (b), 10(c) and 10(d) of resolution 2146 
         <VALUE>2020-11-24</VALUE>
         <VALUE>2022-11-08</VALUE>
         <VALUE>2024-11-07</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
@@ -52023,6 +52103,7 @@ Listed pursuant to paragraphs 10(a), 10 (b), 10(c) and 10(d) of resolution 2146 
         <VALUE>2010-05-17</VALUE>
         <VALUE>2019-12-04</VALUE>
         <VALUE>2021-11-15</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
@@ -52126,6 +52207,7 @@ Listed pursuant to paragraphs 10(a), 10 (b), 10(c) and 10(d) of resolution 2146 
       <LAST_REVIEWED_ON>
         <VALUE>2010-05-17</VALUE>
         <VALUE>2020-11-24</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
@@ -52300,6 +52382,7 @@ Listed pursuant to paragraphs 10(a), 10 (b), 10(c) and 10(d) of resolution 2146 
         <VALUE>2019-02-21</VALUE>
         <VALUE>2021-11-15</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
@@ -53456,6 +53539,7 @@ Listed pursuant to paragraphs 10(a), 10 (b), 10(c) and 10(d) of resolution 2146 
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
@@ -53488,6 +53572,7 @@ Listed pursuant to paragraphs 10(a), 10 (b), 10(c) and 10(d) of resolution 2146 
       <LAST_REVIEWED_ON>
         <VALUE>2019-02-21</VALUE>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
@@ -54209,6 +54294,7 @@ region </STATE_PROVINCE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
@@ -54260,6 +54346,7 @@ region </STATE_PROVINCE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
@@ -54316,6 +54403,7 @@ region </STATE_PROVINCE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2022-11-08</VALUE>
+        <VALUE>2026-11-02</VALUE>
       </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
@@ -54851,6 +54939,9 @@ region </STATE_PROVINCE>
       <LIST_TYPE>
         <VALUE>UN List</VALUE>
       </LIST_TYPE>
+      <LAST_REVIEWED_ON>
+        <VALUE>2026-11-02</VALUE>
+      </LAST_REVIEWED_ON>
       <ENTITY_ALIAS>
         <QUALITY>a.k.a.</QUALITY>
         <ALIAS_NAME>ISIL-Tunisia</ALIAS_NAME>
