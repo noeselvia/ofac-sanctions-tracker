@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://scsanctions.un.org/sc-sanctions.xsd" dateGenerated="2026-11-20T07:50:34.182Z">
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://scsanctions.un.org/sc-sanctions.xsd" dateGenerated="2026-11-21T00:00:07.510Z">
   <INDIVIDUALS>
     <INDIVIDUAL>
       <DATAID>6907993</DATAID>
@@ -20361,7 +20361,7 @@ province, Algeria</NOTE>
       <REFERENCE_NUMBER>QDi.198</REFERENCE_NUMBER>
       <LISTED_ON>2005-09-29</LISTED_ON>
       <NAME_ORIGINAL_SCRIPT>هاني السيد السباعي يوسف</NAME_ORIGINAL_SCRIPT>
-      <COMMENTS1>Father's name is Mohamed Elsayed Elsebai INTERPOL-UN Security Council Special Notice:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals</COMMENTS1>
+      <COMMENTS1>Father's name is Mohamed Elsayed Elsebai. Photo available for inclusion in the INTERPOL-UN Security Council Special Notice. INTERPOL-UN Security Council Special Notice:https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals</COMMENTS1>
       <HAS_INTERPOL_LINK>YES</HAS_INTERPOL_LINK>
       <INTERPOL_LINK>https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals#2012-7291</INTERPOL_LINK>
       <NATIONALITY>
@@ -20376,6 +20376,7 @@ province, Algeria</NOTE>
         <VALUE>2012-01-25</VALUE>
         <VALUE>2019-12-06</VALUE>
         <VALUE>2023-10-30</VALUE>
+        <VALUE>2026-11-20</VALUE>
       </LAST_DAY_UPDATED>
       <LAST_REVIEWED_ON>
         <VALUE>2010-07-29</VALUE>

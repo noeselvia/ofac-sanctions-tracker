@@ -24233,3 +24233,7 @@ change_id,action_id,change_date,action,list_name,entity_type,name,country,progra
 24232,696,2026-11-19,added,SDN,entity,VESCIO FUNERAL HOMES INC.,Canada,ILLICIT-DRUGS-EO14059,Counter Narcotics,,"VESCIO SR., Luigi"
 24233,696,2026-11-19,added,SDN,entity,ZHZ INVESTMENT CONSULTING CO.,Cambodia,CYBER4,Cyber,,"ZHAO, Hui"
 24234,696,2026-11-19,updated,SDN,entity,'NDRANGHETA,Italy,SDNTK|ILLICIT-DRUGS-EO14059,Counter Narcotics,,
+24235,697,2026-11-20,added,SDN,individual,"ARABNEJAD, Mojtaba",Iran,SDGT,Counter Terrorism,,MAHAN AIR
+24236,697,2026-11-20,added,SDN,individual,"BAVAND, Mohammad Javad",Iran,IRAN-EO13902,Iran,,
+24237,697,2026-11-20,added,SDN,individual,"SERVATI, Mohammadhossein",Iran,SDGT,Counter Terrorism,"SARVATI, Mohammad Hosein",SEPEHR ENERGY JAHAN NAMA PARS COMPANY
+24238,697,2026-11-20,added,SDN,individual,"TAJ, Majid",Iran,IRAN-EO13902,Iran,,

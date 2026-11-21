@@ -1197,3 +1197,7 @@ snapshot_date,previous_snapshot,action,ent_num,name,sdn_type,programs,country,ch
 2026-11-19,2026-11-18,added,58809,"NAUFAHU, Vetekina",individual,ILLICIT-DRUGS-EO14059,New Zealand,
 2026-11-19,2026-11-18,added,58800,"VESCIO, Rose",individual,ILLICIT-DRUGS-EO14059,Canada,
 2026-11-19,2026-11-18,updated,10902,'NDRANGHETA,entity,SDNTK|ILLICIT-DRUGS-EO14059,Italy,name|program|remarks
+2026-11-21,2026-11-20,added,59252,"TAJ, Majid",individual,IRAN-EO13902,Iran,
+2026-11-21,2026-11-20,added,59251,"BAVAND, Mohammad Javad",individual,IRAN-EO13902,Iran,
+2026-11-21,2026-11-20,added,59250,"ARABNEJAD, Mojtaba",individual,SDGT|IFSR,Iran,
+2026-11-21,2026-11-20,added,59253,"SERVATI, Mohammadhossein",individual,SDGT|IFSR,Iran,
