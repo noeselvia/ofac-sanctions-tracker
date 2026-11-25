@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://scsanctions.un.org/sc-sanctions.xsd" dateGenerated="2026-11-24T00:00:06.002Z">
+<CONSOLIDATED_LIST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://scsanctions.un.org/sc-sanctions.xsd" dateGenerated="2026-11-25T15:32:06.210Z">
   <INDIVIDUALS>
     <INDIVIDUAL>
       <DATAID>6907993</DATAID>
@@ -50703,6 +50703,30 @@ September pursuant to paragraph 15 of resolution 2009. INTERPOL-UN Security Coun
       <LISTED_ON>2026-07-22</LISTED_ON>
       <COMMENTS1>IMO: 9058713 
 Listed pursuant to paragraphs 10(a), 10 (b), 10(c) and 10(d) of resolution 2146 (2014), as amended by paragraph 2 of resolutions 2441 (2018) and 2509 (2020) and extended in resolution 2819 (2026) (prohibition to load, transport or discharge; prohibition to enter ports; prohibition to provide bunkering and vessel services; prohibition to engage in financial transactions with regard to petroleum). Pursuant to paragraph 11 of resolution 2146, as modified by paragraph 2 of resolution 2509 (2020), this designation is valid from 22 July 2026 to 22 July 2027, unless terminated earlier by the Committee pursuant to paragraph 12 of resolution 2146 (2014). Flag State: Cameroon. As of 4 April 2026, the vessel was located near the anchorage area of the Benghazi Old Harbour, Libya.</COMMENTS1>
+      <HAS_INTERPOL_LINK>NO</HAS_INTERPOL_LINK>
+      <INTERPOL_LINK/>
+      <LIST_TYPE>
+        <VALUE>UN List</VALUE>
+      </LIST_TYPE>
+      <ENTITY_ALIAS>
+        <QUALITY/>
+        <ALIAS_NAME/>
+      </ENTITY_ALIAS>
+      <ENTITY_ADDRESS>
+        <COUNTRY/>
+      </ENTITY_ADDRESS>
+      <SORT_KEY/>
+      <SORT_KEY_LAST_MOD/>
+    </ENTITY>
+    <ENTITY>
+      <DATAID>6909750</DATAID>
+      <VERSIONNUM>1</VERSIONNUM>
+      <FIRST_NAME>Aegean</FIRST_NAME>
+      <UN_LIST_TYPE>Libya</UN_LIST_TYPE>
+      <REFERENCE_NUMBER>LYe.007</REFERENCE_NUMBER>
+      <LISTED_ON>2026-11-24</LISTED_ON>
+      <COMMENTS1>IMO: 8027705
+Listed pursuant to paragraphs 10(a), 10 (b), 10(c) and 10(d) of resolution 2146 (2014), as amended by paragraph 2 of resolutions 2441 (2018) and 2509 (2020) and extended in resolution 2819 (2026) (prohibition to load, transport or discharge; prohibition to enter ports; prohibition to provide bunkering and vessel services; prohibition to engage in financial transactions with regard to petroleum). Pursuant to paragraph 11 of resolution 2146, as modified by paragraph 2 of resolution 2509 (2020), this designation is valid from 24 November 2026 to 24 November 2027, unless terminated earlier by the Committee pursuant to paragraph 12 of resolution 2146 (2014). Flag State: Unknown. As of 4 April 2026, the vessel was located near the anchorage area of the Benghazi Old Harbour, Libya.</COMMENTS1>
       <HAS_INTERPOL_LINK>NO</HAS_INTERPOL_LINK>
       <INTERPOL_LINK/>
       <LIST_TYPE>
